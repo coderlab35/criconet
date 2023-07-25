@@ -82,7 +82,24 @@ textarea.form-control {
 .l_btn a {
   background: #800000;
 }
-
+.white h1,
+.white h2,
+.white h3,
+.white h4,
+.white h5,
+.white h6,
+.white p{
+  color: #fff;
+}
+.heading h2{
+  color: #800000;
+}
+.ml-30{
+  margin-left: 30px;
+}
+.d_padding{
+  padding: 80px 0;
+}
 /* main css  */
 
 /* navigation bar  */
@@ -224,17 +241,74 @@ ul.nav.navbar-nav li.nav-item.dropdown {
 
 /* main hero section  */
 section.main_hero_sec {
-  background: #0E2245;
   position: relative;
-  height: 100vh;
+  background: #0E2245 url(../images/right-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: screen;
+  background-position: center;
+  padding: 160px 0px 80px 0;
 }
-section.main_hero_sec::after {
+/* section.main_hero_sec::after {
   content: "";
   position: absolute;
   right: 0;
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: url("../images/right-bg.png");
+  background-image: url(../images/right-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  mix-blend-mode: screen;
+  z-index: 1;
+} */
+.hero_right {
+  position: relative;
+}
+.main_bg {
+  max-width: 410px;
+  margin: 0 auto;
+}
+.main_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 280px;
+  margin: 0 auto;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.main_img img{
+  /* border: 3px solid #fff; */
+  border-radius: 140px;
+  object-fit: cover;
+}
+.hero_left h1 {
+  color: #EDDC92;
+  font-size: 52px;
+  line-height: 62px;
+  margin-bottom: 15px;
+}
+.hero_left h2 {
+  font-size: 36px;
+  line-height: 46px;
+  margin-bottom: 15px;
+}
+.n_btn a {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.n_btn a:hover {
+  background: #800000;
+  border-color: #800000;
+}
+.c_btn.n_btn a img {
+  width: 20px;
+  margin-left: 10px;
 }
 /* end hero section  */
