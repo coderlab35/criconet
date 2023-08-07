@@ -100,6 +100,12 @@ textarea.form-control {
 .d_padding{
   padding: 80px 0;
 }
+.mb-20{
+  margin-bottom: 20px;
+}
+.mt-20{
+  margin-top: 20px;
+}
 /* main css  */
 
 /* navigation bar  */
@@ -112,7 +118,7 @@ section.navigation {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 9999;
   padding: 10px 0;
 }
 
@@ -312,3 +318,130 @@ section.main_hero_sec {
   margin-left: 10px;
 }
 /* end hero section  */
+
+/* service tab section  */
+.service_tab_wrap {
+  margin-top: 50px;
+}
+.accordion-header button.accordion-button {
+  background: url(../images/e-Pavilion.jpg) rgb(0 0 0 / 60%);;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  background-color: transparent;
+  background-position: top;
+  position: relative;
+}
+/* .accordion-header{
+  position: relative;
+}
+.accordion-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(0 0 0 / 60%);
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+} */
+.accordion-button::after {
+  background: url(../images/right-arrow.png);
+  background-repeat: no-repeat;
+}
+.accordion-button::after {
+  background: url(../images/right-arrow.png);
+  background-repeat: no-repeat;
+  height: 36px;
+  background-size: contain;
+  /* width: 116px; */
+}
+/* end service tab seaction  */
+
+
+/* cta section  */
+.cta_wrap {
+  padding: 80px;
+  border-radius: 20px;
+  background: #0E2245;
+  position: relative;
+}
+.cta_img {
+  position: absolute;
+  top: -93px;
+  max-width: 430px;
+  right: 50px;
+}
+/* end cta section  */
+
+/* footer  */
+footer {
+  background: #0E2245;
+  color: #fff;
+  padding: 50px 0;
+}
+
+h4.footer_heading {
+  color: #EDDC92;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  margin-bottom: 24px;
+}
+.footer_contact li a img {
+  margin-right: 15px;
+  width: 26px;
+}
+.footer_contact li a{
+  color: #fff;
+}
+.footer_btn a {
+  color: #EDDC92;
+  font-family: Paytone One;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+}
+.footer_menu ul li {
+  margin-bottom: 10px;
+}
+.footer_menu ul li a {
+  color: #FFF;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+.search_wrap.footer button {
+  color: #FFF;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 700;
+}
+.search_wrap.footer {
+  position: relative;
+}
+.search_wrap.footer .button_shadow::before{
+  width: 138px !important;
+}
+.search_wrap.footer .button_shadow::after{
+  width: 137px !important;
+}
+.social_icon ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.bttom_menu ul li {
+  display: inline-block;
+  border-right: 1px solid #fff;
+  padding: 0 20px;
+}
+.bttom_menu ul li:last-child {
+  border: none;
+}
+.bttom_menu ul li a {
+  color: #fff;
+}
+
+/* end footer  */
