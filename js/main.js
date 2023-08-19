@@ -40,3 +40,27 @@ $(window).scroll(function(){
       prevEl: ".swiper-button-prev",
     },
   });
+
+
+
+  var swiper = new Swiper(".testimonials_thumb", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+    autoplay: {
+      delay: 3000,
+    },
+  });
+
+  var swiper = new Swiper(".testimonials", {
+    loop: true,
+    spaceBetween: 10,
+    autoplay: {
+      delay: 3000,
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });

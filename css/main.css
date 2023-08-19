@@ -444,12 +444,91 @@ section.home_blog .heading h2 {
   margin: 0 auto;
   left: 0;
   right: 0;
-  bottom: 15px;
+  bottom: 4%;
+  width: 13%;
+}
+.blog_slider_arrow .swiper-pagination {
+  bottom: -10px !important;
 }
 .blog_slider_arrow .swiper-button-prev:after, .blog_slider_arrow .swiper-button-next:after {
   display: none;
 }
 /* end home blog  */
+
+/* home about section  */
+section.about_sec {
+  margin-bottom: 80px;
+}
+.about_wrap {
+  background: #0E2245;
+  padding: 50px;
+  border-radius: 30px;
+}
+.two_img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-width: 190px;
+  margin: 0 auto;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* end home about section  */
+
+/* testimonials  */
+
+.testimonials_slider_wrap {
+  position: relative;
+}
+.testimonials_main {
+  display: flex;
+  justify-content: space-between;
+}
+.swiper.testimonials_thumb {
+  position: absolute;
+  /* height: 150px; */
+  width: 480px;
+  right: 0;
+  bottom: 20px;
+}
+.main_slider_img{
+  flex: 2;
+}
+.main_slider_img img {
+  height: 550px;
+  width: 100%;
+  object-fit: cover;
+}
+.main_slider_content{
+  flex: 3;
+}
+.swiper.testimonials_thumb .swiper-slide img {
+  height: 190px;
+  object-fit: cover;
+}
+.main_slider_content {
+  margin-left: 30px;
+}
+h2.play_name {
+  font-size: 28px;
+  line-height: 38px;
+  font-family: 'Open Sans';
+  font-weight: 700;
+}
+.designation {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500 !important;
+  font-family: 'Open Sans';
+}
+.main_slider_content p {
+  font-size: 16px;
+  line-height: 26px;
+  margin: 5px 8px 0px 0px;
+}
+/* end testimonials   */
 
 /* media coverage  */
 section.media_coverage_sec .heading h5{
@@ -474,10 +553,15 @@ section.media_coverage_sec .heading h5{
   height: 60px;
   object-fit: cover;
 }
+.blog_slider_arrow span.swiper-pagination-bullet.swiper-pagination-bullet-active,
 .swiper.brand_slider span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: url('../images/slider_slide_icon.svg');
   background-repeat: no-repeat;
   background-size: cover;
+}
+.blog_slider_arrow span.swiper-pagination-bullet{
+  background: #fff;
+  opacity: 1;
 }
 .swiper.brand_slider span.swiper-pagination-bullet {
   background: #000;
