@@ -81,6 +81,18 @@ textarea.form-control {
 }
 .l_btn a {
   background: #800000;
+  color: #fff;
+  box-shadow: 0 3px 3px 0 rgb(0 0 0);
+  border: 1px solid #800000;
+}
+.l_btn a:hover{
+  background: transparent;
+  border: 1px solid #fff;
+}
+.l_btn img {
+  height: 16px;
+  margin-bottom: 4px;
+  margin-right: 5px;
 }
 .white h1,
 .white h2,
@@ -120,6 +132,12 @@ textarea.form-control {
 }
 .pb-20{
   padding-bottom: 20px !important;
+}
+.secondary-heading{
+  color: #EDDC92 !important;
+}
+.big-p a{
+  padding: 0 65px !important;
 }
 /* main css  */
 
@@ -270,19 +288,7 @@ section.main_hero_sec {
   background-position: center;
   padding: 160px 0px 80px 0;
 }
-/* section.main_hero_sec::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-image: url(../images/right-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  mix-blend-mode: screen;
-  z-index: 1;
-} */
+
 .hero_right {
   position: relative;
 }
@@ -338,38 +344,71 @@ section.main_hero_sec {
 .service_tab_wrap {
   margin-top: 50px;
 }
-.accordion-header button.accordion-button {
-  background: url(../images/e-Pavilion.jpg) rgb(0 0 0 / 60%);;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100px;
-  background-color: transparent;
-  background-position: top;
-  position: relative;
+.service_tab{
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  position: relative !important;
+  background-position: top !important;
 }
-/* .accordion-header{
-  position: relative;
-}
-.accordion-header::before {
+.service_tab::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  background: rgb(0 0 0 / 60%);
-  width: 100%;
   height: 100%;
-  z-index: 99;
-} */
-.accordion-button::after {
-  background: url(../images/right-arrow.png);
-  background-repeat: no-repeat;
+  width: 100%;
+  background: rgb(0 0 0 / 55%);
+}
+.service_tab1 {
+  background: url(../images/e-Pavilion.jpg);
+}
+.service_tab2 {
+  background: url(../images/e-Coaching.jpg);
+}
+.service_tab3 {
+  background: url(../images/e-Streaming.jpg);
+}
+.service_tab4 {
+  background: url(../images/e-Academies.jpg);
+}
+.service_tab .accordion-header {
+  margin-bottom: 0;
+  position: relative;
+  z-index: 999;
+}
+.accordion-item{
+  border: 0 !important;
+}
+.accordion-header .accordion-button {
+  background-color: transparent;
+  color: #E2D188;
+  padding: 25px 15px;
+  font-size: 22px;
 }
 .accordion-button::after {
   background: url(../images/right-arrow.png);
   background-repeat: no-repeat;
   height: 36px;
   background-size: contain;
-  /* width: 116px; */
+}
+.accordion-button:not(.collapsed)::after{
+  background: url(../images/right-arrow.png);
+  background-repeat: no-repeat;
+  height: 36px;
+  background-size: contain;
+  transform: rotate(270deg);
+}
+.service_tab_wrap .accordion-item .accordion-body {
+  padding: 50px 0;
+}
+.accordion-body .l_btn a:hover {
+  background: transparent;
+  border: 1px solid #040404;
+  color: #800000;
+}
+.accordion-body .heading h5 {
+  color: #0E2245;
+  margin-bottom: 0;
 }
 /* end service tab seaction  */
 
@@ -461,19 +500,24 @@ section.about_sec {
 }
 .about_wrap {
   background: #0E2245;
-  padding: 50px;
+  padding: 110px 50px;
   border-radius: 30px;
 }
 .two_img {
   position: absolute;
+  top: 0;
   left: 0;
-  right: 0;
-  max-width: 190px;
-  margin: 0 auto;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+.two-left-img img, .two-right-img img {
+  max-width: 215px;
+  border-radius: 140px;
+    object-fit: cover;
+}
+.two-left-img {
+  margin-top: 2.5rem;
+}
+.two-left-img img, .two-right-img img {
+  max-width: 210px;
 }
 /* end home about section  */
 
