@@ -716,11 +716,13 @@ h4.footer_heading {
 
 
 /* about page  */
+section.academy_list_sec,
 section.about-page-sec{
     position: relative;
     overflow: hidden;
     z-index: 9;
 }
+section.academy_list_sec::before,
 section.about-page-sec:before {
   position: absolute;
   content: "";
@@ -850,3 +852,64 @@ section.mee_team_sec {
   border-radius: 60px;
 }
 /* end about -page  */
+
+/* Acaademy listing page  */
+.fliter_wrap {
+  display: flex;
+  justify-content: end;
+}
+.fliter_wrap .search_wrap .search_shadow{
+  width: 25%;
+  background: #ECEDF1;
+  top: -3px;
+  left: auto;
+  right: 180px;
+  z-index: 10;
+}
+.f_btn a:hover{
+  background: #0E2245 !important;
+  border: 1px solid #0E2245 !important;
+}
+.academies_box {
+  border: 1px solid #0E2245;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+.academies_text {
+  margin: 10px;
+}
+.academies_text h5{
+  font-family: 'Open Sans';
+  font-weight: 700;
+}
+.service_list ul li {
+  display: inline-block;
+  border: 1px solid #0E2245;
+  border-radius: 40px;
+  padding: 0px 11px;
+  font-size: 13px;
+  margin: 3px 0;
+  color: #0E2245;
+}
+.b_btn a{
+  background-color: #0E2245;
+  color: #fff;
+  box-shadow: 0 3px 3px 0 rgb(0 0 0);
+  border: 1px solid #0E2245;
+}
+.academies_btn .l_btn a:hover,
+.b_btn a:hover{
+  background-color: transparent;
+  color: #0E2245;
+}
+.location span,
+.fees span {
+  color: #444444;
+  font-weight: 600;
+}
+section.academy_list_sec::before{
+  width: 1150px !important;
+  height: 1440px !important;
+}
+/* end academy listing page  */
