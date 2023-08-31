@@ -127,8 +127,14 @@ textarea.form-control {
 .mb-50{
   margin-bottom: 50px;
 }
+.mb-70{
+  margin-bottom: 70px;
+}
 .mt-20{
   margin-top: 20px;
+}
+.ms-40{
+  margin-left: 40px;
 }
 .pb-20{
   padding-bottom: 20px !important;
@@ -483,9 +489,11 @@ section.home_blog .heading h2 {
 .blog_slide_footer p.date {
   font-size: 13px;
 }
+.swiper.benefits_slider,
 .swiper.blog_slider {
   position: inherit;
 }
+.benefits_slider_arrow,
 .blog_slider_arrow {
   position: absolute;
   margin: 0 auto;
@@ -494,9 +502,12 @@ section.home_blog .heading h2 {
   bottom: 4%;
   width: 13%;
 }
+.benefits_slider_arrow .swiper-pagination,
 .blog_slider_arrow .swiper-pagination {
   bottom: -10px !important;
 }
+.benefits_slider_arrow .swiper-button-prev:after,
+.benefits_slider_arrow .swiper-button-next:after,
 .blog_slider_arrow .swiper-button-prev:after, .blog_slider_arrow .swiper-button-next:after {
   display: none;
 }
@@ -607,16 +618,20 @@ section.media_coverage_sec .heading h5{
   height: 60px;
   object-fit: cover;
 }
+.benefits_slider_arrow span.swiper-pagination-bullet.swiper-pagination-bullet-active,
 .blog_slider_arrow span.swiper-pagination-bullet.swiper-pagination-bullet-active,
 .swiper.brand_slider span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: url('../images/slider_slide_icon.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
+.benefits_slider_arrow span.swiper-pagination-bullet,
+.benefits_slider_arrow span.swiper-pagination-bullet,
 .blog_slider_arrow span.swiper-pagination-bullet{
   background: #fff;
   opacity: 1;
 }
+
 .swiper.brand_slider span.swiper-pagination-bullet {
   background: #000;
   opacity: 1;
@@ -908,8 +923,240 @@ section.mee_team_sec {
   color: #444444;
   font-weight: 600;
 }
-section.academy_list_sec::before{
+section.academy_list_sec::before {
   width: 1150px !important;
-  height: 1440px !important;
+  height: 1810px !important;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.pagination ul{
+  display: flex;
+  align-items: center;
+}
+.pagination ul li {
+  display: inline-block;
+}
+.pagination ul li svg {
+  height: 45px;
+  cursor: pointer;
+}
+.pagination ul li a {
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  background: #EDDC92;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 60px;
+  color: #800000;
+  font-size: 21px;
+  font-weight: 600;
+  border: 1px solid #EDDC92;
+  margin: 0 8px;
+}
+.pagination ul li.active a,
+.pagination ul li a:hover{
+  background: #800000;
+  color: #fff;
 }
 /* end academy listing page  */
+
+/* academy-details page  */
+section.coach_list_sec {
+  padding-bottom: 80px;
+}
+.academies-details p span {
+  font-weight: 600;
+}
+ul.academies-service li {
+  display: inline-block;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: 0 17px;
+  margin: 0px 5px 10px 0px;
+}
+ul.academies-service li:hover{
+  border: 1px solid #800000;
+  cursor: pointer;
+  background: #800000;
+}
+.soclial_icon {
+  margin: 10px 0;
+}
+.soclial_icon ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.soclial_icon ul li a {
+  background: #fff;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 6px;
+}
+.soclial_icon ul li a img {
+  height: 30px;
+}
+.academies-details-heading {
+  display: flex;
+  align-items: center;
+  margin-left: -65px;
+}
+.academies-details-heading h2 {
+  margin: 0 10px;
+}
+.coach_list_tab {
+  background: #0E2245;
+  border-radius: 20px;
+}
+.coach_list_tab ul.nav.nav-tabs {
+  padding: 0px 30px;
+  padding-top: 10px;
+}
+.coach_list_tab ul.nav.nav-tabs li.nav-item a {
+  background: transparent !important;
+  color: #fff;
+  border: 0;
+}
+.coach_list_tab ul.nav.nav-tabs li.nav-item a.nav-link.active {
+  color: #EDDC92;
+  border-bottom: 1px solid #EDDC92;
+}
+.tab-content {
+  padding: 0 20px;
+}
+.coach_profile_wrap {
+  background: #fff;
+  padding: 6px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+.coach_profile_img {
+  background: #0E2245;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  text-align: center;
+  height: 140px;
+}
+.coach_profile_img img {
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+  border: 5px solid #B11F24;
+  background: #fff;
+  padding: 5px;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.coach_text_wrap {
+  margin-top: 50px;
+  text-align: center;
+}
+.coach_rating ul li {
+  display: inline-block;
+}
+.coach_rating ul li i {
+  color: #D9D9D9;
+}
+.coach_rating ul li.active i,
+.coach_rating ul li i:hover{
+  color: #FFBC11;
+}
+.coach_text_wrap h3 {
+  font-family: 'Open Sans';
+  font-weight: 600;
+}
+.coach_text_wrap p span {
+  color: #000;
+  font-weight: 600;
+}
+.coach_text_wrap p {
+  color: #444444;
+}
+.coach_service {
+  border-top: 1px solid #eee;
+  padding: 10px 0;
+}
+.coach_service ul li {
+  display: inline-block;
+  border: 1px solid #800000;
+  border-radius: 50px;
+  padding: 3px 17px;
+  font-size: 12px;
+  margin: 4px;
+  color: #800000;
+  font-weight: 500;
+}
+/* end academy-details page  */
+
+/* E coaching Player  */
+section.benefits_sec {
+  padding-bottom: 80px;
+}
+.e-coach-popup-wrap {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 60px;
+  margin: 0 auto;
+}
+.popup-icon svg {
+  height: 90px;
+}
+.benefits_wrap {
+  background: #0E2245;
+  border-radius: 17px;
+  padding: 60px;
+  position: relative;
+}
+.benefits {
+  background: #fff;
+  border-radius: 18px;
+  padding: 30px 15px;
+  text-align: center;
+  transform: scale(.90);
+}
+.benefits_icon img {
+  border: 1px solid #000;
+  border-radius: 60px;
+  padding: 6px;
+}
+.benefits_text_wrap p {
+  color: #3C3C3C;
+  font-size: 15px;
+  line-height: 25px;
+}
+.benefits-heading {
+  font-weight: 600;
+  font-size: 18px !important;
+  line-height: 28px;
+}
+
+.swiper-slide.swiper-slide-active .benefits .benefits_icon img {
+  border-color: #800000;
+}
+.swiper-slide.swiper-slide-active .benefits .benefits_text_wrap .benefits-heading{
+  color: #800000;
+}
+.swiper-slide.swiper-slide-active .benefits {
+  transform: scale(1);
+  transition: all 0.4s ease-in-out;
+}
+.benefits_slider_arrow{
+  bottom: 5%;
+  width: 18%;
+}
+.benefits_slider_wrap {
+  margin: 40px 0;
+}
+/*End  E coaching Player  */

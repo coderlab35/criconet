@@ -64,3 +64,17 @@ $(window).scroll(function(){
       swiper: swiper,
     },
   });
+
+  var swiper = new Swiper(".benefits_slider", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    centeredSlides: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
