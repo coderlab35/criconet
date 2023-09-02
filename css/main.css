@@ -393,19 +393,19 @@ section.main_hero_sec {
 .accordion-item{
   border: 0 !important;
 }
-.accordion-header .accordion-button {
+.service_tab .accordion-header .accordion-button {
   background-color: transparent;
   color: #E2D188;
   padding: 25px 15px;
   font-size: 22px;
 }
-.accordion-button::after {
+.service_tab .accordion-button::after {
   background: url(../images/right-arrow.png);
   background-repeat: no-repeat;
   height: 36px;
   background-size: contain;
 }
-.accordion-button:not(.collapsed)::after{
+.service_tab .accordion-button:not(.collapsed)::after{
   background: url(../images/right-arrow.png);
   background-repeat: no-repeat;
   height: 36px;
@@ -754,6 +754,7 @@ section.about-page-sec:before {
     height: 406px;
     max-width: 225px;
 }
+section.how-work-sec,
 section.founder_sec{
     background: #0E2245 url(../images/bg-doted.png) center no-repeat;
     background-size: cover;
@@ -1159,4 +1160,70 @@ section.benefits_sec {
 .benefits_slider_wrap {
   margin: 40px 0;
 }
+
+.features-tab-wrap .accordion-button::after {
+  background: url(../images/plush-icon.png);
+  background-repeat: no-repeat;
+  height: 20px;
+  background-size: contain;
+  transition: all 0.3s ease-in-out;
+}
+.features-tab-wrap .accordion-button:not(.collapsed)::after {
+  background: url(../images/minus-icon.png);
+  background-repeat: no-repeat;
+  height: 20px;
+  background-size: contain;
+  transform: rotate(180deg);
+
+}
+.features-tab-wrap .accordion-item {
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.18);
+  margin-bottom:10px
+}
+.features-tab-wrap .accordion-flush .accordion-item .accordion-button, .features-tab-wrap .accordion-flush .accordion-item .accordion-button.collapsed {
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+.features-tab-wrap .accordion-button:not(.collapsed) {
+  color: #222222;
+  background-color: transparent ;
+  box-shadow: none;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+section.how-work-sec .icon_wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.how-work-sec .icon_wrap h5{
+  padding: 0 10px;
+}
+section.how-work-sec .badge-about{
+  padding: 8px 89px;
+}
+.step-text-wrap p {
+  max-width: 250px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+.step-slider-wrap .swiper.step_slider {
+  position: inherit;
+}
+.steap-slider-navigation {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+}
+.steap-count .swiper-pagination {
+  display: flex;
+  color: #fff;
+}
 /*End  E coaching Player  */
+

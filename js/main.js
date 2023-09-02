@@ -78,3 +78,15 @@ $(window).scroll(function(){
       prevEl: ".swiper-button-prev",
     },
   });
+
+
+  var swiper = new Swiper(".step_slider", {
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
