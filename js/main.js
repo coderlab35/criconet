@@ -67,12 +67,13 @@ $(window).scroll(function(){
 
   var swiper = new Swiper(".benefits_slider", {
     slidesPerView: 3,
-    spaceBetween: 20,
+    centeredSlides: true,
     loop: true,
+    slidesPerGroup: 1,
+    paginationClickable: true,
     pagination: {
       el: ".swiper-pagination",
     },
-    centeredSlides: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -81,9 +82,24 @@ $(window).scroll(function(){
 
 
   var swiper = new Swiper(".step_slider", {
+    loop: true,
     pagination: {
       el: ".swiper-pagination",
       type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  var swiper = new Swiper(".coach_slider", {
+    slidesPerView: 2.5,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'progressbar',
     },
     navigation: {
       nextEl: ".swiper-button-next",

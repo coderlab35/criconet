@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy Player</title>
+     <!-- boostrap  -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- external css  -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- fa fa icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- main navigation bar  -->
+    <section class="navigation">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm navbar-light">
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../images/logo.png" alt="logo">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">e-Pavilion
+                                <i class="fa fa-chevron-down down-arrow"></i>
+                                <i class="fa fa-chevron-up up-arrow"></i>
+                            </a>
+
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Notice Board</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">e-Coaching
+                                <i class="fa fa-chevron-down down-arrow"></i>
+                                <i class="fa fa-chevron-up up-arrow"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">I am a player</a>
+                                <a href="#" class="dropdown-item">I am a coach</a>
+                                <a href="#" class="dropdown-item">Book a coach</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">e-Streaming
+                                <i class="fa fa-chevron-down down-arrow"></i>
+                                <i class="fa fa-chevron-up up-arrow"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Watch live Match</a>
+                                <a href="#" class="dropdown-item">Book Live Streaming</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">e-Academies
+                                <i class="fa fa-chevron-down down-arrow"></i>
+                                <i class="fa fa-chevron-up up-arrow"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Join Acedemiy</a>
+                                <a href="#" class="dropdown-item">List Your Acedemiy</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Partner With Us
+                                <i class="fa fa-chevron-down down-arrow"></i>
+                                <i class="fa fa-chevron-up up-arrow"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Coaches</a>
+                                <a href="#" class="dropdown-item">Academies</a>
+                                <a href="#" class="dropdown-item">Tournament Organizers</a>
+                                <a href="#" class="dropdown-item">Ground Owners</a>
+                                <a href="#" class="dropdown-item">Franchise Partners</a>
+                                <a href="#" class="dropdown-item">Sponsors</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item dropdown">
+                            <form action="">
+                                <div class="search_wrap">
+                                    <div class="search_shadow"></div>
+                                    <input type="text" placeholder="Search.." name="search">
+                                    <div class="button_shadow">
+                                        <button type="submit">
+                                            <img src="../images/search.svg" alt="search_icon">
+                                        </button>
+                                    </div>
+                            </form>
+                </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <div class="c_btn l_btn">
+                        <a>
+                            <img src="../images/login-btn.svg" alt="btn"> | Login
+                        </a>
+                    </div>
+                </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!-- end main navigation bar  -->
+  <!-- main hero section  -->
+  <section class="main_hero_sec">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-md-6">
+                <div class="hero_left white inner-page">
+                    <h1>Get trained by coaches from India’s best cricket academies</h1>
+                    <p>Learn advanced techniques, sharpen your skills and gain insights into your game with the help of expert coaches from India s reputed cricket academies through our hybrid model.</p>
+                    <div class="innerpage-heading d-flex">
+                        <div class="c_btn l_btn">
+                            <a href="#">
+                                Explore Academies
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-md-6">
+                <div class="hero_right">
+                    <div class="main_bg">
+                        <img src="../images/main-bg.png" alt="bg">
+                    </div>
+                    <div class="main_img">
+                        <img src="../images/about-page01.jpg" alt="main-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- main hero section  -->
+
+<!-- about section  -->
+<section class="about-page-sec d_padding">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-md-6">
+                <div class="about_left position-relative about-page">
+                    <div class="two_main_bg">
+                        <img src="../images/bg-two-img.svg" alt="about">
+                    </div>
+                    <div class="two_img d-flex">
+                        <div class="two-left-img me-1 ms-3">
+                            <img src="../images/e-coaching-p-about.jpg" alt="main-img"> 
+                        </div>
+                        <div class="two-right-img ms-1">
+                            <img src="../images/e-coaching-p-about-01.png" alt="main-img"> 
+                        </div>
+                    </div>
+                    <div class="badge-about">
+                        <p class="m-0">A platform for all your  cricketing needs!</p>
+                    </div>
+                    <div class="e-coach-popup-wrap">
+                        <div class="popup-icon text-center"> 
+                            <svg width="129" height="129" viewBox="0 0 129 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M126.83 64.8177C126.83 30.0918 98.8732 1.91797 64.415 1.91797C29.9567 1.91797 2 30.0918 2 64.8177C2 99.5436 29.9567 127.717 64.415 127.717C98.8732 127.717 126.83 99.5436 126.83 64.8177Z" fill="#0E2245" stroke="#0E2245" stroke-width="2.4" stroke-miterlimit="10"/>
+                                <path d="M51.5163 90.5156L88.7214 67.8651C89.24 67.5467 89.6687 67.0992 89.9661 66.5656C90.2635 66.0321 90.4197 65.4304 90.4197 64.8184C90.4197 64.2064 90.2635 63.6047 89.9661 63.0711C89.6687 62.5376 89.24 62.0901 88.7214 61.7717L51.5163 39.1212C50.983 38.7992 50.3743 38.626 49.7527 38.6193C49.131 38.6127 48.5188 38.7727 47.9788 39.0832C47.4389 39.3936 46.9905 39.8432 46.6799 40.3859C46.3692 40.9285 46.2074 41.5447 46.211 42.1712V87.4656C46.2074 88.0921 46.3692 88.7082 46.6799 89.2509C46.9905 89.7935 47.4389 90.2432 47.9788 90.5536C48.5188 90.864 49.131 91.0241 49.7527 91.0174C50.3743 91.0107 50.983 90.8375 51.5163 90.5156Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-md-6">
+                <div class="about_right_wrap ms-40 text-center">
+                    <div class="heading mb-2 academies-details-heading">
+                        <img src="../images/left-heading-icon-red.svg" alt="icon">
+                        <h2 class="mt-35">Academy-led Hybrid Coaching</h2>
+                        <img src="../images/right-heading-icon-red.svg" alt="icon">
+                    </div>
+                    <p>Our academy led hybrid coaching model connects local talent to the top cricket academies. An ever growing number of verified academies have partnered with us to offer an integrated online and on ground coaching module to give the best of both worlds to players like you.</p>
+                    <p>Coaches continue to meet, assess and coach students in person while also delivering personalized training programs and support online. You can search and register with these academies conveniently from your device on our platform.</p>
+                    <div class="innerpage-heading d-flex mt-2 justify-content-center">
+                        <div class="c_btn l_btn f_btn">
+                            <a href="#">
+                                Sign Up
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end about section  -->
+
+<!-- Benefits -->
+<section class="benefits_sec">
+    <div class="container benefits_wrap">
+        <div class="icon_with_header text-center ">
+            <div class="icon_wrap white d-flex aling-items-center mb-2 justify-content-center">
+                <img src="../images/left-heading-icon-yallow.svg" alt="icon">
+                <h5>Benefits</h5>
+                <img src="../images/right-heading-icon-yallow.svg" alt="icon">
+            </div>
+            <h2 class="secondary-heading mb-2">Benefits of e-Coaching with us</h2>
+        </div>
+
+        <div class="benefits_slider_wrap">
+            <div class="swiper benefits_slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="benefits">
+                            <div class="benefits_icon">
+                                <img src="../images/Get notification for each and every activity.svg" alt="icon">
+                            </div>
+                            <div class="benefits_text_wrap mt-3">
+                                <p class="benefits-heading">Regular net sessions on the ground</p>
+                                <p>Get access to league level coaching
+                                    expertise through our listed
+                                    academies. Be it cricketing skills or
+                                    fitness drills, your all round
+                                    development is taken care when you
+                                    practise on ground.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="benefits">
+                            <div class="benefits_icon">
+                                <img src="../images/Online Performance tracking.svg" alt="icon">
+                            </div>
+                            <div class="benefits_text_wrap mt-3">
+                                <p class="benefits-heading">Online Performance tracking</p>
+                                <p>Gather actionable insights and build a
+                                    deeper understanding of your game
+                                    through inbuilt video feedback
+                                    mechanism from your coach</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="benefits">
+                            <div class="benefits_icon">
+                                <img src="../images/Strengthen your concepts.svg" alt="icon">
+                            </div>
+                            <div class="benefits_text_wrap mt-3">
+                                <p class="benefits-heading">Strengthen your concepts</p>
+                                <p>Get your concepts right and improve
+                                    your basics with the help of our
+                                    certified academy coaches. Get
+                                    performance oriented feedback to
+                                    understand and rectify your game.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="benefits">
+                            <div class="benefits_icon">
+                                <img src="../images/Zero training gaps.svg" alt="icon">
+                            </div>
+                            <div class="benefits_text_wrap mt-3">
+                                <p class="benefits-heading">Zero training gaps</p>
+                                <p>Get trained even when the academy
+                                    is closed due to rain, Covid, pollution,
+                                    etc. Training sessions are conducted
+                                    online using the Criconet app.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="benefits_slider_arrow">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 4.5C20.1433 4.5 16.3731 5.64366 13.1664 7.78634C9.95962 9.92903 7.46026 12.9745 5.98435 16.5377C4.50844 20.1008 4.12228 24.0216 4.87469 27.8043C5.6271 31.5869 7.4843 35.0615 10.2114 37.7886C12.9385 40.5157 16.4131 42.3729 20.1957 43.1253C23.9784 43.8777 27.8992 43.4916 31.4623 42.0157C35.0255 40.5397 38.071 38.0404 40.2137 34.8336C42.3563 31.6269 43.5 27.8567 43.5 24C43.4901 18.8313 41.4324 13.8772 37.7776 10.2224C34.1228 6.56755 29.1687 4.50991 24 4.5ZM32.8875 24.5813C32.8057 24.763 32.6913 24.9282 32.55 25.0688L26.1938 31.425C26.0576 31.565 25.8942 31.6755 25.7135 31.7497C25.5329 31.8239 25.339 31.8601 25.1438 31.8563C24.9457 31.8605 24.7488 31.8245 24.5651 31.7503C24.3814 31.6762 24.2146 31.5655 24.075 31.425C23.7945 31.1438 23.6369 30.7628 23.6369 30.3656C23.6369 29.9684 23.7945 29.5875 24.075 29.3063L27.8813 25.5H16.5C16.1022 25.5 15.7206 25.342 15.4393 25.0607C15.158 24.7794 15 24.3978 15 24C15 23.6022 15.158 23.2206 15.4393 22.9393C15.7206 22.658 16.1022 22.5 16.5 22.5H27.8813L24.075 18.6938C23.8165 18.4084 23.6776 18.0346 23.687 17.6497C23.6965 17.2647 23.8536 16.8982 24.1259 16.6259C24.3982 16.3536 24.7647 16.1965 25.1497 16.187C25.5346 16.1776 25.9084 16.3165 26.1938 16.575L32.55 22.9313C32.6913 23.0718 32.8057 23.237 32.8875 23.4188C33.0377 23.7917 33.0377 24.2083 32.8875 24.5813Z" fill="#EDDC92"/>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 4.5C27.8567 4.5 31.6269 5.64366 34.8336 7.78634C38.0404 9.92903 40.5397 12.9745 42.0156 16.5377C43.4916 20.1008 43.8777 24.0216 43.1253 27.8043C42.3729 31.5869 40.5157 35.0615 37.7886 37.7886C35.0615 40.5157 31.5869 42.3729 27.8043 43.1253C24.0216 43.8777 20.1008 43.4916 16.5377 42.0157C12.9745 40.5397 9.92903 38.0404 7.78634 34.8336C5.64365 31.6269 4.5 27.8567 4.5 24C4.50991 18.8313 6.56755 13.8772 10.2224 10.2224C13.8772 6.56755 18.8313 4.50991 24 4.5ZM15.1125 24.5813C15.1943 24.763 15.3087 24.9282 15.45 25.0688L21.8062 31.425C21.9424 31.565 22.1058 31.6755 22.2865 31.7497C22.4671 31.8239 22.661 31.8601 22.8562 31.8563C23.0543 31.8605 23.2512 31.8245 23.4349 31.7503C23.6186 31.6762 23.7854 31.5655 23.925 31.425C24.2055 31.1438 24.3631 30.7628 24.3631 30.3656C24.3631 29.9684 24.2055 29.5875 23.925 29.3063L20.1187 25.5H31.5C31.8978 25.5 32.2794 25.342 32.5607 25.0607C32.842 24.7794 33 24.3978 33 24C33 23.6022 32.842 23.2206 32.5607 22.9393C32.2794 22.658 31.8978 22.5 31.5 22.5H20.1187L23.925 18.6938C24.1835 18.4084 24.3224 18.0346 24.313 17.6497C24.3035 17.2647 24.1464 16.8982 23.8741 16.6259C23.6018 16.3536 23.2353 16.1965 22.8503 16.187C22.4654 16.1776 22.0916 16.3165 21.8062 16.575L15.45 22.9313C15.3087 23.0718 15.1943 23.237 15.1125 23.4188C14.9623 23.7917 14.9623 24.2083 15.1125 24.5813Z" fill="#EDDC92"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</section>
+<!-- end Benefits -->
+
+<!-- Features section  -->
+<section class="about-page-sec d_padding">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-md-6">
+                <div class="heading mb-4">
+                    <div class="icon_wrap_red justify-content-start">
+                        <img src="../images/left-heading-icon-red.svg" alt="icon">
+                        <h5>Features</h5>
+                        <img src="../images/right-heading-icon-red.svg" alt="icon">
+                    </div>
+                    <h2 class="mb-2">Why we are the best e-Coaching platform</h2>
+                </div>
+                <div class="features-tab-wrap">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <div class="accordion-header epavilion" id="flush-heading01">
+                                <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse01" aria-expanded="false" aria-controls="flush-collapse02">
+                                    Practice Videos Archive
+                                </div>
+                            </div>
+                            <div id="flush-collapse01" class="accordion-collapse collapse show" aria-labelledby="flush-heading01" data-bs-parent="#accordionFlushExample" style="">
+                                <div class="accordion-body">
+                                   <p>Monitor your performance by
+                                    revisiting your past practice videos
+                                    and improve your game.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header epavilion" id="flush-heading02">
+                                <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse02" aria-expanded="false" aria-controls="flush-collapse02">
+                                    Tips & Tricks Library
+                                </div>
+                            </div>
+                            <div id="flush-collapse02" class="accordion-collapse collapse" aria-labelledby="flush-heading02" data-bs-parent="#accordionFlushExample" style="">
+                                <div class="accordion-body">
+                                   <p>Take your game to the next level with
+                                    unrestricted access to our best tips
+                                    and tricks from seasoned players and
+                                    top coaches.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header epavilion" id="flush-heading03">
+                                <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse03" aria-expanded="false" aria-controls="flush-collapse03">
+                                    Fitness Module
+                                </div>
+                            </div>
+                            <div id="flush-collapse03" class="accordion-collapse collapse" aria-labelledby="flush-heading03" data-bs-parent="#accordionFlushExample" style="">
+                                <div class="accordion-body">
+                                   <p>Track your fitness levels through our
+                                    robust modules and training regimes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header epavilion" id="flush-heading04">
+                                <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse04" aria-expanded="false" aria-controls="flush-collapse04">
+                                    Video sharing
+                                </div>
+                            </div>
+                            <div id="flush-collapse04" class="accordion-collapse collapse" aria-labelledby="flush-heading04" data-bs-parent="#accordionFlushExample" style="">
+                                <div class="accordion-body">
+                                   <p>Share your videos with your academy
+                                    coach to get their assessment of your
+                                    techniques.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header epavilion" id="flush-heading05">
+                                <div class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse05" aria-expanded="false" aria-controls="flush-collapse05">
+                                    Multiple Payment Methods
+                                </div>
+                            </div>
+                            <div id="flush-collapse05" class="accordion-collapse collapse" aria-labelledby="flush-heading05" data-bs-parent="#accordionFlushExample" style="">
+                                <div class="accordion-body">
+                                   <p>Pay with a payment method of your choice. We accept UPI, credit and debit cards, and net banking.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xl-6 col-md-6">
+                <div class="founder_right position-relative">
+                    <div class="main_bg">
+                        <img src="../images/main-bg.png" alt="bg">
+                    </div>
+                    <div class="main_img">
+                        <img src="../images/e-coach-player-features.jfif" alt="Veer Sagar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Features section  -->
+
+<!-- coach slider  -->
+<section class="coach-slider-sec d_50_padding">
+    <div class="c_btn l_btn ms-1 f_btn">
+        <a href="#">     
+            <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2H20M5.21429 7H16.7857M9.07143 12H12.9286" stroke="white" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            | Filters
+        </a>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-xl-4 col-md-4">
+            <div class="select-coach">
+               <div class="heading mb-3">
+                    <h3>Featured Academies</h3>
+                </div> 
+                <p>Choose how you pay with a variety of safe, secure and convenient payment methods like UPI, credit cards, debit cards, net banking, etc.</p>
+            </div>
+        </div>
+        <div class="col-xl-8 col-md-8">
+            <div class="coach_slider_wrap">
+                <div class="swiper coach_slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="academies_box">
+                            <div class="academies_img">
+                                <img src="../images/academy.png" alt="academies">
+                            </div>
+                            <div class="academies_text">
+                                <h5>Venkateshwar Cricket Academy</h5>
+                                <div class="location mt-2">
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.6152 11.4717C12.1079 11.4717 12.5298 11.2962 12.8809 10.9451C13.2314 10.5945 13.4067 10.1729 13.4067 9.6803C13.4067 9.18765 13.2314 8.76577 12.8809 8.41465C12.5298 8.06412 12.1079 7.88886 11.6152 7.88886C11.1226 7.88886 10.701 8.06412 10.3505 8.41465C9.99936 8.76577 9.82379 9.18765 9.82379 9.6803C9.82379 10.1729 9.99936 10.5945 10.3505 10.9451C10.701 11.2962 11.1226 11.4717 11.6152 11.4717ZM11.6152 20.0931C11.4958 20.0931 11.3764 20.0707 11.2569 20.0259C11.1375 19.9811 11.033 19.9214 10.9434 19.8467C8.76386 17.9209 7.13663 16.1334 6.06176 14.4841C4.9869 12.8341 4.44946 11.2926 4.44946 9.85945C4.44946 7.62014 5.16992 5.83616 6.61084 4.50751C8.05116 3.17885 9.71929 2.51453 11.6152 2.51453C13.5112 2.51453 15.1793 3.17885 16.6196 4.50751C18.0606 5.83616 18.781 7.62014 18.781 9.85945C18.781 11.2926 18.2436 12.8341 17.1687 14.4841C16.0938 16.1334 14.4666 17.9209 12.287 19.8467C12.1975 19.9214 12.093 19.9811 11.9735 20.0259C11.8541 20.0707 11.7347 20.0931 11.6152 20.0931Z" fill="#0E2245"></path>
+                                    </svg>
+                                    <span>Delhi, Dwarka Sector 10</span>
+                                </div>
+                                <div class="fees">  
+                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.0631 2.29431C9.80634 2.29431 7.64191 3.19081 6.046 4.78661C4.4501 6.3824 3.55371 8.54672 3.55371 10.8037C3.55371 13.0606 4.45021 15.2248 6.046 16.8207C7.6418 18.4166 9.80612 19.313 12.0631 19.313C14.32 19.313 16.4842 18.4165 18.0801 16.8207C19.676 15.2249 20.5724 13.0606 20.5724 10.8037C20.5669 8.54867 19.6686 6.38731 18.0741 4.79289C16.4794 3.19839 14.3184 2.3 12.0633 2.29453L12.0631 2.29431ZM12.0631 17.7715C10.2151 17.7715 8.44274 17.0374 7.13605 15.7307C5.82936 14.424 5.09526 12.6517 5.09526 10.8037C5.09526 8.95572 5.82936 7.18338 7.13605 5.87669C8.44274 4.57 10.2151 3.8359 12.0631 3.8359C13.9111 3.8359 15.6834 4.57 16.9901 5.87669C18.2968 7.18338 19.0309 8.95572 19.0309 10.8037C19.0309 12.6517 18.2968 14.424 16.9901 15.7307C15.6834 17.0374 13.9111 17.7715 12.0631 17.7715Z" fill="#0E2245"></path>
+                                        <path d="M12.0645 4.47046C10.3845 4.47046 8.77328 5.13786 7.58532 6.32579C6.39735 7.51373 5.72998 9.12496 5.72998 10.805C5.72998 12.485 6.39739 14.0962 7.58532 15.2841C8.77325 16.4721 10.3845 17.1395 12.0645 17.1395C13.7445 17.1395 15.3557 16.4721 16.5437 15.2841C17.7316 14.0962 18.399 12.485 18.399 10.805C18.399 9.69297 18.1063 8.60078 17.5503 7.63773C16.9943 6.67483 16.1946 5.87522 15.2318 5.31922C14.2688 4.76322 13.1765 4.4705 12.0645 4.4705L12.0645 4.47046ZM13.2469 9.11554H14.1127C14.2876 9.11554 14.4294 9.25743 14.4294 9.43222C14.4294 9.60716 14.2876 9.74904 14.1127 9.74904H13.2469C13.078 10.8047 12.2334 11.4382 11.1777 11.4382H10.8187L13.1625 13.6975C13.2824 13.8262 13.2914 14.0229 13.1836 14.1619C13.1229 14.2262 13.0395 14.2641 12.9513 14.2676C12.8675 14.262 12.7869 14.2327 12.7191 14.1831L9.80518 11.3959C9.70313 11.3067 9.66921 11.1624 9.72074 11.037C9.76317 10.9068 9.87994 10.8151 10.0163 10.8047H11.1777C11.4991 10.8192 11.8157 10.7219 12.0735 10.5295C12.3314 10.3369 12.5147 10.0612 12.5924 9.74904H10.0163C9.8414 9.74904 9.69966 9.60716 9.69966 9.43222C9.69966 9.25743 9.8414 9.11554 10.0163 9.11554H12.5924C12.5147 8.80334 12.3314 8.52765 12.0735 8.3351C11.8157 8.1427 11.4991 8.04542 11.1777 8.05985H10.0163C9.8414 8.05985 9.69966 7.91797 9.69966 7.74317C9.69966 7.56823 9.8414 7.42635 10.0163 7.42635H14.1127C14.2876 7.42635 14.4294 7.56823 14.4294 7.74317C14.4294 7.91797 14.2876 8.05985 14.1127 8.05985H12.6768C12.9867 8.33251 13.1888 8.70693 13.247 9.11553L13.2469 9.11554Z" fill="#0E2245"></path>
+                                    </svg>
+                                    <span>₹ 2000.00/- Month</span>
+                                </div>
+                                <div class="service_list mb-2 mt-2">
+                                    <ul>
+                                        <li>Batting</li>
+                                        <li>Bowling</li>
+                                        <li>Fielding</li>
+                                        <li>Wicket keeping</li>
+                                        <li>Mental</li>
+                                        <li>Technical</li>
+                                        <li>Physical</li>
+                                    </ul>
+                                </div>
+                                <div class="academies_btn d-flex">
+                                    <div class="c_btn l_btn">
+                                        <a href="#">Know More</a>
+                                    </div>
+                                    <div class="c_btn b_btn ms-3">
+                                        <a href="#">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="academies_box">
+                            <div class="academies_img">
+                                <img src="../images/academy.png" alt="academies">
+                            </div>
+                            <div class="academies_text">
+                                <h5>Venkateshwar Cricket Academy</h5>
+                                <div class="location mt-2">
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.6152 11.4717C12.1079 11.4717 12.5298 11.2962 12.8809 10.9451C13.2314 10.5945 13.4067 10.1729 13.4067 9.6803C13.4067 9.18765 13.2314 8.76577 12.8809 8.41465C12.5298 8.06412 12.1079 7.88886 11.6152 7.88886C11.1226 7.88886 10.701 8.06412 10.3505 8.41465C9.99936 8.76577 9.82379 9.18765 9.82379 9.6803C9.82379 10.1729 9.99936 10.5945 10.3505 10.9451C10.701 11.2962 11.1226 11.4717 11.6152 11.4717ZM11.6152 20.0931C11.4958 20.0931 11.3764 20.0707 11.2569 20.0259C11.1375 19.9811 11.033 19.9214 10.9434 19.8467C8.76386 17.9209 7.13663 16.1334 6.06176 14.4841C4.9869 12.8341 4.44946 11.2926 4.44946 9.85945C4.44946 7.62014 5.16992 5.83616 6.61084 4.50751C8.05116 3.17885 9.71929 2.51453 11.6152 2.51453C13.5112 2.51453 15.1793 3.17885 16.6196 4.50751C18.0606 5.83616 18.781 7.62014 18.781 9.85945C18.781 11.2926 18.2436 12.8341 17.1687 14.4841C16.0938 16.1334 14.4666 17.9209 12.287 19.8467C12.1975 19.9214 12.093 19.9811 11.9735 20.0259C11.8541 20.0707 11.7347 20.0931 11.6152 20.0931Z" fill="#0E2245"></path>
+                                    </svg>
+                                    <span>Delhi, Dwarka Sector 10</span>
+                                </div>
+                                <div class="fees">  
+                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.0631 2.29431C9.80634 2.29431 7.64191 3.19081 6.046 4.78661C4.4501 6.3824 3.55371 8.54672 3.55371 10.8037C3.55371 13.0606 4.45021 15.2248 6.046 16.8207C7.6418 18.4166 9.80612 19.313 12.0631 19.313C14.32 19.313 16.4842 18.4165 18.0801 16.8207C19.676 15.2249 20.5724 13.0606 20.5724 10.8037C20.5669 8.54867 19.6686 6.38731 18.0741 4.79289C16.4794 3.19839 14.3184 2.3 12.0633 2.29453L12.0631 2.29431ZM12.0631 17.7715C10.2151 17.7715 8.44274 17.0374 7.13605 15.7307C5.82936 14.424 5.09526 12.6517 5.09526 10.8037C5.09526 8.95572 5.82936 7.18338 7.13605 5.87669C8.44274 4.57 10.2151 3.8359 12.0631 3.8359C13.9111 3.8359 15.6834 4.57 16.9901 5.87669C18.2968 7.18338 19.0309 8.95572 19.0309 10.8037C19.0309 12.6517 18.2968 14.424 16.9901 15.7307C15.6834 17.0374 13.9111 17.7715 12.0631 17.7715Z" fill="#0E2245"></path>
+                                        <path d="M12.0645 4.47046C10.3845 4.47046 8.77328 5.13786 7.58532 6.32579C6.39735 7.51373 5.72998 9.12496 5.72998 10.805C5.72998 12.485 6.39739 14.0962 7.58532 15.2841C8.77325 16.4721 10.3845 17.1395 12.0645 17.1395C13.7445 17.1395 15.3557 16.4721 16.5437 15.2841C17.7316 14.0962 18.399 12.485 18.399 10.805C18.399 9.69297 18.1063 8.60078 17.5503 7.63773C16.9943 6.67483 16.1946 5.87522 15.2318 5.31922C14.2688 4.76322 13.1765 4.4705 12.0645 4.4705L12.0645 4.47046ZM13.2469 9.11554H14.1127C14.2876 9.11554 14.4294 9.25743 14.4294 9.43222C14.4294 9.60716 14.2876 9.74904 14.1127 9.74904H13.2469C13.078 10.8047 12.2334 11.4382 11.1777 11.4382H10.8187L13.1625 13.6975C13.2824 13.8262 13.2914 14.0229 13.1836 14.1619C13.1229 14.2262 13.0395 14.2641 12.9513 14.2676C12.8675 14.262 12.7869 14.2327 12.7191 14.1831L9.80518 11.3959C9.70313 11.3067 9.66921 11.1624 9.72074 11.037C9.76317 10.9068 9.87994 10.8151 10.0163 10.8047H11.1777C11.4991 10.8192 11.8157 10.7219 12.0735 10.5295C12.3314 10.3369 12.5147 10.0612 12.5924 9.74904H10.0163C9.8414 9.74904 9.69966 9.60716 9.69966 9.43222C9.69966 9.25743 9.8414 9.11554 10.0163 9.11554H12.5924C12.5147 8.80334 12.3314 8.52765 12.0735 8.3351C11.8157 8.1427 11.4991 8.04542 11.1777 8.05985H10.0163C9.8414 8.05985 9.69966 7.91797 9.69966 7.74317C9.69966 7.56823 9.8414 7.42635 10.0163 7.42635H14.1127C14.2876 7.42635 14.4294 7.56823 14.4294 7.74317C14.4294 7.91797 14.2876 8.05985 14.1127 8.05985H12.6768C12.9867 8.33251 13.1888 8.70693 13.247 9.11553L13.2469 9.11554Z" fill="#0E2245"></path>
+                                    </svg>
+                                    <span>₹ 2000.00/- Month</span>
+                                </div>
+                                <div class="service_list mb-2 mt-2">
+                                    <ul>
+                                        <li>Batting</li>
+                                        <li>Bowling</li>
+                                        <li>Fielding</li>
+                                        <li>Wicket keeping</li>
+                                        <li>Mental</li>
+                                        <li>Technical</li>
+                                        <li>Physical</li>
+                                    </ul>
+                                </div>
+                                <div class="academies_btn d-flex">
+                                    <div class="c_btn l_btn">
+                                        <a href="#">Know More</a>
+                                    </div>
+                                    <div class="c_btn b_btn ms-3">
+                                        <a href="#">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="academies_box">
+                            <div class="academies_img">
+                                <img src="../images/academy.png" alt="academies">
+                            </div>
+                            <div class="academies_text">
+                                <h5>Venkateshwar Cricket Academy</h5>
+                                <div class="location mt-2">
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.6152 11.4717C12.1079 11.4717 12.5298 11.2962 12.8809 10.9451C13.2314 10.5945 13.4067 10.1729 13.4067 9.6803C13.4067 9.18765 13.2314 8.76577 12.8809 8.41465C12.5298 8.06412 12.1079 7.88886 11.6152 7.88886C11.1226 7.88886 10.701 8.06412 10.3505 8.41465C9.99936 8.76577 9.82379 9.18765 9.82379 9.6803C9.82379 10.1729 9.99936 10.5945 10.3505 10.9451C10.701 11.2962 11.1226 11.4717 11.6152 11.4717ZM11.6152 20.0931C11.4958 20.0931 11.3764 20.0707 11.2569 20.0259C11.1375 19.9811 11.033 19.9214 10.9434 19.8467C8.76386 17.9209 7.13663 16.1334 6.06176 14.4841C4.9869 12.8341 4.44946 11.2926 4.44946 9.85945C4.44946 7.62014 5.16992 5.83616 6.61084 4.50751C8.05116 3.17885 9.71929 2.51453 11.6152 2.51453C13.5112 2.51453 15.1793 3.17885 16.6196 4.50751C18.0606 5.83616 18.781 7.62014 18.781 9.85945C18.781 11.2926 18.2436 12.8341 17.1687 14.4841C16.0938 16.1334 14.4666 17.9209 12.287 19.8467C12.1975 19.9214 12.093 19.9811 11.9735 20.0259C11.8541 20.0707 11.7347 20.0931 11.6152 20.0931Z" fill="#0E2245"></path>
+                                    </svg>
+                                    <span>Delhi, Dwarka Sector 10</span>
+                                </div>
+                                <div class="fees">  
+                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.0631 2.29431C9.80634 2.29431 7.64191 3.19081 6.046 4.78661C4.4501 6.3824 3.55371 8.54672 3.55371 10.8037C3.55371 13.0606 4.45021 15.2248 6.046 16.8207C7.6418 18.4166 9.80612 19.313 12.0631 19.313C14.32 19.313 16.4842 18.4165 18.0801 16.8207C19.676 15.2249 20.5724 13.0606 20.5724 10.8037C20.5669 8.54867 19.6686 6.38731 18.0741 4.79289C16.4794 3.19839 14.3184 2.3 12.0633 2.29453L12.0631 2.29431ZM12.0631 17.7715C10.2151 17.7715 8.44274 17.0374 7.13605 15.7307C5.82936 14.424 5.09526 12.6517 5.09526 10.8037C5.09526 8.95572 5.82936 7.18338 7.13605 5.87669C8.44274 4.57 10.2151 3.8359 12.0631 3.8359C13.9111 3.8359 15.6834 4.57 16.9901 5.87669C18.2968 7.18338 19.0309 8.95572 19.0309 10.8037C19.0309 12.6517 18.2968 14.424 16.9901 15.7307C15.6834 17.0374 13.9111 17.7715 12.0631 17.7715Z" fill="#0E2245"></path>
+                                        <path d="M12.0645 4.47046C10.3845 4.47046 8.77328 5.13786 7.58532 6.32579C6.39735 7.51373 5.72998 9.12496 5.72998 10.805C5.72998 12.485 6.39739 14.0962 7.58532 15.2841C8.77325 16.4721 10.3845 17.1395 12.0645 17.1395C13.7445 17.1395 15.3557 16.4721 16.5437 15.2841C17.7316 14.0962 18.399 12.485 18.399 10.805C18.399 9.69297 18.1063 8.60078 17.5503 7.63773C16.9943 6.67483 16.1946 5.87522 15.2318 5.31922C14.2688 4.76322 13.1765 4.4705 12.0645 4.4705L12.0645 4.47046ZM13.2469 9.11554H14.1127C14.2876 9.11554 14.4294 9.25743 14.4294 9.43222C14.4294 9.60716 14.2876 9.74904 14.1127 9.74904H13.2469C13.078 10.8047 12.2334 11.4382 11.1777 11.4382H10.8187L13.1625 13.6975C13.2824 13.8262 13.2914 14.0229 13.1836 14.1619C13.1229 14.2262 13.0395 14.2641 12.9513 14.2676C12.8675 14.262 12.7869 14.2327 12.7191 14.1831L9.80518 11.3959C9.70313 11.3067 9.66921 11.1624 9.72074 11.037C9.76317 10.9068 9.87994 10.8151 10.0163 10.8047H11.1777C11.4991 10.8192 11.8157 10.7219 12.0735 10.5295C12.3314 10.3369 12.5147 10.0612 12.5924 9.74904H10.0163C9.8414 9.74904 9.69966 9.60716 9.69966 9.43222C9.69966 9.25743 9.8414 9.11554 10.0163 9.11554H12.5924C12.5147 8.80334 12.3314 8.52765 12.0735 8.3351C11.8157 8.1427 11.4991 8.04542 11.1777 8.05985H10.0163C9.8414 8.05985 9.69966 7.91797 9.69966 7.74317C9.69966 7.56823 9.8414 7.42635 10.0163 7.42635H14.1127C14.2876 7.42635 14.4294 7.56823 14.4294 7.74317C14.4294 7.91797 14.2876 8.05985 14.1127 8.05985H12.6768C12.9867 8.33251 13.1888 8.70693 13.247 9.11553L13.2469 9.11554Z" fill="#0E2245"></path>
+                                    </svg>
+                                    <span>₹ 2000.00/- Month</span>
+                                </div>
+                                <div class="service_list mb-2 mt-2">
+                                    <ul>
+                                        <li>Batting</li>
+                                        <li>Bowling</li>
+                                        <li>Fielding</li>
+                                        <li>Wicket keeping</li>
+                                        <li>Mental</li>
+                                        <li>Technical</li>
+                                        <li>Physical</li>
+                                    </ul>
+                                </div>
+                                <div class="academies_btn d-flex">
+                                    <div class="c_btn l_btn">
+                                        <a href="#">Know More</a>
+                                    </div>
+                                    <div class="c_btn b_btn ms-3">
+                                        <a href="#">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="academies_box">
+                            <div class="academies_img">
+                                <img src="../images/academy.png" alt="academies">
+                            </div>
+                            <div class="academies_text">
+                                <h5>Venkateshwar Cricket Academy</h5>
+                                <div class="location mt-2">
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.6152 11.4717C12.1079 11.4717 12.5298 11.2962 12.8809 10.9451C13.2314 10.5945 13.4067 10.1729 13.4067 9.6803C13.4067 9.18765 13.2314 8.76577 12.8809 8.41465C12.5298 8.06412 12.1079 7.88886 11.6152 7.88886C11.1226 7.88886 10.701 8.06412 10.3505 8.41465C9.99936 8.76577 9.82379 9.18765 9.82379 9.6803C9.82379 10.1729 9.99936 10.5945 10.3505 10.9451C10.701 11.2962 11.1226 11.4717 11.6152 11.4717ZM11.6152 20.0931C11.4958 20.0931 11.3764 20.0707 11.2569 20.0259C11.1375 19.9811 11.033 19.9214 10.9434 19.8467C8.76386 17.9209 7.13663 16.1334 6.06176 14.4841C4.9869 12.8341 4.44946 11.2926 4.44946 9.85945C4.44946 7.62014 5.16992 5.83616 6.61084 4.50751C8.05116 3.17885 9.71929 2.51453 11.6152 2.51453C13.5112 2.51453 15.1793 3.17885 16.6196 4.50751C18.0606 5.83616 18.781 7.62014 18.781 9.85945C18.781 11.2926 18.2436 12.8341 17.1687 14.4841C16.0938 16.1334 14.4666 17.9209 12.287 19.8467C12.1975 19.9214 12.093 19.9811 11.9735 20.0259C11.8541 20.0707 11.7347 20.0931 11.6152 20.0931Z" fill="#0E2245"></path>
+                                    </svg>
+                                    <span>Delhi, Dwarka Sector 10</span>
+                                </div>
+                                <div class="fees">  
+                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.0631 2.29431C9.80634 2.29431 7.64191 3.19081 6.046 4.78661C4.4501 6.3824 3.55371 8.54672 3.55371 10.8037C3.55371 13.0606 4.45021 15.2248 6.046 16.8207C7.6418 18.4166 9.80612 19.313 12.0631 19.313C14.32 19.313 16.4842 18.4165 18.0801 16.8207C19.676 15.2249 20.5724 13.0606 20.5724 10.8037C20.5669 8.54867 19.6686 6.38731 18.0741 4.79289C16.4794 3.19839 14.3184 2.3 12.0633 2.29453L12.0631 2.29431ZM12.0631 17.7715C10.2151 17.7715 8.44274 17.0374 7.13605 15.7307C5.82936 14.424 5.09526 12.6517 5.09526 10.8037C5.09526 8.95572 5.82936 7.18338 7.13605 5.87669C8.44274 4.57 10.2151 3.8359 12.0631 3.8359C13.9111 3.8359 15.6834 4.57 16.9901 5.87669C18.2968 7.18338 19.0309 8.95572 19.0309 10.8037C19.0309 12.6517 18.2968 14.424 16.9901 15.7307C15.6834 17.0374 13.9111 17.7715 12.0631 17.7715Z" fill="#0E2245"></path>
+                                        <path d="M12.0645 4.47046C10.3845 4.47046 8.77328 5.13786 7.58532 6.32579C6.39735 7.51373 5.72998 9.12496 5.72998 10.805C5.72998 12.485 6.39739 14.0962 7.58532 15.2841C8.77325 16.4721 10.3845 17.1395 12.0645 17.1395C13.7445 17.1395 15.3557 16.4721 16.5437 15.2841C17.7316 14.0962 18.399 12.485 18.399 10.805C18.399 9.69297 18.1063 8.60078 17.5503 7.63773C16.9943 6.67483 16.1946 5.87522 15.2318 5.31922C14.2688 4.76322 13.1765 4.4705 12.0645 4.4705L12.0645 4.47046ZM13.2469 9.11554H14.1127C14.2876 9.11554 14.4294 9.25743 14.4294 9.43222C14.4294 9.60716 14.2876 9.74904 14.1127 9.74904H13.2469C13.078 10.8047 12.2334 11.4382 11.1777 11.4382H10.8187L13.1625 13.6975C13.2824 13.8262 13.2914 14.0229 13.1836 14.1619C13.1229 14.2262 13.0395 14.2641 12.9513 14.2676C12.8675 14.262 12.7869 14.2327 12.7191 14.1831L9.80518 11.3959C9.70313 11.3067 9.66921 11.1624 9.72074 11.037C9.76317 10.9068 9.87994 10.8151 10.0163 10.8047H11.1777C11.4991 10.8192 11.8157 10.7219 12.0735 10.5295C12.3314 10.3369 12.5147 10.0612 12.5924 9.74904H10.0163C9.8414 9.74904 9.69966 9.60716 9.69966 9.43222C9.69966 9.25743 9.8414 9.11554 10.0163 9.11554H12.5924C12.5147 8.80334 12.3314 8.52765 12.0735 8.3351C11.8157 8.1427 11.4991 8.04542 11.1777 8.05985H10.0163C9.8414 8.05985 9.69966 7.91797 9.69966 7.74317C9.69966 7.56823 9.8414 7.42635 10.0163 7.42635H14.1127C14.2876 7.42635 14.4294 7.56823 14.4294 7.74317C14.4294 7.91797 14.2876 8.05985 14.1127 8.05985H12.6768C12.9867 8.33251 13.1888 8.70693 13.247 9.11553L13.2469 9.11554Z" fill="#0E2245"></path>
+                                    </svg>
+                                    <span>₹ 2000.00/- Month</span>
+                                </div>
+                                <div class="service_list mb-2 mt-2">
+                                    <ul>
+                                        <li>Batting</li>
+                                        <li>Bowling</li>
+                                        <li>Fielding</li>
+                                        <li>Wicket keeping</li>
+                                        <li>Mental</li>
+                                        <li>Technical</li>
+                                        <li>Physical</li>
+                                    </ul>
+                                </div>
+                                <div class="academies_btn d-flex">
+                                    <div class="c_btn l_btn">
+                                        <a href="#">Know More</a>
+                                    </div>
+                                    <div class="c_btn b_btn ms-3">
+                                        <a href="#">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="academies_box">
+                            <div class="academies_img">
+                                <img src="../images/academy.png" alt="academies">
+                            </div>
+                            <div class="academies_text">
+                                <h5>Venkateshwar Cricket Academy</h5>
+                                <div class="location mt-2">
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.6152 11.4717C12.1079 11.4717 12.5298 11.2962 12.8809 10.9451C13.2314 10.5945 13.4067 10.1729 13.4067 9.6803C13.4067 9.18765 13.2314 8.76577 12.8809 8.41465C12.5298 8.06412 12.1079 7.88886 11.6152 7.88886C11.1226 7.88886 10.701 8.06412 10.3505 8.41465C9.99936 8.76577 9.82379 9.18765 9.82379 9.6803C9.82379 10.1729 9.99936 10.5945 10.3505 10.9451C10.701 11.2962 11.1226 11.4717 11.6152 11.4717ZM11.6152 20.0931C11.4958 20.0931 11.3764 20.0707 11.2569 20.0259C11.1375 19.9811 11.033 19.9214 10.9434 19.8467C8.76386 17.9209 7.13663 16.1334 6.06176 14.4841C4.9869 12.8341 4.44946 11.2926 4.44946 9.85945C4.44946 7.62014 5.16992 5.83616 6.61084 4.50751C8.05116 3.17885 9.71929 2.51453 11.6152 2.51453C13.5112 2.51453 15.1793 3.17885 16.6196 4.50751C18.0606 5.83616 18.781 7.62014 18.781 9.85945C18.781 11.2926 18.2436 12.8341 17.1687 14.4841C16.0938 16.1334 14.4666 17.9209 12.287 19.8467C12.1975 19.9214 12.093 19.9811 11.9735 20.0259C11.8541 20.0707 11.7347 20.0931 11.6152 20.0931Z" fill="#0E2245"></path>
+                                    </svg>
+                                    <span>Delhi, Dwarka Sector 10</span>
+                                </div>
+                                <div class="fees">  
+                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.0631 2.29431C9.80634 2.29431 7.64191 3.19081 6.046 4.78661C4.4501 6.3824 3.55371 8.54672 3.55371 10.8037C3.55371 13.0606 4.45021 15.2248 6.046 16.8207C7.6418 18.4166 9.80612 19.313 12.0631 19.313C14.32 19.313 16.4842 18.4165 18.0801 16.8207C19.676 15.2249 20.5724 13.0606 20.5724 10.8037C20.5669 8.54867 19.6686 6.38731 18.0741 4.79289C16.4794 3.19839 14.3184 2.3 12.0633 2.29453L12.0631 2.29431ZM12.0631 17.7715C10.2151 17.7715 8.44274 17.0374 7.13605 15.7307C5.82936 14.424 5.09526 12.6517 5.09526 10.8037C5.09526 8.95572 5.82936 7.18338 7.13605 5.87669C8.44274 4.57 10.2151 3.8359 12.0631 3.8359C13.9111 3.8359 15.6834 4.57 16.9901 5.87669C18.2968 7.18338 19.0309 8.95572 19.0309 10.8037C19.0309 12.6517 18.2968 14.424 16.9901 15.7307C15.6834 17.0374 13.9111 17.7715 12.0631 17.7715Z" fill="#0E2245"></path>
+                                        <path d="M12.0645 4.47046C10.3845 4.47046 8.77328 5.13786 7.58532 6.32579C6.39735 7.51373 5.72998 9.12496 5.72998 10.805C5.72998 12.485 6.39739 14.0962 7.58532 15.2841C8.77325 16.4721 10.3845 17.1395 12.0645 17.1395C13.7445 17.1395 15.3557 16.4721 16.5437 15.2841C17.7316 14.0962 18.399 12.485 18.399 10.805C18.399 9.69297 18.1063 8.60078 17.5503 7.63773C16.9943 6.67483 16.1946 5.87522 15.2318 5.31922C14.2688 4.76322 13.1765 4.4705 12.0645 4.4705L12.0645 4.47046ZM13.2469 9.11554H14.1127C14.2876 9.11554 14.4294 9.25743 14.4294 9.43222C14.4294 9.60716 14.2876 9.74904 14.1127 9.74904H13.2469C13.078 10.8047 12.2334 11.4382 11.1777 11.4382H10.8187L13.1625 13.6975C13.2824 13.8262 13.2914 14.0229 13.1836 14.1619C13.1229 14.2262 13.0395 14.2641 12.9513 14.2676C12.8675 14.262 12.7869 14.2327 12.7191 14.1831L9.80518 11.3959C9.70313 11.3067 9.66921 11.1624 9.72074 11.037C9.76317 10.9068 9.87994 10.8151 10.0163 10.8047H11.1777C11.4991 10.8192 11.8157 10.7219 12.0735 10.5295C12.3314 10.3369 12.5147 10.0612 12.5924 9.74904H10.0163C9.8414 9.74904 9.69966 9.60716 9.69966 9.43222C9.69966 9.25743 9.8414 9.11554 10.0163 9.11554H12.5924C12.5147 8.80334 12.3314 8.52765 12.0735 8.3351C11.8157 8.1427 11.4991 8.04542 11.1777 8.05985H10.0163C9.8414 8.05985 9.69966 7.91797 9.69966 7.74317C9.69966 7.56823 9.8414 7.42635 10.0163 7.42635H14.1127C14.2876 7.42635 14.4294 7.56823 14.4294 7.74317C14.4294 7.91797 14.2876 8.05985 14.1127 8.05985H12.6768C12.9867 8.33251 13.1888 8.70693 13.247 9.11553L13.2469 9.11554Z" fill="#0E2245"></path>
+                                    </svg>
+                                    <span>₹ 2000.00/- Month</span>
+                                </div>
+                                <div class="service_list mb-2 mt-2">
+                                    <ul>
+                                        <li>Batting</li>
+                                        <li>Bowling</li>
+                                        <li>Fielding</li>
+                                        <li>Wicket keeping</li>
+                                        <li>Mental</li>
+                                        <li>Technical</li>
+                                        <li>Physical</li>
+                                    </ul>
+                                </div>
+                                <div class="academies_btn d-flex">
+                                    <div class="c_btn l_btn">
+                                        <a href="#">Know More</a>
+                                    </div>
+                                    <div class="c_btn b_btn ms-3">
+                                        <a href="#">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="academies_box">
+                            <div class="academies_img">
+                                <img src="../images/academy.png" alt="academies">
+                            </div>
+                            <div class="academies_text">
+                                <h5>Venkateshwar Cricket Academy</h5>
+                                <div class="location mt-2">
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.6152 11.4717C12.1079 11.4717 12.5298 11.2962 12.8809 10.9451C13.2314 10.5945 13.4067 10.1729 13.4067 9.6803C13.4067 9.18765 13.2314 8.76577 12.8809 8.41465C12.5298 8.06412 12.1079 7.88886 11.6152 7.88886C11.1226 7.88886 10.701 8.06412 10.3505 8.41465C9.99936 8.76577 9.82379 9.18765 9.82379 9.6803C9.82379 10.1729 9.99936 10.5945 10.3505 10.9451C10.701 11.2962 11.1226 11.4717 11.6152 11.4717ZM11.6152 20.0931C11.4958 20.0931 11.3764 20.0707 11.2569 20.0259C11.1375 19.9811 11.033 19.9214 10.9434 19.8467C8.76386 17.9209 7.13663 16.1334 6.06176 14.4841C4.9869 12.8341 4.44946 11.2926 4.44946 9.85945C4.44946 7.62014 5.16992 5.83616 6.61084 4.50751C8.05116 3.17885 9.71929 2.51453 11.6152 2.51453C13.5112 2.51453 15.1793 3.17885 16.6196 4.50751C18.0606 5.83616 18.781 7.62014 18.781 9.85945C18.781 11.2926 18.2436 12.8341 17.1687 14.4841C16.0938 16.1334 14.4666 17.9209 12.287 19.8467C12.1975 19.9214 12.093 19.9811 11.9735 20.0259C11.8541 20.0707 11.7347 20.0931 11.6152 20.0931Z" fill="#0E2245"></path>
+                                    </svg>
+                                    <span>Delhi, Dwarka Sector 10</span>
+                                </div>
+                                <div class="fees">  
+                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.0631 2.29431C9.80634 2.29431 7.64191 3.19081 6.046 4.78661C4.4501 6.3824 3.55371 8.54672 3.55371 10.8037C3.55371 13.0606 4.45021 15.2248 6.046 16.8207C7.6418 18.4166 9.80612 19.313 12.0631 19.313C14.32 19.313 16.4842 18.4165 18.0801 16.8207C19.676 15.2249 20.5724 13.0606 20.5724 10.8037C20.5669 8.54867 19.6686 6.38731 18.0741 4.79289C16.4794 3.19839 14.3184 2.3 12.0633 2.29453L12.0631 2.29431ZM12.0631 17.7715C10.2151 17.7715 8.44274 17.0374 7.13605 15.7307C5.82936 14.424 5.09526 12.6517 5.09526 10.8037C5.09526 8.95572 5.82936 7.18338 7.13605 5.87669C8.44274 4.57 10.2151 3.8359 12.0631 3.8359C13.9111 3.8359 15.6834 4.57 16.9901 5.87669C18.2968 7.18338 19.0309 8.95572 19.0309 10.8037C19.0309 12.6517 18.2968 14.424 16.9901 15.7307C15.6834 17.0374 13.9111 17.7715 12.0631 17.7715Z" fill="#0E2245"></path>
+                                        <path d="M12.0645 4.47046C10.3845 4.47046 8.77328 5.13786 7.58532 6.32579C6.39735 7.51373 5.72998 9.12496 5.72998 10.805C5.72998 12.485 6.39739 14.0962 7.58532 15.2841C8.77325 16.4721 10.3845 17.1395 12.0645 17.1395C13.7445 17.1395 15.3557 16.4721 16.5437 15.2841C17.7316 14.0962 18.399 12.485 18.399 10.805C18.399 9.69297 18.1063 8.60078 17.5503 7.63773C16.9943 6.67483 16.1946 5.87522 15.2318 5.31922C14.2688 4.76322 13.1765 4.4705 12.0645 4.4705L12.0645 4.47046ZM13.2469 9.11554H14.1127C14.2876 9.11554 14.4294 9.25743 14.4294 9.43222C14.4294 9.60716 14.2876 9.74904 14.1127 9.74904H13.2469C13.078 10.8047 12.2334 11.4382 11.1777 11.4382H10.8187L13.1625 13.6975C13.2824 13.8262 13.2914 14.0229 13.1836 14.1619C13.1229 14.2262 13.0395 14.2641 12.9513 14.2676C12.8675 14.262 12.7869 14.2327 12.7191 14.1831L9.80518 11.3959C9.70313 11.3067 9.66921 11.1624 9.72074 11.037C9.76317 10.9068 9.87994 10.8151 10.0163 10.8047H11.1777C11.4991 10.8192 11.8157 10.7219 12.0735 10.5295C12.3314 10.3369 12.5147 10.0612 12.5924 9.74904H10.0163C9.8414 9.74904 9.69966 9.60716 9.69966 9.43222C9.69966 9.25743 9.8414 9.11554 10.0163 9.11554H12.5924C12.5147 8.80334 12.3314 8.52765 12.0735 8.3351C11.8157 8.1427 11.4991 8.04542 11.1777 8.05985H10.0163C9.8414 8.05985 9.69966 7.91797 9.69966 7.74317C9.69966 7.56823 9.8414 7.42635 10.0163 7.42635H14.1127C14.2876 7.42635 14.4294 7.56823 14.4294 7.74317C14.4294 7.91797 14.2876 8.05985 14.1127 8.05985H12.6768C12.9867 8.33251 13.1888 8.70693 13.247 9.11553L13.2469 9.11554Z" fill="#0E2245"></path>
+                                    </svg>
+                                    <span>₹ 2000.00/- Month</span>
+                                </div>
+                                <div class="service_list mb-2 mt-2">
+                                    <ul>
+                                        <li>Batting</li>
+                                        <li>Bowling</li>
+                                        <li>Fielding</li>
+                                        <li>Wicket keeping</li>
+                                        <li>Mental</li>
+                                        <li>Technical</li>
+                                        <li>Physical</li>
+                                    </ul>
+                                </div>
+                                <div class="academies_btn d-flex">
+                                    <div class="c_btn l_btn">
+                                        <a href="#">Know More</a>
+                                    </div>
+                                    <div class="c_btn b_btn ms-3">
+                                        <a href="#">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="academies_box">
+                            <div class="academies_img">
+                                <img src="../images/academy.png" alt="academies">
+                            </div>
+                            <div class="academies_text">
+                                <h5>Venkateshwar Cricket Academy</h5>
+                                <div class="location mt-2">
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.6152 11.4717C12.1079 11.4717 12.5298 11.2962 12.8809 10.9451C13.2314 10.5945 13.4067 10.1729 13.4067 9.6803C13.4067 9.18765 13.2314 8.76577 12.8809 8.41465C12.5298 8.06412 12.1079 7.88886 11.6152 7.88886C11.1226 7.88886 10.701 8.06412 10.3505 8.41465C9.99936 8.76577 9.82379 9.18765 9.82379 9.6803C9.82379 10.1729 9.99936 10.5945 10.3505 10.9451C10.701 11.2962 11.1226 11.4717 11.6152 11.4717ZM11.6152 20.0931C11.4958 20.0931 11.3764 20.0707 11.2569 20.0259C11.1375 19.9811 11.033 19.9214 10.9434 19.8467C8.76386 17.9209 7.13663 16.1334 6.06176 14.4841C4.9869 12.8341 4.44946 11.2926 4.44946 9.85945C4.44946 7.62014 5.16992 5.83616 6.61084 4.50751C8.05116 3.17885 9.71929 2.51453 11.6152 2.51453C13.5112 2.51453 15.1793 3.17885 16.6196 4.50751C18.0606 5.83616 18.781 7.62014 18.781 9.85945C18.781 11.2926 18.2436 12.8341 17.1687 14.4841C16.0938 16.1334 14.4666 17.9209 12.287 19.8467C12.1975 19.9214 12.093 19.9811 11.9735 20.0259C11.8541 20.0707 11.7347 20.0931 11.6152 20.0931Z" fill="#0E2245"></path>
+                                    </svg>
+                                    <span>Delhi, Dwarka Sector 10</span>
+                                </div>
+                                <div class="fees">  
+                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.0631 2.29431C9.80634 2.29431 7.64191 3.19081 6.046 4.78661C4.4501 6.3824 3.55371 8.54672 3.55371 10.8037C3.55371 13.0606 4.45021 15.2248 6.046 16.8207C7.6418 18.4166 9.80612 19.313 12.0631 19.313C14.32 19.313 16.4842 18.4165 18.0801 16.8207C19.676 15.2249 20.5724 13.0606 20.5724 10.8037C20.5669 8.54867 19.6686 6.38731 18.0741 4.79289C16.4794 3.19839 14.3184 2.3 12.0633 2.29453L12.0631 2.29431ZM12.0631 17.7715C10.2151 17.7715 8.44274 17.0374 7.13605 15.7307C5.82936 14.424 5.09526 12.6517 5.09526 10.8037C5.09526 8.95572 5.82936 7.18338 7.13605 5.87669C8.44274 4.57 10.2151 3.8359 12.0631 3.8359C13.9111 3.8359 15.6834 4.57 16.9901 5.87669C18.2968 7.18338 19.0309 8.95572 19.0309 10.8037C19.0309 12.6517 18.2968 14.424 16.9901 15.7307C15.6834 17.0374 13.9111 17.7715 12.0631 17.7715Z" fill="#0E2245"></path>
+                                        <path d="M12.0645 4.47046C10.3845 4.47046 8.77328 5.13786 7.58532 6.32579C6.39735 7.51373 5.72998 9.12496 5.72998 10.805C5.72998 12.485 6.39739 14.0962 7.58532 15.2841C8.77325 16.4721 10.3845 17.1395 12.0645 17.1395C13.7445 17.1395 15.3557 16.4721 16.5437 15.2841C17.7316 14.0962 18.399 12.485 18.399 10.805C18.399 9.69297 18.1063 8.60078 17.5503 7.63773C16.9943 6.67483 16.1946 5.87522 15.2318 5.31922C14.2688 4.76322 13.1765 4.4705 12.0645 4.4705L12.0645 4.47046ZM13.2469 9.11554H14.1127C14.2876 9.11554 14.4294 9.25743 14.4294 9.43222C14.4294 9.60716 14.2876 9.74904 14.1127 9.74904H13.2469C13.078 10.8047 12.2334 11.4382 11.1777 11.4382H10.8187L13.1625 13.6975C13.2824 13.8262 13.2914 14.0229 13.1836 14.1619C13.1229 14.2262 13.0395 14.2641 12.9513 14.2676C12.8675 14.262 12.7869 14.2327 12.7191 14.1831L9.80518 11.3959C9.70313 11.3067 9.66921 11.1624 9.72074 11.037C9.76317 10.9068 9.87994 10.8151 10.0163 10.8047H11.1777C11.4991 10.8192 11.8157 10.7219 12.0735 10.5295C12.3314 10.3369 12.5147 10.0612 12.5924 9.74904H10.0163C9.8414 9.74904 9.69966 9.60716 9.69966 9.43222C9.69966 9.25743 9.8414 9.11554 10.0163 9.11554H12.5924C12.5147 8.80334 12.3314 8.52765 12.0735 8.3351C11.8157 8.1427 11.4991 8.04542 11.1777 8.05985H10.0163C9.8414 8.05985 9.69966 7.91797 9.69966 7.74317C9.69966 7.56823 9.8414 7.42635 10.0163 7.42635H14.1127C14.2876 7.42635 14.4294 7.56823 14.4294 7.74317C14.4294 7.91797 14.2876 8.05985 14.1127 8.05985H12.6768C12.9867 8.33251 13.1888 8.70693 13.247 9.11553L13.2469 9.11554Z" fill="#0E2245"></path>
+                                    </svg>
+                                    <span>₹ 2000.00/- Month</span>
+                                </div>
+                                <div class="service_list mb-2 mt-2">
+                                    <ul>
+                                        <li>Batting</li>
+                                        <li>Bowling</li>
+                                        <li>Fielding</li>
+                                        <li>Wicket keeping</li>
+                                        <li>Mental</li>
+                                        <li>Technical</li>
+                                        <li>Physical</li>
+                                    </ul>
+                                </div>
+                                <div class="academies_btn d-flex">
+                                    <div class="c_btn l_btn">
+                                        <a href="#">Know More</a>
+                                    </div>
+                                    <div class="c_btn b_btn ms-3">
+                                        <a href="#">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end coach slider  -->
+
+ <!-- footer   -->
+ <footer>
+    <div class="footer_top_wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-md-4">
+                    <div class="footer_collum_wrap">
+                        <h4 class="footer_heading">Contact Us</h4>
+                        <div class="footer_contact mb-20">
+                            <ul>
+                                <li class="mb-20"><a href="#"><img src="../images/whatsapp.svg" alt="whatsapp"> Whatsapp +918002632986</a></li>
+                                <li><a href="#"><img src="../images/mail.svg" alt="mail">Email: info@criconet.com</a></li>
+                            </ul>
+                        </div>
+                        <h4 class="footer_heading">Support</h4>
+                        <div class="footer_btn">
+                            <a href="#">Download App <img src="../images/google-play.png" alt="Play store"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-2">
+                    <h4 class="footer_heading">Our Services</h4>
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="#">e-Pavilion</a></li>
+                            <li><a href="#">e-Coaching</a></li>
+                            <li><a href="#">e-Streaming</a></li>
+                            <li><a href="#">e-Academy</a></li>
+                            <li><a href="#">Partner With Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-2">
+                    <h4 class="footer_heading">Quick Links</h4>
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Media Releases</a></li>
+                            <li><a href="#">Career</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <h4 class="footer_heading">Subscribe to our Newsletter</h4>
+                    <form action="">
+                            <div class="search_wrap footer mb-20">
+                                <div class="search_shadow"></div>
+                                <input type="text" placeholder="Email..." name="search">
+                                <div class="button_shadow">
+                                    <button type="submit">
+                                        Subscribe
+                                    </button>
+                                </div>                            
+                            </div>
+                     </form>
+                     <h4 class="footer_heading mt-20">Follow Us</h4>  
+                     <div class="social_icon">
+                        <ul>
+                            <li><a href="#"><img src="../images/Facebook.svg" alt="facebook"></a></li>
+                            <li><a href="#"><img src="../images/Insta.svg" alt="insta"></a></li>
+                            <li><a href="#"><img src="../images/youtube.svg" alt="youtube"></a></li>
+                            <li><a href="#"><img src="../images/Linkedin.svg" alt="Linkedin"></a></li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+   
+    <div class="footer_bottam_wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-6">
+                    <p>Copyright © 2022 Criconet. All rights reserved. </p>
+                </div>
+                <div class="col-xl-6 col-md-6">
+                    <div class="bttom_menu">
+                        <ul>
+                            <li><a href="#">User Agreement</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer  -->
+<!-- boostrap  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+<!-- jquery  -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- main js  -->
+<script src="../js/main.js"></script>
+</body>

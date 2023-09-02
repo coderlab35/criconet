@@ -103,6 +103,7 @@ textarea.form-control {
 .white p{
   color: #fff;
 }
+.heading h3,
 .heading h2{
   color: #800000;
 }
@@ -132,6 +133,12 @@ textarea.form-control {
 }
 .mt-20{
   margin-top: 20px;
+}
+.mt-40{
+  margin-top: 40px;
+}
+.mt-35{
+  margin-top: 35px !important;
 }
 .ms-40{
   margin-left: 40px;
@@ -335,6 +342,10 @@ section.main_hero_sec {
   line-height: 62px;
   margin-bottom: 15px;
 }
+.inner-page h1 {
+  font-size: 38px;
+  line-height: 48px;
+}
 .hero_left h2 {
   font-size: 36px;
   line-height: 46px;
@@ -506,6 +517,8 @@ section.home_blog .heading h2 {
 .blog_slider_arrow .swiper-pagination {
   bottom: -10px !important;
 }
+.steap-arrow .swiper-button-prev:after,
+.steap-arrow .swiper-button-next:after,
 .benefits_slider_arrow .swiper-button-prev:after,
 .benefits_slider_arrow .swiper-button-next:after,
 .blog_slider_arrow .swiper-button-prev:after, .blog_slider_arrow .swiper-button-next:after {
@@ -750,9 +763,9 @@ section.about-page-sec:before {
   right: 0px;
   z-index: -1;
 }
-.about-page .two-left-img img, .about-page .two-right-img img{
-    height: 406px;
-    max-width: 225px;
+.about-page .two-left-img img, .about-page .two-right-img img {
+  height: 405px;
+  max-width: 225px;
 }
 section.how-work-sec,
 section.founder_sec{
@@ -792,6 +805,7 @@ section.mission_vision_sec {
   overflow: hidden;
   z-index: 9;
 }
+section.coach-slider-sec:before,
 section.mission_vision_sec:before {
   position: absolute;
   content: "";
@@ -861,8 +875,8 @@ section.mee_team_sec {
   display: inline-block;
   position: absolute;
   transform: rotate(346deg);
-  left: 14%;
-  bottom: 2%;
+  left: 21%;
+  bottom: 15%;
   padding: 8px 29px;
   border: 4px solid #fff;
   border-radius: 60px;
@@ -1010,7 +1024,8 @@ ul.academies-service li:hover{
   align-items: center;
   margin-left: -65px;
 }
-.academies-details-heading h2 {
+.academies-details-heading h2,
+.academies-details-heading h3 {
   margin: 0 10px;
 }
 .coach_list_tab {
@@ -1106,7 +1121,7 @@ section.benefits_sec {
 }
 .e-coach-popup-wrap {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 0;
   right: 60px;
   margin: 0 auto;
@@ -1126,6 +1141,7 @@ section.benefits_sec {
   padding: 30px 15px;
   text-align: center;
   transform: scale(.90);
+  min-height: 330px;
 }
 .benefits_icon img {
   border: 1px solid #000;
@@ -1152,6 +1168,11 @@ section.benefits_sec {
 .swiper-slide.swiper-slide-active .benefits {
   transform: scale(1);
   transition: all 0.4s ease-in-out;
+}
+.benefits_icon img {
+  height: 80px;
+  width: 80px;
+  padding: 10px;
 }
 .benefits_slider_arrow{
   bottom: 5%;
@@ -1201,11 +1222,11 @@ section.how-work-sec .icon_wrap{
   align-items: center;
   justify-content: center;
 }
-section.how-work-sec .icon_wrap h5{
+section.how-work-sec .icon_wrap h2{
   padding: 0 10px;
 }
-section.how-work-sec .badge-about{
-  padding: 8px 89px;
+section.how-work-sec .badge-about {
+  padding: 6px 75px;
 }
 .step-text-wrap p {
   max-width: 250px;
@@ -1215,15 +1236,110 @@ section.how-work-sec .badge-about{
 .step-slider-wrap .swiper.step_slider {
   position: inherit;
 }
+.steap-count .swiper-pagination {
+  color: #fff;
+}
 .steap-slider-navigation {
   position: absolute;
-  display: flex;
-  justify-content: space-between;
-  z-index: 999;
+  width: 75%;
+  left: 0;
+  bottom: 38%;
+  margin: 0 auto;
+  right: 0;
+}
+.step-img img {
+  height: 160px;
+  width: 100%;
+}
+.steap-arrow .swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: auto !important;
+  left: 50px !important;
 }
 .steap-count .swiper-pagination {
-  display: flex;
-  color: #fff;
+  width: auto;
+  right: 0;
+  left: auto;
+  bottom: -18px;
+}
+.select-coach {
+  margin-left: auto;
+  max-width: 400px;
+  padding-right: 20px;
+  margin-top: 10px;
+}
+section.coach-slider-sec {
+  position: relative;
+  z-index: 9;
+}
+.swiper.coach_slider {
+  position: inherit;
+}
+.coach_slider_wrap .coach_profile_wrap {
+  box-shadow: 0px 5px 10px 0px rgb(157 152 152 / 25%);
+  margin-left: 4px;
+}
+.coach_slider .swiper-button-prev:after {
+  content: "" !important;
+  background: url(../images/simple-left-arrow.svg);
+  width: 20px;
+  background-size: 20px;
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  height: 20px;
+  background-repeat: no-repeat;
+}
+.coach_slider .swiper-button-next:after {
+  content: "" !important;
+  background: url(../images/simple-right-arrow.svg);
+  width: 20px;
+  background-size: 20px;
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  height: 20px;
+  background-repeat: no-repeat;
+}
+.coach_slider .swiper-button-next {
+  right: auto;
+  left: 85px;
+  bottom: 25%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  top: inherit;
+}
+.coach_slider .swiper-button-prev {
+  left: 32px;
+  right: auto;
+  bottom: 25%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  top: inherit;
+}
+section.coach-slider-sec:before{
+  width: 730px;
+  height: 640px;
+  left: -270px;
 }
 /*End  E coaching Player  */
 
+section.inner-cta-sec {
+  margin-top: 120px;
+}
+
+.coach_slider .swiper-pagination {
+  height: 5px !important;
+  top: inherit !important;
+  bottom: 50px;
+  width: 66% !important;
+  background: #0E2245;
+  right: 0;
+  left: inherit !important;
+}
+.coach_slider .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #B11F24 !important;
+}
