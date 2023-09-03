@@ -6,7 +6,7 @@ $(window).scroll(function(){
     else sticky.removeClass('fixed');
   });
 
-
+  $( document ).ready(function() {
   var swiper = new Swiper(".brand_slider", {
     slidesPerView: 4,
     spaceBetween: 30,
@@ -69,8 +69,10 @@ $(window).scroll(function(){
     slidesPerView: 3,
     centeredSlides: true,
     loop: true,
-    slidesPerGroup: 1,
-    paginationClickable: true,
+    autoplay: 
+    {
+      delay: 2000,
+    },
     pagination: {
       el: ".swiper-pagination",
     },
@@ -106,3 +108,5 @@ $(window).scroll(function(){
       prevEl: ".swiper-button-prev",
     },
   });
+
+});

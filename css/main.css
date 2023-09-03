@@ -81,7 +81,7 @@ textarea.form-control {
 }
 .l_btn a {
   background: #800000;
-  color: #fff;
+  color: #fff !important;
   box-shadow: 0 3px 3px 0 rgb(0 0 0);
   border: 1px solid #800000;
 }
@@ -1225,6 +1225,7 @@ section.how-work-sec .icon_wrap{
 section.how-work-sec .icon_wrap h2{
   padding: 0 10px;
 }
+.book-live .badge-about,
 section.how-work-sec .badge-about {
   padding: 6px 75px;
 }
@@ -1343,3 +1344,58 @@ section.inner-cta-sec {
 .coach_slider .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   background: #B11F24 !important;
 }
+
+
+/* Subscription Plans */
+section.subscription-plans {
+  background: rgb(237 220 146 / 20%);
+}
+section.subscription-plans .icon_wrap_red h2 {
+  padding: 0 15px;
+}
+section.subscription-plans .heading p {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.plan-card-wrap table thead tr th {
+  background: #800000;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  padding: 20px 10px;
+  color: #fff;
+}
+.plan-card-wrap table thead tr th:nth-child(odd) {
+  background: #0E2245 !important;
+  min-width: 100px;
+}
+.plan-card-wrap table thead tr th:nth-child(even){
+  min-width: 100px;
+}
+.plan-card-wrap table {
+  background: #fff;
+  box-shadow: 0 4px 3px 0 rgb(27 37 33 / 9%);
+  border-radius: 10px;
+}
+.plan-card-wrap table tbody tr:nth-child(odd) th {
+  background: rgb(238 220 146 / 25%);
+}
+.plan-card-wrap table tbody tr td,
+.plan-card-wrap table tbody tr th {
+  font-size: 16px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  padding: 13px 20px;
+  max-width: 270px;
+}
+.plan-card-wrap table tbody tr td{
+  text-align: center;
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.plan-card-wrap table tbody tr td:last-child {
+  background: rgb(238 220 146 / 20%);
+}
+
+/* End Subscription Plans */
