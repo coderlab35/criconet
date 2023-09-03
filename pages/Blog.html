@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+     <!-- boostrap  -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- external css  -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- fa fa icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- main navigation bar  -->
+    <section class="navigation">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm navbar-light">
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../images/logo.png" alt="logo">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">e-Pavilion
+                                <i class="fa fa-chevron-down down-arrow"></i>
+                                <i class="fa fa-chevron-up up-arrow"></i>
+                            </a>
+
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Notice Board</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">e-Coaching
+                                <i class="fa fa-chevron-down down-arrow"></i>
+                                <i class="fa fa-chevron-up up-arrow"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">I am a player</a>
+                                <a href="#" class="dropdown-item">I am a coach</a>
+                                <a href="#" class="dropdown-item">Book a coach</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">e-Streaming
+                                <i class="fa fa-chevron-down down-arrow"></i>
+                                <i class="fa fa-chevron-up up-arrow"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Watch live Match</a>
+                                <a href="#" class="dropdown-item">Book Live Streaming</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">e-Academies
+                                <i class="fa fa-chevron-down down-arrow"></i>
+                                <i class="fa fa-chevron-up up-arrow"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Join Acedemiy</a>
+                                <a href="#" class="dropdown-item">List Your Acedemiy</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Partner With Us
+                                <i class="fa fa-chevron-down down-arrow"></i>
+                                <i class="fa fa-chevron-up up-arrow"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Coaches</a>
+                                <a href="#" class="dropdown-item">Academies</a>
+                                <a href="#" class="dropdown-item">Tournament Organizers</a>
+                                <a href="#" class="dropdown-item">Ground Owners</a>
+                                <a href="#" class="dropdown-item">Franchise Partners</a>
+                                <a href="#" class="dropdown-item">Sponsors</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item dropdown">
+                            <form action="">
+                                <div class="search_wrap">
+                                    <div class="search_shadow"></div>
+                                    <input type="text" placeholder="Search.." name="search">
+                                    <div class="button_shadow">
+                                        <button type="submit">
+                                            <img src="../images/search.svg" alt="search_icon">
+                                        </button>
+                                    </div>
+                            </form>
+                </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <div class="c_btn l_btn">
+                        <a>
+                            <img src="../images/login-btn.svg" alt="btn"> | Login
+                        </a>
+                    </div>
+                </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!-- end main navigation bar  -->
+  <!-- main hero section  -->
+  <section class="main_hero_sec">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-md-6">
+                <div class="hero_left white inner-page">
+                    <h1>Our Blog</h1>
+                    <p>The best hangout for cricket lovers, right on your phone.</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-md-6">
+                <div class="hero_right">
+                    <div class="main_bg">
+                        <img src="../images/main-bg.png" alt="bg">
+                    </div>
+                    <div class="main_img">
+                        <img src="../images/academylisting-main.jpeg" alt="main-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- main hero section  -->
+
+<section class="blog-sec d_padding">
+    <div class="container">
+        <div class="fliter_wrap position-relative mb-4">
+            <form action="">
+                <div class="search_wrap">
+                    <div class="search_shadow"></div>
+                    <input type="text" placeholder="Search.." name="search">
+                    <div class="button_shadow">
+                        <button type="submit">
+                            <img src="../images/search.svg" alt="search_icon">
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="c_btn l_btn ms-2 f_btn">
+                <a href="#">     
+                    <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 2H20M5.21429 7H16.7857M9.07143 12H12.9286" stroke="white" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    | Filters
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-9 col-md-9">
+               <div class="blog-wrap">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="../images/blog02.png" alt="blog">
+                        </div>
+                        <div class="blog-text-wrap">
+                            <div class="blog_tag mb-2">
+                                <span>Cricket</span>
+                            </div>
+                            <h4>Finished ? Aaron finch ? A tale of World Cup winning captain</h4>
+                            <p>9 months ago, won a trophy as a captain, now his position in the t in doll drums.</p>
+                            <div class="blog-footer">
+                                <p class="name">By Kannan Nair</p>
+                                <p class="date">June 31, 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="../images/blog02.png" alt="blog">
+                        </div>
+                        <div class="blog-text-wrap">
+                            <div class="blog_tag mb-2">
+                                <span>Cricket</span>
+                            </div>
+                            <h4>Finished ? Aaron finch ? A tale of World Cup winning captain</h4>
+                            <p>9 months ago, won a trophy as a captain, now his position in the t in doll drums.</p>
+                            <div class="blog-footer">
+                                <p class="name">By Kannan Nair</p>
+                                <p class="date">June 31, 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="../images/blog02.png" alt="blog">
+                        </div>
+                        <div class="blog-text-wrap">
+                            <div class="blog_tag mb-2">
+                                <span>Cricket</span>
+                            </div>
+                            <h4>Finished ? Aaron finch ? A tale of World Cup winning captain</h4>
+                            <p>9 months ago, won a trophy as a captain, now his position in the t in doll drums.</p>
+                            <div class="blog-footer">
+                                <p class="name">By Kannan Nair</p>
+                                <p class="date">June 31, 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="../images/blog02.png" alt="blog">
+                        </div>
+                        <div class="blog-text-wrap">
+                            <div class="blog_tag mb-2">
+                                <span>Cricket</span>
+                            </div>
+                            <h4>Finished ? Aaron finch ? A tale of World Cup winning captain</h4>
+                            <p>9 months ago, won a trophy as a captain, now his position in the t in doll drums.</p>
+                            <div class="blog-footer">
+                                <p class="name">By Kannan Nair</p>
+                                <p class="date">June 31, 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="../images/blog02.png" alt="blog">
+                        </div>
+                        <div class="blog-text-wrap">
+                            <div class="blog_tag mb-2">
+                                <span>Cricket</span>
+                            </div>
+                            <h4>Finished ? Aaron finch ? A tale of World Cup winning captain</h4>
+                            <p>9 months ago, won a trophy as a captain, now his position in the t in doll drums.</p>
+                            <div class="blog-footer">
+                                <p class="name">By Kannan Nair</p>
+                                <p class="date">June 31, 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="../images/blog02.png" alt="blog">
+                        </div>
+                        <div class="blog-text-wrap">
+                            <div class="blog_tag mb-2">
+                                <span>Cricket</span>
+                            </div>
+                            <h4>Finished ? Aaron finch ? A tale of World Cup winning captain</h4>
+                            <p>9 months ago, won a trophy as a captain, now his position in the t in doll drums.</p>
+                            <div class="blog-footer">
+                                <p class="name">By Kannan Nair</p>
+                                <p class="date">June 31, 2022</p>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+               <div class="pagination">
+                <ul>
+                    <li>
+                        <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M33.345 48.4584L19.4949 34.5L33.345 20.5417M21.4194 34.5H49.5053" stroke="black" stroke-width="1.87319" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M68 34.5C68 16.0052 52.9948 1 34.5 1C16.0052 1 1 16.0052 1 34.5C1 52.9948 16.0052 68 34.5 68C52.9948 68 68 52.9948 68 34.5Z" stroke="black" stroke-width="1.87319" stroke-miterlimit="10"/>
+                        </svg>
+                    </li>
+                    <li class="active"><a href="">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li>
+                        <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M35.6552 48.4584L49.5054 34.5L35.6552 20.5417M47.5809 34.5H19.495" stroke="black" stroke-width="1.87319" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M0.999998 34.5C0.999998 16.0052 16.0052 1 34.5 1C52.9948 1 68 16.0052 68 34.5C68 52.9948 52.9948 68 34.5 68C16.0052 68 0.999998 52.9948 0.999998 34.5Z" stroke="black" stroke-width="1.87319" stroke-miterlimit="10"/>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-xl-3 col-md-3">
+                <div class="blog-right">
+                    <div class="recent-view">
+                        <h6>Recently viewed Blogs</h6>
+                        <div class="recent-blog">
+                            <div class="recent-blog-text">
+                                <h5>indian team</h5>
+                                <p>Finished ? Aaron finch ? A tale of World Cup winning captain</p>
+                            </div>
+                            <div class="recent-blog-img">
+                                <img src="../images/blog02.png" alt="blog">
+                            </div>
+                        </div>
+                        <div class="recent-blog">
+                            <div class="recent-blog-text">
+                                <h5>indian team</h5>
+                                <p>Finished ? Aaron finch ? A tale of World Cup winning captain</p>
+                            </div>
+                            <div class="recent-blog-img">
+                                <img src="../images/blog02.png" alt="blog">
+                            </div>
+                        </div>
+                        <div class="recent-blog">
+                            <div class="recent-blog-text">
+                                <h5>indian team</h5>
+                                <p>Finished ? Aaron finch ? A tale of World Cup winning captain</p>
+                            </div>
+                            <div class="recent-blog-img">
+                                <img src="../images/blog02.png" alt="blog">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-tag mt-4">
+                        <h6 class="mb-2">Category</h6>
+                        <span>Cricket</span>
+                        <span>Indian Team</span>
+                        <span>Indian Team</span>
+                        <span>Cricket</span>
+                        <span>Cricket</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</section>
+ <!-- footer   -->
+ <footer>
+    <div class="footer_top_wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-md-4">
+                    <div class="footer_collum_wrap">
+                        <h4 class="footer_heading">Contact Us</h4>
+                        <div class="footer_contact mb-20">
+                            <ul>
+                                <li class="mb-20"><a href="#"><img src="../images/whatsapp.svg" alt="whatsapp"> Whatsapp +918002632986</a></li>
+                                <li><a href="#"><img src="../images/mail.svg" alt="mail">Email: info@criconet.com</a></li>
+                            </ul>
+                        </div>
+                        <h4 class="footer_heading">Support</h4>
+                        <div class="footer_btn">
+                            <a href="#">Download App <img src="../images/google-play.png" alt="Play store"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-2">
+                    <h4 class="footer_heading">Our Services</h4>
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="#">e-Pavilion</a></li>
+                            <li><a href="#">e-Coaching</a></li>
+                            <li><a href="#">e-Streaming</a></li>
+                            <li><a href="#">e-Academy</a></li>
+                            <li><a href="#">Partner With Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-2">
+                    <h4 class="footer_heading">Quick Links</h4>
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Media Releases</a></li>
+                            <li><a href="#">Career</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <h4 class="footer_heading">Subscribe to our Newsletter</h4>
+                    <form action="">
+                            <div class="search_wrap footer mb-20">
+                                <div class="search_shadow"></div>
+                                <input type="text" placeholder="Email..." name="search">
+                                <div class="button_shadow">
+                                    <button type="submit">
+                                        Subscribe
+                                    </button>
+                                </div>                            
+                            </div>
+                     </form>
+                     <h4 class="footer_heading mt-20">Follow Us</h4>  
+                     <div class="social_icon">
+                        <ul>
+                            <li><a href="#"><img src="../images/Facebook.svg" alt="facebook"></a></li>
+                            <li><a href="#"><img src="../images/Insta.svg" alt="insta"></a></li>
+                            <li><a href="#"><img src="../images/youtube.svg" alt="youtube"></a></li>
+                            <li><a href="#"><img src="../images/Linkedin.svg" alt="Linkedin"></a></li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+   
+    <div class="footer_bottam_wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-6">
+                    <p>Copyright © 2022 Criconet. All rights reserved. </p>
+                </div>
+                <div class="col-xl-6 col-md-6">
+                    <div class="bttom_menu">
+                        <ul>
+                            <li><a href="#">User Agreement</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer  -->
+<!-- boostrap  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+<!-- jquery  -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- main js  -->
+<script src="../js/main.js"></script>
+</body>

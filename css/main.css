@@ -56,7 +56,7 @@ img {
   border: 1px solid #ddd !important;
   border-radius: 5px;
   font-size: 16px;
-  height: 58px;
+  height: 45px;
 }
 textarea.form-control {
   height: auto !important;
@@ -744,12 +744,14 @@ h4.footer_heading {
 
 
 /* about page  */
+section.blog-sec,
 section.academy_list_sec,
 section.about-page-sec{
     position: relative;
     overflow: hidden;
     z-index: 9;
 }
+section.blog-sec::before,
 section.academy_list_sec::before,
 section.about-page-sec:before {
   position: absolute;
@@ -800,11 +802,13 @@ section.founder_sec{
   line-height: 24px;
   margin-top: 10px;
 }
+section.job-form,
 section.mission_vision_sec {
   position: relative;
   overflow: hidden;
   z-index: 9;
 }
+section.job-form:before,
 section.coach-slider-sec:before,
 section.mission_vision_sec:before {
   position: absolute;
@@ -1217,11 +1221,13 @@ section.benefits_sec {
   font-weight: 700;
 }
 
+section.career-job .icon_wrap,
 section.how-work-sec .icon_wrap{
   display: flex;
   align-items: center;
   justify-content: center;
 }
+section.career-job .icon_wrap h2,
 section.how-work-sec .icon_wrap h2{
   padding: 0 10px;
 }
@@ -1399,3 +1405,253 @@ section.subscription-plans .heading p {
 }
 
 /* End Subscription Plans */
+
+/* career page  */
+section.career-job {
+  background: #0E2245;
+}
+.job-form-wrap {
+  max-width: 780px;
+  margin: 0 auto;
+}
+.group-input {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.group-input .form-group {
+  width: 100%;
+}
+.input-wrap,
+.group-input {
+  margin: 10px 0;
+}
+.input-wrap textarea{
+  padding: 10px 25px;
+  background: #EAEAEA;
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25) inset;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+}
+.input-wrap select, .input-wrap .form-group input, .group-input .form-group input {
+  border-radius: 60px;
+  padding: 0 25px;
+  background: #EAEAEA;
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.input-wrap label,
+.input-wrap .form-group label,
+.group-input .form-group label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+label.choose-file {
+  background: #0E2245;
+  box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.04);
+  color: #fff;
+  padding: 0 25px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50px;
+  margin-right: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+}
+label.choose-file:hover{
+  background: #800000;
+}
+section.job-form:before{
+  width: 860px;
+  height: 760px;
+  left: -200px;
+}
+/* end career page */
+
+/* Blog page  */
+.blog-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.blog-card {
+  background: #fff;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 267px;
+  margin: 5px 5px;
+}
+.blog-img img{
+  border-radius: 10px;
+}
+.blog-img img {
+  border-radius: 10px;
+  min-height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.blog-text-wrap h4 {
+  font-size: 15px;
+  line-height: 25px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+}
+.blog-text-wrap p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+.blog-text-wrap .blog_tag span {
+  font-size: 13px;
+  padding: 0px 15px;
+  line-height: 22px;
+}
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.blog-footer p.name {
+  font-weight: 500;
+}
+.category-tag h6,
+.recent-view h6 {
+  font-size: 19px;
+  font-family: 'Open Sans';
+  line-height: 29px;
+  font-weight: 600;
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+}
+.recent-blog {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 7px;
+}
+.recent-blog-text h5 {
+  color: #800000;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 600;
+}
+.recent-blog-text p {
+  font-size: 13px;
+  line-height: 18px;
+}
+.recent-blog-img img {
+  max-width: 100px;
+  border-radius: 10px;
+  height: 75px;
+  object-fit: cover;
+}
+.category-tag span {
+  border: 1px solid #800000;
+  color: #800000;
+  padding: 0px 10px;
+  display: inline-block;
+  margin: 3px;
+  border-radius: 51px;
+  font-size: 12px;
+  line-height: 22px;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+}
+.category-tag span:hover{
+  background-color: #0E2245;
+  border-color: #0E2245;
+  color: #fff;
+}
+section.blog-sec::before {
+  width: 910px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+}
+/* End blog page  */
+
+/* Blog single page  */
+
+section.blog-inner-hero {
+  background: url(../images/blog-single.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+}
+section.blog-inner-hero:before{
+  content: "";
+  position: absolute;
+  background: rgb(14 34 69 / 50%);
+  height: 100%;
+  width: 100%;
+  z-index: 9;
+}
+.privacy-policy-sec-wrap,
+.blog-hero-sec-wrap-inner {
+  position: absolute;
+  z-index: 99;
+  top: 60%;
+  left: 5%;
+}
+.privacy-policy-sec-wrap h1,
+.blog-hero-sec-wrap-inner h1 {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 11px;
+}
+.date-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog-single-content p {
+  margin: 10px 0;
+  text-align: justify;
+}
+.blog-single-content h3 {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 26px;
+  margin: 20px 0;
+}
+/* End Blog single page  */
+
+/* Privacy Policy section  */
+section.privacy-policy-sec{
+  background: url(../images/privacy-policy.jpg);
+}
+section.privacy-policy-sec{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+}
+section.privacy-policy-sec:before {
+  content: "";
+  position: absolute;
+  background: rgb(14 34 69 / 50%);
+  height: 100%;
+  width: 100%;
+  z-index: 9;
+}
+.policy-content-wrap p {
+  max-width: 630px;
+}
+ul.type-a li{
+  list-style-type: lower-latin;
+}
+ul.greek li{
+  list-style-type: upper-roman;
+}
+.Definitions-wrap ul li,
+.single-content-wrap h6 {
+  margin: 10px 0;
+}
+.Definitions-wrap ul.greek li {
+  margin-left: 60px;
+}
+
+
+/* End Privacy Policy  */
