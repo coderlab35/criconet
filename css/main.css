@@ -1434,6 +1434,7 @@ section.career-job {
   border: none;
   width: 100%;
 }
+.live-strem-input input,
 .input-wrap select, .input-wrap .form-group input, .group-input .form-group input {
   border-radius: 60px;
   padding: 0 25px;
@@ -1655,3 +1656,104 @@ ul.greek li{
 
 
 /* End Privacy Policy  */
+
+/* Notice board  */
+section.notice-board-sec {
+  position: relative;
+  overflow: hidden;
+  z-index: 9;
+}
+section.notice-board-sec::before{
+    position: absolute;
+    content: "";
+    background: url(../images/bg-right.svg);
+    width: 910px;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: top center;
+    right: 0px;
+    z-index: -1;
+}
+.notice-card {
+  background: #fff;
+  box-shadow: 0px 5px 7px 0px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.notice-card-text{
+  padding: 20px;
+}
+.heading h5 {
+  color: #800000;
+  font-family: 'Open Sans';
+  font-weight: 600;
+}
+.post-by {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post-by-text p {
+  margin-bottom: 0 !important;
+  color: #0E2245;
+  font-size: 14px;
+}
+.notice-footer {
+  border-top: 1px solid #800000;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.post-by-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.notice-card p {
+  color: #0E2245;
+}
+.post-count {
+  position: relative;
+}
+.post-by-name {
+  color: #800000 !important;
+}
+.post-count span {
+  position: absolute;
+  left: 5px;
+  color: #FFF;
+  font-weight: 600;
+  top: 0;
+}
+/* End notice board  */
+
+/* Booking form  */
+section.navigation.log-in-page {
+  background: #0E2245;
+}
+section.booking-live-sec{
+  margin-top: 120px;
+}
+.live-strem-wrap {
+  background: #fff;
+  box-shadow: 0px 5px 8px 4px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+}
+.live-strem-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  border-bottom: 2px solid #eee;
+}
+.live-strem-body {
+  padding: 20px;
+}
+.live-strem-input input{
+  margin-bottom: 15px;
+}
+/* end Booking form  */

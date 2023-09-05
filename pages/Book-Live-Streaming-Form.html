@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Live Streaming Form</title>
+     <!-- boostrap  -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- external css  -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- fa fa icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+  <!-- main navigation bar  -->
+  <section class="navigation log-in-page">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <a href="../index.html" class="navbar-brand">
+                <img src="../images/logo.png" alt="logo">
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">e-Pavilion
+                            <i class="fa fa-chevron-down down-arrow"></i>
+                            <i class="fa fa-chevron-up up-arrow"></i>
+                        </a>
+
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Notice Board</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">e-Coaching
+                            <i class="fa fa-chevron-down down-arrow"></i>
+                            <i class="fa fa-chevron-up up-arrow"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">I am a player</a>
+                            <a href="#" class="dropdown-item">I am a coach</a>
+                            <a href="#" class="dropdown-item">Book a coach</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">e-Streaming
+                            <i class="fa fa-chevron-down down-arrow"></i>
+                            <i class="fa fa-chevron-up up-arrow"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Watch live Match</a>
+                            <a href="#" class="dropdown-item">Book Live Streaming</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="academylisting.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">e-Academies
+                            <i class="fa fa-chevron-down down-arrow"></i>
+                            <i class="fa fa-chevron-up up-arrow"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Join Acedemiy</a>
+                            <a href="#" class="dropdown-item">List Your Acedemiy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Partner With Us
+                            <i class="fa fa-chevron-down down-arrow"></i>
+                            <i class="fa fa-chevron-up up-arrow"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="e-coaching-page-coach.html" class="dropdown-item">Coaches</a>
+                            <a href="academylisting.html" class="dropdown-item">Academies</a>
+                            <a href="#" class="dropdown-item">Tournament Organizers</a>
+                            <a href="#" class="dropdown-item">Ground Owners</a>
+                            <a href="#" class="dropdown-item">Franchise Partners</a>
+                            <a href="#" class="dropdown-item">Sponsors</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item dropdown">
+                        <form action="">
+                            <div class="search_wrap">
+                                <div class="search_shadow"></div>
+                                <input type="text" placeholder="Search.." name="search">
+                                <div class="button_shadow">
+                                    <button type="submit">
+                                        <img src="../images/search.svg" alt="search_icon">
+                                    </button>
+                                </div>
+                        </form>
+            </div>
+            </li>
+            <li class="nav-item dropdown">
+                <div class="c_btn l_btn">
+                    <a>
+                        <img src="../images/login-btn.svg" alt="btn"> | Login
+                    </a>
+                </div>
+            </li>
+            </ul>
+        </nav>
+    </div>
+</section>
+<!-- end main navigation bar  -->
+
+<section class="booking-live-sec d_padding">
+    <div class="container">
+        <div class="live-strem-wrap">
+            <div class="live-strem-header">
+                <div class="back-icon">    
+                    <svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.3382 18.0234L10.3371 18.0223C10.2669 17.9525 10.2096 17.8707 10.1679 17.7809C10.0978 17.6002 10.0978 17.3998 10.1679 17.2191C10.2096 17.1293 10.2669 17.0475 10.3371 16.9777L10.3382 16.9766L15.5437 11.7711C15.6817 11.6497 15.8604 11.5847 16.0444 11.5892C16.2319 11.5938 16.4105 11.6704 16.5431 11.803C16.6758 11.9357 16.7523 12.1142 16.7569 12.3018C16.7615 12.4857 16.6964 12.6645 16.5751 12.8024L13.4618 15.9157L12.6083 16.7692H13.8154H23.1538C23.3477 16.7692 23.5335 16.8462 23.6706 16.9833C23.8076 17.1203 23.8846 17.3062 23.8846 17.5C23.8846 17.6938 23.8076 17.8797 23.6706 18.0167C23.5335 18.1538 23.3477 18.2308 23.1538 18.2308H13.8154H12.6083L13.4618 19.0843L16.5845 22.207L10.3382 18.0234ZM10.3382 18.0234L15.5536 23.2388L15.5536 23.2387M10.3382 18.0234L15.5536 23.2387M15.5536 23.2387L15.5585 23.2437M15.5536 23.2387L15.5585 23.2437M15.5585 23.2437C15.6224 23.3095 15.6991 23.3614 15.784 23.3962C15.8688 23.431 15.9599 23.4481 16.0516 23.4462L16.0619 23.446M15.5585 23.2437L16.0619 23.446M16.0619 23.446L16.0723 23.4463M16.0619 23.446L16.0723 23.4463M16.0723 23.4463C16.1671 23.4483 16.2613 23.4311 16.3492 23.3956C16.4372 23.3601 16.517 23.3071 16.5838 23.2399L16.5845 23.2392M16.0723 23.4463L16.5845 23.2392M16.5845 23.2392C16.7211 23.1022 16.7979 22.9166 16.7979 22.7231M16.5845 23.2392L16.7979 22.7231M16.7979 22.7231C16.7979 22.5298 16.7213 22.3444 16.5849 22.2074L16.7979 22.7231ZM16.999 1H17C20.2634 1 23.4535 1.96771 26.1669 3.78075C28.8803 5.59379 30.9952 8.17074 32.244 11.1857C33.4929 14.2007 33.8196 17.5183 33.1829 20.719C32.5463 23.9197 30.9748 26.8597 28.6673 29.1673C26.3597 31.4748 23.4197 33.0463 20.219 33.6829C17.0183 34.3196 13.7007 33.9929 10.6857 32.744C7.67074 31.4952 5.09379 29.3803 3.28075 26.6669C1.46771 23.9535 0.5 20.7634 0.5 17.5V17.499C0.508385 13.1258 2.24937 8.93407 5.34172 5.84172C8.43407 2.74937 12.6258 1.00839 16.999 1Z" stroke="#800000"/>
+                    </svg>
+                </div>
+                <h3>Book Live Streaming</h3>
+            </div>
+            <div class="live-strem-body">
+            <form>
+                <div class="row">
+                   
+                    <div class="col-md-5 col-xl-5">
+                        <div class="live-strem-lable">
+                            <label for="usr">Contact Name <span>*</span></label>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-xl-7">
+                        <div class="live-strem-input">
+                            <input type="text" class="form-control" placeholder="Ex: Rakesh" name="email">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- apply job Form -->
+<section class="job-form d_padding">
+    <div class="heading mb-4">
+        <div class="icon_wrap_red">
+            <img src="../images/left-heading-icon-red.svg" alt="icon">
+            <h2 class="mb-2">Apply for a Job</h2>
+            <img src="../images/right-heading-icon-red.svg" alt="icon">
+        </div>
+    <div class="container">
+        <div class="job-form-wrap">
+            <form>
+                <div class="group-input">
+                    <div class="form-group">
+                        <label for="usr">First Name <span>*</span></label>
+                        <input type="text" class="form-control" placeholder="Ex: Rakesh" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="usr">Last Name <span>*</span></label>
+                        <input type="text" class="form-control" placeholder="Ex: Patel" name="pswd">
+                    </div>
+                </div>
+                <div class="input-wrap">
+                    <div class="form-group">
+                        <label for="usr">Email <span>*</span></label>
+                        <input type="email" class="form-control" placeholder="Ex: name@email.com" name="email">
+                    </div>
+                </div>
+                <div class="input-wrap">
+                    <div class="form-group">
+                        <label for="usr">Phone <span>*</span></label>
+                        <input type="number" class="form-control" placeholder="Ex: +91 9999999999" name="email">
+                    </div>
+                </div>
+                <div class="input-wrap">
+                    <label for="sel1" class="form-label">Select Job Profile *</label>
+                    <select class="form-select" id="sel1" name="sellist1">
+                    <option>Ex: Sales Manager</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    </select>
+                </div>
+                <div class="input-wrap">
+                    <div class="form-group">
+                        <label class="w-100">Upload Your Resume <span>*</span> <span class="flie-type">(Only .doc, .docx and .PDF)</span></label>
+                        <input type="file" id="actual-btn" name="filename" hidden/>
+                        <label for="actual-btn" class="choose-file">Choose File</label>
+                        <span id="file-chosen">No file chosen</span>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <div class="c_btn l_btn f_btn">
+                        <a href="#" class="text-center w-100">
+                            Submit Resume
+                        </a>
+                    </div>
+                </div>
+              </form>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- End apply job Form -->
+
+ <!-- footer   -->
+ <footer>
+    <div class="footer_top_wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-md-4">
+                    <div class="footer_collum_wrap">
+                        <h4 class="footer_heading">Contact Us</h4>
+                        <div class="footer_contact mb-20">
+                            <ul>
+                                <li class="mb-20"><a href="#"><img src="../images/whatsapp.svg" alt="whatsapp"> Whatsapp +918002632986</a></li>
+                                <li><a href="#"><img src="../images/mail.svg" alt="mail">Email: info@criconet.com</a></li>
+                            </ul>
+                        </div>
+                        <h4 class="footer_heading">Support</h4>
+                        <div class="footer_btn">
+                            <a href="#">Download App <img src="../images/google-play.png" alt="Play store"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-2">
+                    <h4 class="footer_heading">Our Services</h4>
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="#">e-Pavilion</a></li>
+                            <li><a href="e-coaching-page-coach.html">e-Coaching</a></li>
+                            <li><a href="Book-Live-streaming-Pitch.html">e-Streaming</a></li>
+                            <li><a href="academylisting.html">e-Academy</a></li>
+                            <li><a href="Partners-Page.html">Partner With Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-2">
+                    <h4 class="footer_heading">Quick Links</h4>
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="Blog.html">Blog</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Media Releases</a></li>
+                            <li><a href="career.html">Career</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <h4 class="footer_heading">Subscribe to our Newsletter</h4>
+                    <form action="">
+                            <div class="search_wrap footer mb-20">
+                                <div class="search_shadow"></div>
+                                <input type="text" placeholder="Email..." name="search">
+                                <div class="button_shadow">
+                                    <button type="submit">
+                                        Subscribe
+                                    </button>
+                                </div>                            
+                            </div>
+                     </form>
+                     <h4 class="footer_heading mt-20">Follow Us</h4>  
+                     <div class="social_icon">
+                        <ul>
+                            <li><a href="#"><img src="../images/Facebook.svg" alt="facebook"></a></li>
+                            <li><a href="#"><img src="../images/Insta.svg" alt="insta"></a></li>
+                            <li><a href="#"><img src="../images/youtube.svg" alt="youtube"></a></li>
+                            <li><a href="#"><img src="../images/Linkedin.svg" alt="Linkedin"></a></li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+   
+    <div class="footer_bottam_wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-6">
+                    <p>Copyright © 2022 Criconet. All rights reserved. </p>
+                </div>
+                <div class="col-xl-6 col-md-6">
+                    <div class="bttom_menu">
+                        <ul>
+                            <li><a href="User-Agreement.html">User Agreement</a></li>
+                            <li><a href="terms.html">Terms of Use</a></li>
+                            <li><a href="Privacy-Page.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer  -->
+<!-- boostrap  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+<!-- jquery  -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- main js  -->
+<script src="../js/main.js"></script>
+</body>
