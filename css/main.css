@@ -1766,7 +1766,7 @@ section.booking-live-sec{
 .live-strem-group {
   margin-bottom: 10px;
 }
-.dropdown-toggle::after {
+/* .dropdown-toggle::after {
   display: inline-block;
   content: "";
   position: absolute;
@@ -1774,5 +1774,5 @@ section.booking-live-sec{
   height: 20px;
   width: 20px;
   background-repeat: no-repeat;
-}
+} */
 /* end Booking form  */
