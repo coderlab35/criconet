@@ -1434,7 +1434,7 @@ section.career-job {
   border: none;
   width: 100%;
 }
-.live-strem-input input,
+.live-strem-input input,.live-strem-input select,
 .input-wrap select, .input-wrap .form-group input, .group-input .form-group input {
   border-radius: 60px;
   padding: 0 25px;
@@ -1753,7 +1753,26 @@ section.booking-live-sec{
 .live-strem-body {
   padding: 20px;
 }
-.live-strem-input input{
-  margin-bottom: 15px;
+.live-strem-group {
+  display: flex;
+  align-items: center;
+}
+.live-strem-lable{
+  width: 40%;
+}
+.live-strem-input {
+  width: 60%;
+}
+.live-strem-group {
+  margin-bottom: 10px;
+}
+.dropdown-toggle::after {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  background-image: url(../images/select-dropdown.svg);
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
 }
 /* end Booking form  */
