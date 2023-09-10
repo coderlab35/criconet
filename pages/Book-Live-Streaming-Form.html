@@ -152,97 +152,84 @@
                         <label for="usr">Select Service For <span>*</span></label>
                     </div>
                     <div class="live-strem-input">
-                        <div class="dropdown">
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-                              Dropdown button
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Link 1</a></li>
-                              <li><a class="dropdown-item" href="#">Link 2</a></li>
-                              <li><a class="dropdown-item" href="#">Link 3</a></li>
-                            </ul>
-                        </div>
+                        <select class="form-select select-service">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
                     </div>
                 </div>
                 <div class="live-strem-group">
                     <div class="live-strem-lable">
-                        <label for="usr">Contact Name <span>*</span></label>
+                        <label for="usr">Name of Tournament/Organization/Club * <span>*</span></label>
                     </div>
                     <div class="live-strem-input">
-                        <input type="text" class="form-control" placeholder="Ex: Rakesh" name="email">
+                        <input type="text" class="form-control" placeholder="Enter Name of Tournament/Organization/Club" name="email">
+                    </div>
+                </div>
+                <div class="live-strem-group">
+                    <div class="live-strem-lable">
+                        <label for="usr">Select State/UT</label>
+                    </div>
+                    <div class="live-strem-input">
+                        <select class="form-select select-service">
+                            <option selected>Select State/UT</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="live-strem-group">
+                    <div class="live-strem-lable">
+                        <label for="usr">Select City</label>
+                    </div>
+                    <div class="live-strem-input">
+                        <select class="form-select select-service">
+                            <option selected>Select City</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="live-strem-group">
+                    <div class="live-strem-lable">
+                        <label for="usr">Ground Address <span>*</span></label>
+                    </div>
+                    <div class="live-strem-input">
+                        <input type="text" class="form-control" placeholder="Enter Your Ground Location/Address" name="email">
+                    </div>
+                </div>
+                <div class="live-strem-group">
+                    <div class="live-strem-lable">
+                        <label for="usr">Select Match Dates</label>
+                    </div>
+                    <div class="live-strem-input">
+                        <input type="date" class="form-control" placeholder="Select Multiple Dates" name="email">
+                    </div>
+                </div>
+                <div class="live-strem-group align-items-start">
+                    <div class="live-strem-lable">
+                        <label for="usr">Message <span>*</span></label>
+                    </div>
+                    <div class="live-strem-input">
+                        <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Enter Your Details"></textarea>
                     </div>
                 </div>
             </form>
             </div>
+            <div class="live-strem-footer">
+                <div class="c_btn l_btn ms-2 f_btn">
+                    <a href="#">     
+                        Send Form
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
-
-
-<!-- apply job Form -->
-<section class="job-form d_padding">
-    <div class="heading mb-4">
-        <div class="icon_wrap_red">
-            <img src="../images/left-heading-icon-red.svg" alt="icon">
-            <h2 class="mb-2">Apply for a Job</h2>
-            <img src="../images/right-heading-icon-red.svg" alt="icon">
-        </div>
-    <div class="container">
-        <div class="job-form-wrap">
-            <form>
-                <div class="group-input">
-                    <div class="form-group">
-                        <label for="usr">First Name <span>*</span></label>
-                        <input type="text" class="form-control" placeholder="Ex: Rakesh" name="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="usr">Last Name <span>*</span></label>
-                        <input type="text" class="form-control" placeholder="Ex: Patel" name="pswd">
-                    </div>
-                </div>
-                <div class="input-wrap">
-                    <div class="form-group">
-                        <label for="usr">Email <span>*</span></label>
-                        <input type="email" class="form-control" placeholder="Ex: name@email.com" name="email">
-                    </div>
-                </div>
-                <div class="input-wrap">
-                    <div class="form-group">
-                        <label for="usr">Phone <span>*</span></label>
-                        <input type="number" class="form-control" placeholder="Ex: +91 9999999999" name="email">
-                    </div>
-                </div>
-                <div class="input-wrap">
-                    <label for="sel1" class="form-label">Select Job Profile *</label>
-                    <select class="form-select" id="sel1" name="sellist1">
-                    <option>Ex: Sales Manager</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    </select>
-                </div>
-                <div class="input-wrap">
-                    <div class="form-group">
-                        <label class="w-100">Upload Your Resume <span>*</span> <span class="flie-type">(Only .doc, .docx and .PDF)</span></label>
-                        <input type="file" id="actual-btn" name="filename" hidden/>
-                        <label for="actual-btn" class="choose-file">Choose File</label>
-                        <span id="file-chosen">No file chosen</span>
-                    </div>
-                </div>
-                <div class="mt-4">
-                    <div class="c_btn l_btn f_btn">
-                        <a href="#" class="text-center w-100">
-                            Submit Resume
-                        </a>
-                    </div>
-                </div>
-              </form>
-        </div>
-    </div>
-    </div>
-</section>
-<!-- End apply job Form -->
-
  <!-- footer   -->
  <footer>
     <div class="footer_top_wrap">

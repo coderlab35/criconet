@@ -745,12 +745,14 @@ h4.footer_heading {
 
 /* about page  */
 section.blog-sec,
+section.faq-sec,
 section.academy_list_sec,
 section.about-page-sec{
     position: relative;
     overflow: hidden;
     z-index: 9;
 }
+section.faq-sec::before,
 section.blog-sec::before,
 section.academy_list_sec::before,
 section.about-page-sec:before {
@@ -1186,6 +1188,7 @@ section.benefits_sec {
   margin: 40px 0;
 }
 
+.faq-tab-wrap .accordion-button::after,
 .features-tab-wrap .accordion-button::after {
   background: url(../images/plush-icon.png);
   background-repeat: no-repeat;
@@ -1193,6 +1196,7 @@ section.benefits_sec {
   background-size: contain;
   transition: all 0.3s ease-in-out;
 }
+.faq-tab-wrap .accordion-button:not(.collapsed)::after,
 .features-tab-wrap .accordion-button:not(.collapsed)::after {
   background: url(../images/minus-icon.png);
   background-repeat: no-repeat;
@@ -1201,17 +1205,20 @@ section.benefits_sec {
   transform: rotate(180deg);
 
 }
+.faq-tab-wrap .accordion-item,
 .features-tab-wrap .accordion-item {
   border-radius: 5px;
   background: #FFF;
   box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.18);
   margin-bottom:10px
 }
+.faq-tab-wrap .accordion-button.collapsed,
 .features-tab-wrap .accordion-flush .accordion-item .accordion-button, .features-tab-wrap .accordion-flush .accordion-item .accordion-button.collapsed {
   font-size: 16px;
   font-weight: 700;
-  border-radius: 5px;
+  border-radius: 5px !important;
 }
+.faq-tab-wrap .accordion-button:not(.collapsed),
 .features-tab-wrap .accordion-button:not(.collapsed) {
   color: #222222;
   background-color: transparent ;
@@ -1426,9 +1433,10 @@ section.career-job {
 .group-input {
   margin: 10px 0;
 }
+.live-strem-input textarea,
 .input-wrap textarea{
   padding: 10px 25px;
-  background: #EAEAEA;
+  background-color: #EAEAEA;
   box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25) inset;
   border-radius: 10px;
   border: none;
@@ -1438,8 +1446,11 @@ section.career-job {
 .input-wrap select, .input-wrap .form-group input, .group-input .form-group input {
   border-radius: 60px;
   padding: 0 25px;
-  background: #EAEAEA;
+  background-color: #EAEAEA;
   box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25) inset;
+}
+::placeholder{
+  color: #000 !important;
 }
 .input-wrap label,
 .input-wrap .form-group label,
@@ -1517,6 +1528,7 @@ section.job-form:before{
 .blog-footer p.name {
   font-weight: 500;
 }
+.coach-recent-view h6,
 .category-tag h6,
 .recent-view h6 {
   font-size: 19px;
@@ -1565,6 +1577,7 @@ section.job-form:before{
   border-color: #0E2245;
   color: #fff;
 }
+section.faq-sec::before,
 section.blog-sec::before {
   width: 910px;
   height: 100%;
@@ -1766,13 +1779,179 @@ section.booking-live-sec{
 .live-strem-group {
   margin-bottom: 10px;
 }
-/* .dropdown-toggle::after {
-  display: inline-block;
-  content: "";
-  position: absolute;
-  background-image: url(../images/select-dropdown.svg);
-  height: 20px;
-  width: 20px;
-  background-repeat: no-repeat;
-} */
+
+.live-strem-input .select-service{
+  background: url(../images/select-dropdown.svg) no-repeat right #EAEAEA;
+  background-position-x: 618px;
+}
+.live-strem-footer {
+  border-top: 2px solid #eee;
+  padding: 20px;
+  display: flex;
+  justify-content: end;
+}
 /* end Booking form  */
+/* Book a coach page  */
+.coach-book-wrap {
+  background: #fff;
+  padding: 6px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.25);
+}
+.coach-book-img {
+  background: #0E2245;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  text-align: center;
+  height: 110px;
+}
+.coach-book-img img {
+  height: 120px;
+  width: 120px;
+  border-radius: 100px;
+  border: 3px solid #B11F24;
+  background: #fff;
+  padding: 4px;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.coach-book-text {
+  margin-top: 50px;
+  text-align: center;
+}
+.coach-list-wrap{
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  gap: 10px;
+}
+.coach-book-rating ul li {
+  display: inline-block;
+}
+.coach-book-rating ul li i{
+  color: #D9D9D9;
+}
+.coach-book-rating ul li i:hover,
+.coach-book-rating ul li.active i{
+  color: #FFBC11;
+}
+.coach-book-text h3 {
+  font-family: 'Open Sans';
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+.coach-book-text p {
+  color: #444444;
+  font-size: 15px;
+  margin-bottom: 0px !important;
+}
+.coach-book-text p span {
+  color: #000;
+  font-weight: 600;
+} 
+.coach-book-service ul li {
+  color: #800000;
+  border: 1px solid #800000;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 0 8px;
+  margin: 2px;
+  font-size: 12px;
+}
+.coach-book-service{
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+}
+.coach-book-footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 12px 0;
+}
+.coach-book-footer .c_btn a {
+  padding: 0 26px;
+  height: 37px;
+  line-height: 37px;
+}
+.coach-right-wrap{
+  width: 20%;
+}
+.coach-left-wrap {
+  width: 80%;
+}
+.coach-list-main {
+  padding: 0 40px;
+  max-width: 1340px;
+  margin: 0 auto;
+}
+.coach-book-text p.price {
+  color: #800000;
+  font-weight: 500;
+}
+.recent-coach-img img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  border: 2px solid #800000;
+  background: #fff;
+  padding: 3px;
+}
+.recent-view-coach {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.coach-book-rating p.name {
+  font-weight: 600;
+  font-size: 21px;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* faq page  */
+.faq-left {
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.18);
+  padding: 20px;
+}
+.faq-left .nav.nav-tabs,
+.faq-left ul.nav.nav-tabs{
+  border: 0 !important;
+}
+.faq-left .nav.nav-tabs ul {
+  display: block;
+  width: 100%;
+}
+.faq-right .tab-content .tab-pane,
+.faq-right .tab-content {
+  padding: 0;
+}
+.faq-left h3 {
+  font-size: 18px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+}
+
+.faq-left li.nav-item a.nav-link {
+  font-size: 16px;
+  border: 0;
+  font-weight: 600;
+  color: #000 !important;
+  padding: 10px 0;
+}
+.faq-left li.nav-item{
+  border-bottom: 1px solid #eee !important;
+}
+.faq-left li.nav-item:last-child{
+  border: 0 !important;
+}
+.faq-left li.nav-item a.nav-link.active {
+  color: #800000  !important;
+  border-bottom: 1px solid #eee !important;
+}
+/* End faq page  */
