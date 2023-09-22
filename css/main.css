@@ -1701,7 +1701,7 @@ section.notice-board-sec::before{
 .heading h5 {
   color: #800000;
   font-family: 'Open Sans';
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 .post-by {
   display: flex;
@@ -1955,3 +1955,62 @@ section.booking-live-sec{
   border-bottom: 1px solid #eee !important;
 }
 /* End faq page  */
+.center-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center-heading h3{
+  padding: 0 10px;
+}
+.strem-img {
+  position: relative;
+}
+.strem-img img {
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+}
+.strem-img::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: rgb(14 34 69 / 70%);
+  top: 0;
+  left: 0;
+  border-radius: 20px 0px 0px 20px;
+}
+.strem-img::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: rgb(128 0 0 / 60%);
+  top: 0;
+  right: 0;
+  border-radius: 0px 20px 20px 0px;
+}
+.strem-img img {
+  border-radius: 20px;
+}
+.stream-slide a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.stream-slide a svg {
+  height: 80px;
+  width: 80px;
+}
+.stream-popup {
+  z-index: 10000;
+}
+
+.modal-backdrop.show {
+  background: #0E2245;
+  opacity: 1;
+  z-index: 9999;
+  height: 100%;
+}

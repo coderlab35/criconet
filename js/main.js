@@ -109,6 +109,19 @@ $(window).scroll(function(){
     },
   });
 
+  var swiper = new Swiper(".stream-slider", {
+    slidesPerView: 1,
+    // spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'progressbar',
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 
 
 const actualBtn = document.getElementById('actual-btn');
