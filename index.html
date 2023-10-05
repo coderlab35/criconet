@@ -96,17 +96,17 @@
                                             <img src="images/search.svg" alt="search_icon">
                                         </button>
                                     </div>
+                                </div>
                             </form>
-                </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <div class="c_btn l_btn">
-                        <a>
-                            <img src="images/login-btn.svg" alt="btn"> | Login
-                        </a>
-                    </div>
-                </li>
-                </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <div class="c_btn l_btn">
+                                <a data-bs-toggle="modal" data-bs-target="#login">
+                                    <img src="images/login-btn.svg" alt="btn"> | Login
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
             </nav>
         </div>
     </section>
@@ -124,7 +124,7 @@
                             a virtual space. Get access to interactive online coaching, academies and live matches!</p>
                         <div class="hero_btn_wrap d-flex">
                             <div class="c_btn l_btn">
-                                <a href="#">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#register">
                                     <img src="images/login-btn.svg" alt="btn"> Sign Up
                                 </a>
                             </div>
@@ -851,6 +851,155 @@
     </div>
 </footer>
 <!-- end footer  -->
+<!-- login and registral popup  -->
+<div class="modal modal-xl fade login" id="login" data-bs-backdrop="static" data-bs-keyboard="false" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header justify-content-end">
+            <div class="login-heading">
+                <h2>Login</h2>
+            </div>
+          <div class="close-btn cursor-pointer" data-bs-dismiss="modal">
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.0007 0.332031C26.2173 0.332031 33.6673 7.78203 33.6673 16.9987C33.6673 26.2154 26.2173 33.6654 17.0007 33.6654C7.78398 33.6654 0.333984 26.2154 0.333984 16.9987C0.333984 7.78203 7.78398 0.332031 17.0007 0.332031ZM22.984 8.66537L17.0007 14.6487L11.0173 8.66537L8.66732 11.0154L14.6507 16.9987L8.66732 22.982L11.0173 25.332L17.0007 19.3487L22.984 25.332L25.334 22.982L19.3507 16.9987L25.334 11.0154L22.984 8.66537Z" fill="#800000"/>
+            </svg>
+          </div>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="login-form-wrap">
+                <div class="social-conect-btn">
+                    <div class="login-google-btn">
+                        <a href="#">
+                            <img src="images/logos_google-icon.svg" alt="google-btn-icon">
+                            Login with Google
+                        </a>
+                    </div>
+                    <div class="login-google-btn">
+                        <a href="#">
+                            <img src="images/logos_facebook.svg" alt="google-btn-icon">
+                            Login with Google
+                        </a>
+                    </div>
+                </div>
+                <div class="divider-or mb-3 mt-3">
+                    <span></span>
+                    <p>or</p> 
+                    <span></span>
+                </div>
+                <form class="mt-3 mb-3">
+                    <div class="login-input">
+                        <input type="text" class="form-control" placeholder="Enter Username/Mail ID/Phone No." name="email">
+                    </div>
+                     <div class="login-input">
+                        <input type="password" class="form-control" placeholder="Enter Password" name="email">
+                    </div>
+                    <div class="c_btn l_btn login-form">
+                        <a data-bs-toggle="modal" data-bs-target="#login">
+                             Login
+                        </a>
+                    </div>
+                </form>
+                <div class="have-account text-center">
+                    <p>Dont have an account?<a href="#" data-bs-toggle="modal" data-bs-target="#register">Register Now</a></p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="modal modal-xl fade login" id="register" data-bs-backdrop="static" data-bs-keyboard="false" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header justify-content-end">
+            <div class="login-heading">
+                <h2>Register</h2>
+            </div>
+          <div class="close-btn cursor-pointer" data-bs-dismiss="modal">
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.0007 0.332031C26.2173 0.332031 33.6673 7.78203 33.6673 16.9987C33.6673 26.2154 26.2173 33.6654 17.0007 33.6654C7.78398 33.6654 0.333984 26.2154 0.333984 16.9987C0.333984 7.78203 7.78398 0.332031 17.0007 0.332031ZM22.984 8.66537L17.0007 14.6487L11.0173 8.66537L8.66732 11.0154L14.6507 16.9987L8.66732 22.982L11.0173 25.332L17.0007 19.3487L22.984 25.332L25.334 22.982L19.3507 16.9987L25.334 11.0154L22.984 8.66537Z" fill="#800000"/>
+            </svg>
+          </div>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="login-form-wrap">
+                <div class="social-conect-btn">
+                    <div class="login-google-btn">
+                        <a href="#">
+                            <img src="images/logos_google-icon.svg" alt="google-btn-icon">
+                            Login with Google
+                        </a>
+                    </div>
+                    <div class="login-google-btn">
+                        <a href="#">
+                            <img src="images/logos_facebook.svg" alt="google-btn-icon">
+                            Login with Google
+                        </a>
+                    </div>
+                </div>
+                <div class="divider-or mb-3 mt-3">
+                    <span></span>
+                    <p>or</p> 
+                    <span></span>
+                </div>
+                <form class="mt-3 mb-3">
+                    <div class="group-input mb-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="First Name" name="email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Last Name" name="pswd">
+                        </div>
+                    </div>
+                    <div class="group-input mb-3">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email ID" name="email">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="Phone No." name="pswd">
+                        </div>
+                    </div>
+                    <div class="group-input position-relative mb-3">
+                        <div class="form-group ">
+                           <input class="form-control" id="password" name="password" placeholder="Enter Password" value="">
+                        </div>
+                        <span class="input-group-append password-eye">
+                              <i class="fa fa-eye-slash" id="togglePassword"></i>
+                        </span>
+                    </div>
+                     <div class="group-input mb-3">
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Re-enter Password" name="email">
+                        </div>
+                    </div>
+                    <div class="group-input mb-3">
+                            <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Referral Code (Optional)" name="email">
+                            </div>
+                    </div>
+                     <div class="form-check mb-3 tearm-condition ms-2">
+                      <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                      <label class="form-check-label" for="check2">By creating an account, I agree to your <span>Terms & Conditions</span></label>
+                    </div>
+                    <div class="c_btn l_btn login-form">
+                        <a data-bs-toggle="modal" data-bs-target="#login">
+                             Register
+                        </a>
+                    </div>
+                </form>
+                <div class="have-account text-center">
+                        <p>Already have an account?<a href="#" data-bs-toggle="modal" data-bs-target="#login">Login</a></p>
+                    </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- End login and registral popup  -->
     <!-- boostrap  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

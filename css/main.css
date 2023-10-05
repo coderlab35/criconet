@@ -78,12 +78,14 @@ textarea.form-control {
   padding: 0 25px;
   font-size: 16px;
   font-weight: 500;
+  cursor: pointer;
 }
 .l_btn a {
   background: #800000;
   color: #fff !important;
   box-shadow: 0 3px 3px 0 rgb(0 0 0);
   border: 1px solid #800000;
+  cursor: pointer;
 }
 .l_btn a:hover{
   background: transparent;
@@ -2014,6 +2016,7 @@ section.booking-live-sec{
   width: 80px;
   cursor: pointer;
 }
+.login,
 .scoreboard,
 .ambassador-form,
 .stream-popup {
@@ -2378,7 +2381,7 @@ span.input-group-append.search-inside {
 }
 .refral-links span.input-group-append {
   position: absolute;
-  top: 58%;
+  top: 65%;
   right: 2%;
 }
 .social-link-refrall ul li {
@@ -2394,4 +2397,89 @@ span.input-group-append.search-inside {
   height: 42px;
   width: 42px;
 }
+.social-link-refrall {
+  margin-top: 58px;
+}
 
+.cursor-pointer {
+    cursor: pointer;
+}
+.login-heading {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.login-heading h2 {
+    color: #800000;
+}
+.login-google-btn a {
+    border-radius: 60px;
+    padding: 0px 30px;
+    background-color: #EAEAEA;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    line-height: 50px;
+}
+.login-google-btn a img {
+    margin-right: 15px;
+    height: 30px;
+}
+.social-conect-btn {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.divider-or span {
+    border: 1px solid #eee;
+    width: 48%;
+    height: 2px;
+    display: inline-block;
+}
+.divider-or {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-form-wrap {
+    max-width: 650px;
+    margin: 0 auto;
+}
+.login-input input{
+   border-radius: 60px;
+    padding: 0px 22px;
+    background-color: #EAEAEA;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.modal-xl.login {
+    --bs-modal-width: 660px;
+}
+.login-input {
+    margin: 30px 0;
+}
+.login-form a {
+    display: block;
+    text-align: center;
+}
+.login-form a:hover {
+    background: transparent;
+    color: #800000 !important;
+    border: 1px solid #800000;
+    box-shadow: 0 2px 0px 0 rgb(0 0 0 / 28%);
+}
+.have-account p a {
+    color: #800000;
+    font-weight: 600;
+    margin-left: 10px;
+}
+span.input-group-append.password-eye {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    z-index: 999;
+}
+.tearm-condition label.form-check-label span {
+    color: #800000;
+}

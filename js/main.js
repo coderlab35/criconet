@@ -17,17 +17,6 @@ $(window).scroll(function(){
     },
   });
 
-//   var swiper1 = new Swiper(".blog_slider", {
-//     slidesPerView: 3,
-//     spaceBetween: 20,
-//     loop:true,
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//   });
-
-
   var swiper = new Swiper(".blog_slider", {
     slidesPerView: 3,
     spaceBetween: 20,
@@ -123,17 +112,6 @@ $(window).scroll(function(){
     },
   });
 
-
-const actualBtn = document.getElementById('actual-btn');
-
-const fileChosen = document.getElementById('file-chosen');
-
-actualBtn.addEventListener('change', function(){
-  fileChosen.textContent = this.files[0].name
-})
-
-});
-
 function CopyLink() {
   // Get the text field
   var copyText = document.getElementById("myInput");
@@ -148,3 +126,26 @@ function CopyLink() {
   // Alert the copied text
   alert("Copied the text: " + copyText.value);
 }
+
+const togglePassword = document.querySelector("#togglePassword");
+const password = document.querySelector("#password");
+
+togglePassword.addEventListener("click", function () {
+   
+// toggle the type attribute
+const type = password.getAttribute("type") === "password" ? "text" : "password";
+password.setAttribute("type", type);
+
+// toggle the eye icon
+this.classList.toggle('fa-eye');
+  this.classList.toggle('fa-eye-slash');
+});
+
+const actualBtn = document.getElementById('actual-btn');
+
+const fileChosen = document.getElementById('file-chosen');
+
+actualBtn.addEventListener('change', function(){
+  fileChosen.textContent = this.files[0].name
+});
+});
