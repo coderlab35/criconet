@@ -1759,6 +1759,7 @@ section.notice-board-sec::before{
 section.navigation.log-in-page {
   background: #0E2245;
 }
+.update-coach,
 section.booking-live-sec{
   margin-top: 120px;
 }
@@ -1924,6 +1925,7 @@ section.booking-live-sec{
 }
 
 /* faq page  */
+.coach-update-tab-wrap,
 .faq-left {
   border-radius: 5px;
   background: #FFF;
@@ -2343,6 +2345,7 @@ span.input-group-append.search-inside {
   margin-top: 10px;
 }
 .refral-links input,
+.bill-details input,
 .invite-firend input {
   border-radius: 60px;
   padding: 0 25px;
@@ -2353,10 +2356,12 @@ span.input-group-append.search-inside {
 .invite-firend .form-group{
   position: relative;
 }
+
 .invite-firend span.input-group-append a svg {
   height: 38px;
   width: 38px;
 }
+
 .invite-firend span.input-group-append {
   position: absolute;
   right: 4px;
@@ -2482,4 +2487,286 @@ span.input-group-append.password-eye {
 }
 .tearm-condition label.form-check-label span {
     color: #800000;
+}
+.certificate-wrap{
+  position: relative;
+}
+.certificate-wrap::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -5px;
+    background: #800000;
+    width: 80%;
+    height: 70%;
+    z-index: -1;
+} 
+
+section.package-sec {
+    background: #0E2245;
+}
+.package-card {
+    background: #fff;
+    border-radius: 20px;
+}
+.package-card-head {
+    border-bottom: 1px solid #000;
+    padding: 25px 0px 10px 25px;
+}
+.package-card-boady {
+    padding: 25px;
+}
+.plan p {
+    color: #800000;
+    font-weight: 600;
+    margin-bottom: 0 !important;
+}
+.price-plan h3 {
+    color: #0E2245;
+}
+.price-plan h3 span {
+    color: #000;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+.package-card-boady p {
+    font-weight: 600;
+}
+.package-card-boady ul li img {
+    width: 20px;
+    margin-right: 5px;
+}
+.package-card-boady ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/*booking form */
+.book-wrap {
+    background: #800000;
+    color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    min-height: 460px;
+}
+.calendar-week-day{
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: 600;
+    text-align: center;
+}
+.month-year {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.month-year pre {
+    font-size: 21px;
+    font-weight: 600;
+}
+.month-year span {
+    font-weight: 600;
+}
+
+.calendar-days{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    text-align: center;
+}
+
+.calendar-day span {
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    display: inline-block;
+    line-height: 40px;
+    margin: 10px 0;
+    font-weight: 600;
+    cursor: pointer;
+}
+.calendar-day span.active,
+.calendar-day span:hover {
+    background: #EDDB91;
+    color: #800000;
+    transition: 0.5s ease;
+}
+
+.select-time p {
+    font-weight: 500;
+    text-align: center;
+}
+.time-slot ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.time-slot ul li a {
+    display: inline-block;
+    color: #EDDB91;
+    border: 1px solid #EDDB91;
+    padding: 9px 23px;
+    border-radius: 70px;
+    font-size: 16px;
+}
+.time-slot ul li a:hover {
+    background: #EDDB91;
+    color: #800000;
+    transition: 0.5s ease 0s;
+}
+.c_btn.b_btn.book-btn {
+    margin-top: 5rem;
+    text-align: center;
+}
+.c_btn.b_btn.book-btn a:hover{
+  background: #EDDB91;
+    color: #800000;
+}
+.checkout-profile {
+    background: #fff;
+    box-shadow: 0px 5px 16px 0px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 20px;
+}
+.checkout-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+}
+.checkout-img {
+    height: 120px;
+    width: 120px;
+    border-radius: 100px;
+    border: 3px solid #B11F24;
+    background: #fff;
+    padding: 3px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.checkout-book-text h3 {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0;
+}
+.checkout-book-service {
+    max-width: 520px;
+    margin: 0 auto;
+    text-align: center;
+}
+.checkout-book-service ul li {
+    color: #800000;
+    border: 1px solid #800000;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 5px 14px;
+    margin: 5px;
+    font-size: 14px;
+}
+.checkout-date-price {
+    background: lch(29 0.01 360 / 0.05);
+    padding: 15px 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.checkout-book {
+    padding: 30px 120px;
+}
+.checkout-date-time {
+    flex: 1;
+    border-right: 2px solid #d3d3d3;
+}
+
+.checkout-price{
+  flex: 1;
+}
+.checkout-price p,
+.checkout-date-time p {
+    color: #444444;
+    font-size: 14px;
+    margin-bottom: 0 !important;
+    line-height: 24px;
+}
+.checkout-price p.price,
+.checkout-date-time p.date-time {
+    color: #000;
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 500;
+}
+
+.bill-details span.input-group-append {
+    position: absolute;
+    right: 0;
+    top: 44%;
+}
+.bill-details ul,
+.bill-details {
+    padding: 20px 0;
+}
+.bill-details label {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.bill-details ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 12px;
+}
+.bill-details ul li span.title {
+    color: #9f9f9f;
+    font-weight: 500;
+}
+.bill-details ul li span.amount {
+    color: #000;
+    font-weight: 600;
+}
+.booking-conform {
+    background: #0E2245;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+}
+
+.coach-update-tab .live-strem-input .select-service {
+    background-position-x: 518px;
+}
+.live-strem-header h3 {
+    color: #800000;
+    font-size: 26px;
+}
+.coach-update-tab .from-group-input.two-filed select.form-select.select-service {
+    background-position-x: 205px;
+}
+.update-coach-service ul li {
+    color: #800000;
+    border: 1px solid #800000;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 0px 13px;
+    margin: 3px;
+    font-size: 11px;
+}
+
+.coach-update-tab .live-strem-lable {
+    width: 30%;
+}
+.coach-update-tab .live-strem-input {
+    width: 70%;
+}
+.from-group-input input,
+input,
+.from-group-input textarea {
+    font-size: 14px;
+}
+
+.calendar-day span.off-day {
+    background: #787878;
 }
