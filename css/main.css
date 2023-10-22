@@ -3124,6 +3124,7 @@ body.dashboard-bg {
   line-height: 28px;
   font-weight: 600;
 }
+.session-wrap,
 .manage-academy {
   background: #fff;
   box-shadow: 0px 5px 8px 4px rgb(0 0 0 / 10%);
@@ -3388,4 +3389,135 @@ input[type="file"] {
   font-size: 22px;
   line-height: 32px;
   font-weight: 500;
+}
+
+/* Coach Dashboard  */
+
+.booking-history {
+  margin-top: 20px;
+}
+.booking-history .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.modal-body.scoreboard-count.traingTips .form-group select.form-select {
+  background-position-x: 515px;
+}
+.booking-history .header .dashboard-heading {
+  color: #800000;
+}
+.booking-history-studant p {
+  color: #0E2245;
+  font-weight: 600;
+}
+.booking-studant .coach-book-wrap {
+  margin-bottom: 30px;
+  position: relative;
+}
+.booking-status span.cancle{
+  position: absolute;
+  top: 6px;
+  right: 5px;
+  color: #ffff;
+  background: #E72E25;
+  border-radius: 60px;
+  padding: 0 15px;
+}
+.booking-status span.conform{
+  position: absolute;
+  top: 6px;
+  right: 5px;
+  color: #ffff;
+  background: #018A27;
+  border-radius: 60px;
+  padding: 0 15px;
+}
+section.previous-session {
+  background: #0E2245;
+}
+
+.session-report {
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+.session-report table.table thead tr th {
+  border-bottom: 1px solid #0E2245;
+  color: #0E2245;
+}
+.session-report table.table tbody tr td{
+  color: #0E2245;
+}
+
+.session-card{
+    background: #fff;
+    box-shadow: 0px 5px 8px 4px rgb(0 0 0 / 10%);
+    border-radius: 10px;  
+}
+.session-card-header {
+  background: #0E2245;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+}
+.session-card-header p {
+  margin-bottom: 0 !important;
+}
+.session-date-time {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.session-time,
+.session-date {
+  text-align: center;
+  width: 50%;
+}
+.session-time p.icon-heading,
+.session-date p.icon-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  color: #800000;
+}
+.session-date p,.session-time p {
+  font-weight: 600;
+}
+.session-date {
+  border-right: 1px solid #dbdbdb;
+}
+.session-duration {
+  text-align: center;
+  font-weight: 600;
+  color: #800000;
+  padding-bottom: 30px;
+}
+.session-duration h6 {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+}
+.session-wrap {
+  min-height: 640px;
+}
+.net-count span {
+  position: absolute;
+  background: #800000;
+  color: #fff;
+  padding: 0px 15px;
+  border-radius: 40px;
+  top: 10px;
+  left: 10px;
+  font-weight: 400;
+}
+.net{
+  border: 2px solid #fff;
 }
