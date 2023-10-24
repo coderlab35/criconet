@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coach Dashboard</title>
+     <!-- boostrap  -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- external css  -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- fa fa icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body class="dashboard-bg">
+    <!-- main navigation bar  -->
+    <section class="navigation log-in-page">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm navbar-light">
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../images/logo.png" alt="logo">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarCollapse" class="collapse navbar-collapse justify-content-end login-after-nav">
+                    
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <form>
+                                <div class="input-group nav-searchbar">
+                                    <span class="input-group-append search-inside">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="#444444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M19.0004 18.9999L14.6504 14.6499" stroke="#444444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <input class="form-control" type="search"  id="example-search-input" placeholder="Search">
+                                </div>
+                            </form>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <svg width="19" height="30" viewBox="0 0 19 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.07036 4.61095H13.7939C13.845 4.61186 13.8945 4.5919 13.9305 4.55582C13.9666 4.51952 13.9866 4.47029 13.9857 4.41902V2.31792C13.9866 2.26687 13.9666 2.21741 13.9305 2.18134C13.8945 2.14527 13.845 2.1253 13.7939 2.12621H11.0585C10.8788 2.12621 10.7332 1.98056 10.7332 1.80087C10.7332 1.33601 10.4852 0.906559 10.0827 0.674239C9.68025 0.44192 9.1843 0.44192 8.78186 0.674239C8.37938 0.906559 8.13142 1.33606 8.13142 1.80087C8.13142 1.88708 8.09717 1.9699 8.03614 2.03092C7.97511 2.09195 7.8923 2.12621 7.80609 2.12621H5.07065C5.0196 2.1253 4.97014 2.14526 4.93407 2.18134C4.898 2.21741 4.87803 2.26687 4.87894 2.31792V4.41901C4.87803 4.47028 4.898 4.51952 4.93407 4.55582C4.97014 4.59189 5.0196 4.61186 5.07065 4.61095L5.07036 4.61095Z" fill="white"/>
+                                    <path d="M0.93975 29.1202H17.924C18.1731 29.1195 18.4118 29.0201 18.5879 28.8441C18.764 28.668 18.8633 28.4293 18.864 28.1802V4.69099C18.8633 4.44188 18.7639 4.20321 18.5879 4.02713C18.4118 3.85106 18.1732 3.75171 17.924 3.75103H14.636V4.41779V4.41756C14.6355 4.48245 14.6267 4.54688 14.6099 4.60949H16.9583C17.2049 4.60949 17.4415 4.7075 17.616 4.88197C17.7904 5.05644 17.8884 5.29306 17.8884 5.53967V27.3312C17.8884 27.5778 17.7904 27.8144 17.616 27.9889C17.4415 28.1634 17.2049 28.2614 16.9583 28.2614H1.90572C1.65911 28.2614 1.42248 28.1634 1.24803 27.9889C1.07356 27.8144 0.97555 27.5778 0.97555 27.3312V5.53967C0.97555 5.29305 1.07356 5.05642 1.24803 4.88197C1.42249 4.7075 1.65912 4.60949 1.90572 4.60949H4.25412C4.23733 4.54688 4.22848 4.48245 4.22803 4.41756V3.75098H0.939958C0.690848 3.75166 0.45218 3.85103 0.276105 4.02708C0.10003 4.20313 0.000679534 4.44181 0 4.69093V28.1801C0.000680637 28.4293 0.100054 28.6679 0.276105 28.844C0.452157 29.0201 0.69083 29.1194 0.939958 29.1201L0.93975 29.1202Z" fill="white"/>
+                                    <path d="M1.625 5.54416V27.3357C1.625 27.4902 1.75023 27.6152 1.90451 27.6152H16.957C17.1113 27.6152 17.2366 27.4902 17.2366 27.3357V5.54416C17.2366 5.38965 17.1113 5.26465 16.957 5.26465H1.90451C1.75024 5.26465 1.625 5.38965 1.625 5.54416ZM5.27108 8.44861H15.0285H15.0283C15.2079 8.44861 15.3536 8.59426 15.3536 8.77395C15.3536 8.95364 15.2079 9.09929 15.0283 9.09929H5.27085C5.09139 9.09929 4.94573 8.95364 4.94573 8.77395C4.94573 8.59426 5.09139 8.44861 5.27085 8.44861H5.27108ZM3.83337 12.5371H15.0282C15.2079 12.5371 15.3536 12.6828 15.3536 12.8623C15.3536 13.0419 15.2079 13.1876 15.0282 13.1876H3.83337C3.65368 13.1876 3.50803 13.0419 3.50803 12.8623C3.50803 12.6828 3.65368 12.5371 3.83337 12.5371ZM3.83337 16.6254H15.0282C15.2079 16.6254 15.3536 16.7711 15.3536 16.9508C15.3536 17.1305 15.2079 17.2759 15.0282 17.2759H3.83337C3.65368 17.2759 3.50803 17.1305 3.50803 16.9508C3.50803 16.7711 3.65368 16.6254 3.83337 16.6254ZM3.83337 20.7137L15.0282 20.714C15.2079 20.714 15.3536 20.8594 15.3536 21.0391C15.3536 21.2188 15.2079 21.3644 15.0282 21.3644H3.83337C3.65368 21.3644 3.50803 21.2188 3.50803 21.0391C3.50803 20.8594 3.65368 20.714 3.83337 20.714V20.7137ZM3.83337 24.802L15.0282 24.8023C15.2079 24.8023 15.3536 24.9479 15.3536 25.1274C15.3536 25.3071 15.2079 25.4527 15.0282 25.4527H3.83337C3.65368 25.4527 3.50803 25.3071 3.50803 25.1274C3.50803 24.9479 3.65368 24.8023 3.83337 24.8023V24.802Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <svg width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M26.6664 15.8976C24.9531 15.8976 23.2964 15.0944 21.9998 13.6369C20.739 12.2153 19.969 10.3195 19.8331 8.30027C19.6881 6.14636 20.314 4.16567 21.5948 2.72215C22.8756 1.27863 24.6664 0.5 26.6664 0.5C28.6523 0.5 30.4481 1.29262 31.7247 2.73265C33.0139 4.18667 33.6414 6.16386 33.4964 8.29939C33.3572 10.3212 32.5881 12.2162 31.3297 13.6361C30.0364 15.0944 28.3806 15.8976 26.6664 15.8976ZM37.6522 31.2951H15.6815C15.3282 31.2971 14.9793 31.214 14.6615 31.0522C14.3436 30.8903 14.0654 30.6541 13.8482 30.3617C13.6178 30.0446 13.4586 29.677 13.3827 29.2863C13.3068 28.8955 13.3161 28.4918 13.4098 28.1054C14.1115 25.1475 15.8498 22.6944 18.4365 21.012C20.7323 19.5195 23.6548 18.6971 26.6664 18.6971C29.7373 18.6971 32.5831 19.4845 34.8922 20.9761C37.4847 22.6498 39.2255 25.1169 39.9239 28.1106C40.0165 28.4974 40.0247 28.9011 39.9479 29.2916C39.8712 29.6821 39.7114 30.0494 39.4805 30.366C39.2635 30.6571 38.9859 30.8922 38.669 31.0532C38.3521 31.2143 38.0043 31.297 37.6522 31.2951ZM10.9165 16.2475C7.98403 16.2475 5.40571 13.385 5.16654 9.86715C5.04821 8.06493 5.58321 6.39832 6.66654 5.17614C7.7382 3.9662 9.24986 3.29956 10.9165 3.29956C12.5832 3.29956 14.0832 3.9697 15.1607 5.18664C16.2523 6.41844 16.7857 8.08155 16.6607 9.8689C16.4215 13.3858 13.844 16.2475 10.9165 16.2475ZM16.3882 18.999C14.9223 18.2466 13.0198 17.8704 10.9173 17.8704C8.46236 17.8704 6.07821 18.5423 4.20322 19.7618C2.07739 21.1467 0.647402 23.1633 0.0699049 25.598C-0.0146071 25.9482 -0.0226004 26.314 0.0465228 26.6679C0.115646 27.0218 0.260096 27.3547 0.469069 27.6417C0.667358 27.909 0.921387 28.1249 1.21162 28.2729C1.50185 28.4209 1.82056 28.4971 2.14323 28.4956H11.3932C11.5493 28.4956 11.7005 28.438 11.8203 28.333C11.9402 28.2279 12.0211 28.0821 12.049 27.9208C12.0582 27.8657 12.0698 27.8106 12.0832 27.7563C12.7898 24.7765 14.4457 22.2587 16.8923 20.4232C16.9823 20.3551 17.0547 20.2645 17.1029 20.1596C17.1511 20.0548 17.1736 19.9389 17.1684 19.8226C17.1632 19.7062 17.1304 19.5931 17.073 19.4935C17.0157 19.3938 16.9355 19.3107 16.8398 19.2518C16.709 19.1713 16.559 19.0864 16.3882 18.999Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <svg width="24" height="29" viewBox="0 0 24 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 28.5C12.9725 28.499 13.9237 28.2148 14.7372 27.682C15.5508 27.1493 16.1916 26.391 16.5813 25.5H7.41875C7.80841 26.391 8.44918 27.1493 9.26276 27.682C10.0763 28.2148 11.0275 28.499 12 28.5ZM21 16.5V12.7169C21 8.3125 19.29 4.47563 15 3.5L14.5 0.5H9.5L9 3.5C4.695 4.47563 3 8.2975 3 12.7169V16.5L0 20.5V23.5H24V20.5L21 16.5Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M31.6577 12.9653C30.9191 9.49044 28.9606 6.32768 26.1421 4.05989C23.2599 1.75376 19.678 0.498178 15.9867 0.500002C11.6354 0.500002 7.57127 2.17638 4.5328 5.22057C1.59646 8.1662 -0.0127803 12.0554 7.64456e-05 16.1688C0.000176411 19.1846 0.885563 22.1341 2.54643 24.6514L2.85713 25.0835L1.1429 32.499L9.34265 30.4591C9.34265 30.4591 9.50693 30.5141 9.62836 30.5605C9.74978 30.6069 10.7947 31.0076 11.9033 31.3176C12.8247 31.5748 14.7418 31.9605 16.2439 31.9605C20.5045 31.9605 24.4829 30.3105 27.4457 27.3135C30.382 24.34 31.9991 20.3865 31.9991 16.1774C31.9993 15.0976 31.8849 14.0209 31.6577 12.9653ZM9.14266 18.7852C8.6906 18.7852 8.24869 18.6511 7.87282 18.4C7.49695 18.1488 7.20399 17.7918 7.03099 17.3742C6.858 16.9565 6.81274 16.497 6.90093 16.0536C6.98912 15.6102 7.20681 15.203 7.52646 14.8833C7.84611 14.5637 8.25338 14.346 8.69675 14.2578C9.14012 14.1696 9.59969 14.2149 10.0173 14.3879C10.435 14.5608 10.7919 14.8538 11.0431 15.2297C11.2942 15.6056 11.4283 16.0475 11.4283 16.4995C11.4283 17.1057 11.1875 17.6871 10.7589 18.1157C10.3302 18.5443 9.74885 18.7852 9.14266 18.7852ZM15.9996 18.7852C15.5475 18.7852 15.1056 18.6511 14.7298 18.4C14.3539 18.1488 14.0609 17.7918 13.8879 17.3742C13.7149 16.9565 13.6697 16.497 13.7579 16.0536C13.8461 15.6102 14.0637 15.203 14.3834 14.8833C14.703 14.5637 15.1103 14.346 15.5537 14.2578C15.9971 14.1696 16.4566 14.2149 16.8743 14.3879C17.2919 14.5608 17.6489 14.8538 17.9 15.2297C18.1512 15.6056 18.2852 16.0475 18.2852 16.4995C18.2852 17.1057 18.0444 17.6871 17.6158 18.1157C17.1871 18.5443 16.6058 18.7852 15.9996 18.7852ZM22.8565 18.7852C22.4045 18.7852 21.9626 18.6511 21.5867 18.4C21.2108 18.1488 20.9179 17.7918 20.7449 17.3742C20.5719 16.9565 20.5266 16.497 20.6148 16.0536C20.703 15.6102 20.9207 15.203 21.2403 14.8833C21.56 14.5637 21.9672 14.346 22.4106 14.2578C22.854 14.1696 23.3136 14.2149 23.7312 14.3879C24.1488 14.5608 24.5058 14.8538 24.757 15.2297C25.0081 15.6056 25.1422 16.0475 25.1422 16.4995C25.1422 17.1057 24.9014 17.6871 24.4727 18.1157C24.0441 18.5443 23.4627 18.7852 22.8565 18.7852Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                <img src="../images/profile.png" alt="profile">
+                                <i class="fa fa-chevron-down down-arrow"></i>
+                                <i class="fa fa-chevron-up up-arrow"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">
+                                    <div class="profile-info">
+                                        <img src="../images/profile.png" alt="profile">
+                                        <div class="name-email">
+                                            <p>John Doe</p>
+                                            <p>johndoe@gmail.com</p>
+                                        </div>
+                                    </div> 
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item">
+                                    <div class="profile-info">
+                                        <svg class="h-4.5 w-4.5 shrink-0 ltr:mr-2 rtl:ml-2" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="6" r="4" stroke="currentColor" stroke-width="1.5"></circle>
+                                            <path opacity="0.5" d="M20 17.5C20 19.9853 20 22 12 22C4 22 4 19.9853 4 17.5C4 15.0147 7.58172 13 12 13C16.4183 13 20 15.0147 20 17.5Z" stroke="currentColor" stroke-width="1.5"></path>
+                                        </svg>
+                                        <div class="name-email">
+                                            <p>Profile</p>
+                                        </div>
+                                    </div> 
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <div class="profile-info">
+                                        <svg class="h-4.5 w-4.5 shrink-0 ltr:mr-2 rtl:ml-2" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="6" r="4" stroke="currentColor" stroke-width="1.5"></circle>
+                                            <path opacity="0.5" d="M20 17.5C20 19.9853 20 22 12 22C4 22 4 19.9853 4 17.5C4 15.0147 7.58172 13 12 13C16.4183 13 20 15.0147 20 17.5Z" stroke="currentColor" stroke-width="1.5"></path>
+                                        </svg>
+                                        <div class="name-email">
+                                            <p>Profile</p>
+                                        </div>
+                                    </div> 
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <div class="profile-info">
+                                        <svg class="h-4.5 w-4.5 shrink-0 ltr:mr-2 rtl:ml-2" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="6" r="4" stroke="currentColor" stroke-width="1.5"></circle>
+                                            <path opacity="0.5" d="M20 17.5C20 19.9853 20 22 12 22C4 22 4 19.9853 4 17.5C4 15.0147 7.58172 13 12 13C16.4183 13 20 15.0147 20 17.5Z" stroke="currentColor" stroke-width="1.5"></path>
+                                        </svg>
+                                        <div class="name-email">
+                                            <p>Profile</p>
+                                        </div>
+                                    </div> 
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item">
+                                    <div class="profile-info">
+                                        <svg class="h-4.5 w-4.5 rotate-90 ltr:mr-2 rtl:ml-2" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.5" d="M17 9.00195C19.175 9.01406 20.3529 9.11051 21.1213 9.8789C22 10.7576 22 12.1718 22 15.0002V16.0002C22 18.8286 22 20.2429 21.1213 21.1215C20.2426 22.0002 18.8284 22.0002 16 22.0002H8C5.17157 22.0002 3.75736 22.0002 2.87868 21.1215C2 20.2429 2 18.8286 2 16.0002L2 15.0002C2 12.1718 2 10.7576 2.87868 9.87889C3.64706 9.11051 4.82497 9.01406 7 9.00195" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                                            <path d="M12 15L12 2M12 2L15 5.5M12 2L9 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                        <div class="name-email">
+                                            <p>Sign Out</p>
+                                        </div>
+                                    </div>   
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+            </nav>
+        </div>
+    </section>
+    <!-- end main navigation bar  -->
+    
+    <!-- Dashboard  -->
+   <section class="dashboard">
+    <div  class="container-fluid">
+        <div class="row">
+            <div class="col-xl-3 col-md-3 p-0">
+                <div class="dashboard-menu">
+                    <div class="nav nav-tabs">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#menu" aria-selected="true" role="tab">
+                                    <img src="../images/Schedule Online Session 1.svg" alt="icon">
+                                    Coach Dashboard
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" data-bs-toggle="tab" href="#menu1" aria-selected="false" role="tab" tabindex="-1">
+                                   <img src="../images/Join Session.svg" alt="icon">
+                                    Join Session
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" data-bs-toggle="tab" href="#menu2" aria-selected="false" role="tab" tabindex="-1">
+                                    <img src="../images/Upcoming Session.svg" alt="icon">
+                                   Upcoming Sessions
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" data-bs-toggle="tab" href="#menu3" aria-selected="false" role="tab" tabindex="-1">
+                                    <img src="../images/Past Session.svg" alt="icon">
+                                    Past Sessions
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" data-bs-toggle="tab" href="#menu4" aria-selected="false" role="tab" tabindex="-1">
+                                    <img src="../images/Manage Academy.svg" alt="icon">
+                                    Manage Academy
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" data-bs-toggle="tab" href="#menu5" aria-selected="false" role="tab" tabindex="-1">
+                                    <img src="../images/Manage Attendance.svg" alt="icon">
+                                    Manage Attendance
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" data-bs-toggle="tab" href="#menu6" aria-selected="false" role="tab" tabindex="-1">
+                                    <img src="../images/Manage Students.svg" alt="icon">
+                                    Manage Students
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" data-bs-toggle="tab" href="#menu7" aria-selected="false" role="tab" tabindex="-1">
+                                    <img src="../images/Watch Nets.svg" alt="icon">
+                                    Watch Nets
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" data-bs-toggle="tab" href="#menu8" aria-selected="false" role="tab" tabindex="-1">
+                                    <img src="../images/Training Tips.svg" alt="icon">
+                                   Training Tips
+                                </a>
+                            </li>
+                             <li class="nav-item" role="presentation">
+                                <a class="nav-link" data-bs-toggle="tab" href="#menu9" aria-selected="false" role="tab" tabindex="-1">
+                                    <img src="../images/Schedule Online Session 1.svg" alt="icon">
+                                  Schedule Online Session
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-9 col-md-9">
+                <div class="dashboard-body">
+                    <div class="tab-content p-0">
+                        <div class="tab-pane container fade active show" id="menu" role="tabpanel">
+                            <div class="main-dashboard">
+                                <div class="row">
+                                    <div class="col-md-3 col-xl-3">
+                                        <div class="total-result-wrap">
+                                            <p>Total Player</p>
+                                            <p>12</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xl-3">
+                                        <div class="total-result-wrap">
+                                            <p>Total Session</p>
+                                            <p>10</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xl-3">
+                                        <div class="total-result-wrap">
+                                            <p>Total Earnings</p>
+                                            <p>$5,602.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xl-3">
+                                        <div class="total-result-wrap">
+                                            <p>Total Matches</p>
+                                            <p>1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="booking-history">
+                                    <div class="c_btn l_btn f_btn text-end">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#traingTips">+ Add Training Tip</a>
+                                    </div>
+                                    <div class="header mb-4">
+                                        <p class="dashboard-heading">Booking History</p>
+                                        <div class="c_btn l_btn ms-2 f_btn">
+                                            <a href="#">     
+                                                <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 2H20M5.21429 7H16.7857M9.07143 12H12.9286" stroke="white" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                                | Filters
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="booking-studant">
+                                        <div class="row">
+                                            <div class="col-xl-4">
+                                                <div class="coach-book-wrap">
+                                                    <div class="coach-book-img">
+                                                        <img src="../images/coach-profile.jpg" alt="Profile">
+                                                    </div>
+                                                    <div class="coach-book-text">
+                                                        <h3>Nimesh Sharma</h3>
+                                                        <hr>
+                                                        <div class="booking-history-studant">
+                                                            <p>Date & Session Time</p>
+                                                            <p>18 May 2023, 6:45 AM - 7:30 AM</p>
+                                                            <p>Slot Duration- 45 min</p>
+                                                        </div>
+                                                        <div class="coach-book-footer">
+                                                            <div class="c_btn l_btn f_btn">
+                                                                <a href="../pages/student-Profile.html">View Profile</a>
+                                                            </div>
+                                                            <div class="c_btn b_btn">
+                                                                <a href="#" data-bs-toggle="modal" data-bs-target="#bookNow">   
+                                                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M4.16272 9.07935H9.5815V8.7068C9.5815 8.21008 9.33314 7.80932 8.83642 7.50451C8.3397 7.19971 7.68493 7.0473 6.87211 7.0473C6.05929 7.0473 5.40452 7.19971 4.9078 7.50451C4.41108 7.80932 4.16272 8.21008 4.16272 8.7068V9.07935ZM6.87211 6.36995C7.24465 6.36995 7.56357 6.23731 7.82886 5.97201C8.09416 5.70672 8.22681 5.3878 8.22681 5.01526C8.22681 4.64272 8.09416 4.3238 7.82886 4.0585C7.56357 3.79321 7.24465 3.66056 6.87211 3.66056C6.49957 3.66056 6.18065 3.79321 5.91536 4.0585C5.65006 4.3238 5.51742 4.64272 5.51742 5.01526C5.51742 5.3878 5.65006 5.70672 5.91536 5.97201C6.18065 6.23731 6.49957 6.36995 6.87211 6.36995ZM0.0986328 14.4981V2.30587C0.0986328 1.93333 0.23128 1.61441 0.496575 1.34911C0.761869 1.08382 1.08079 0.951172 1.45333 0.951172H12.2909C12.6634 0.951172 12.9824 1.08382 13.2476 1.34911C13.5129 1.61441 13.6456 1.93333 13.6456 2.30587V10.434C13.6456 10.8066 13.5129 11.1255 13.2476 11.3908C12.9824 11.6561 12.6634 11.7887 12.2909 11.7887H2.80802L0.0986328 14.4981ZM2.23228 10.434H12.2909V2.30587H1.45333V11.1961L2.23228 10.434Z" fill="white"></path>
+                                                                </svg>
+                                                                    Chat
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="coach-book-footer">
+                                                            <div class="c_btn l_btn f_btn">
+                                                                <a href="#">Join Session</a>
+                                                            </div>                                               
+                                                        </div>
+                                                    </div>
+                                                    <div class="booking-status">
+                                                        <span class="cancle">Cancelled</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="coach-book-wrap">
+                                                    <div class="coach-book-img">
+                                                        <img src="../images/coach-profile.jpg" alt="Profile">
+                                                    </div>
+                                                    <div class="coach-book-text">
+                                                        <h3>Nimesh Sharma</h3>
+                                                        <hr>
+                                                        <div class="booking-history-studant">
+                                                            <p>Date & Session Time</p>
+                                                            <p>18 May 2023, 6:45 AM - 7:30 AM</p>
+                                                            <p>Slot Duration- 45 min</p>
+                                                        </div>
+                                                        <div class="coach-book-footer">
+                                                            <div class="c_btn l_btn f_btn">
+                                                                <a href="../pages/student-Profile.html">View Profile</a>
+                                                            </div>
+                                                            <div class="c_btn b_btn">
+                                                                <a href="#" data-bs-toggle="modal" data-bs-target="#bookNow">   
+                                                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M4.16272 9.07935H9.5815V8.7068C9.5815 8.21008 9.33314 7.80932 8.83642 7.50451C8.3397 7.19971 7.68493 7.0473 6.87211 7.0473C6.05929 7.0473 5.40452 7.19971 4.9078 7.50451C4.41108 7.80932 4.16272 8.21008 4.16272 8.7068V9.07935ZM6.87211 6.36995C7.24465 6.36995 7.56357 6.23731 7.82886 5.97201C8.09416 5.70672 8.22681 5.3878 8.22681 5.01526C8.22681 4.64272 8.09416 4.3238 7.82886 4.0585C7.56357 3.79321 7.24465 3.66056 6.87211 3.66056C6.49957 3.66056 6.18065 3.79321 5.91536 4.0585C5.65006 4.3238 5.51742 4.64272 5.51742 5.01526C5.51742 5.3878 5.65006 5.70672 5.91536 5.97201C6.18065 6.23731 6.49957 6.36995 6.87211 6.36995ZM0.0986328 14.4981V2.30587C0.0986328 1.93333 0.23128 1.61441 0.496575 1.34911C0.761869 1.08382 1.08079 0.951172 1.45333 0.951172H12.2909C12.6634 0.951172 12.9824 1.08382 13.2476 1.34911C13.5129 1.61441 13.6456 1.93333 13.6456 2.30587V10.434C13.6456 10.8066 13.5129 11.1255 13.2476 11.3908C12.9824 11.6561 12.6634 11.7887 12.2909 11.7887H2.80802L0.0986328 14.4981ZM2.23228 10.434H12.2909V2.30587H1.45333V11.1961L2.23228 10.434Z" fill="white"></path>
+                                                                </svg>
+                                                                    Chat
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="coach-book-footer">
+                                                            <div class="c_btn l_btn f_btn">
+                                                                <a href="#">Join Session</a>
+                                                            </div>                                               
+                                                        </div>
+                                                    </div>
+                                                    <div class="booking-status">
+                                                        <span class="cancle">Cancelled</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="coach-book-wrap">
+                                                    <div class="coach-book-img">
+                                                        <img src="../images/coach-profile.jpg" alt="Profile">
+                                                    </div>
+                                                    <div class="coach-book-text">
+                                                        <h3>Nimesh Sharma</h3>
+                                                        <hr>
+                                                        <div class="booking-history-studant">
+                                                            <p>Date & Session Time</p>
+                                                            <p>18 May 2023, 6:45 AM - 7:30 AM</p>
+                                                            <p>Slot Duration- 45 min</p>
+                                                        </div>
+                                                        <div class="coach-book-footer">
+                                                            <div class="c_btn l_btn f_btn">
+                                                                <a href="../pages/student-Profile.html">View Profile</a>
+                                                            </div>
+                                                            <div class="c_btn b_btn">
+                                                                <a href="#" data-bs-toggle="modal" data-bs-target="#bookNow">   
+                                                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M4.16272 9.07935H9.5815V8.7068C9.5815 8.21008 9.33314 7.80932 8.83642 7.50451C8.3397 7.19971 7.68493 7.0473 6.87211 7.0473C6.05929 7.0473 5.40452 7.19971 4.9078 7.50451C4.41108 7.80932 4.16272 8.21008 4.16272 8.7068V9.07935ZM6.87211 6.36995C7.24465 6.36995 7.56357 6.23731 7.82886 5.97201C8.09416 5.70672 8.22681 5.3878 8.22681 5.01526C8.22681 4.64272 8.09416 4.3238 7.82886 4.0585C7.56357 3.79321 7.24465 3.66056 6.87211 3.66056C6.49957 3.66056 6.18065 3.79321 5.91536 4.0585C5.65006 4.3238 5.51742 4.64272 5.51742 5.01526C5.51742 5.3878 5.65006 5.70672 5.91536 5.97201C6.18065 6.23731 6.49957 6.36995 6.87211 6.36995ZM0.0986328 14.4981V2.30587C0.0986328 1.93333 0.23128 1.61441 0.496575 1.34911C0.761869 1.08382 1.08079 0.951172 1.45333 0.951172H12.2909C12.6634 0.951172 12.9824 1.08382 13.2476 1.34911C13.5129 1.61441 13.6456 1.93333 13.6456 2.30587V10.434C13.6456 10.8066 13.5129 11.1255 13.2476 11.3908C12.9824 11.6561 12.6634 11.7887 12.2909 11.7887H2.80802L0.0986328 14.4981ZM2.23228 10.434H12.2909V2.30587H1.45333V11.1961L2.23228 10.434Z" fill="white"></path>
+                                                                </svg>
+                                                                    Chat
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="coach-book-footer">
+                                                            <div class="c_btn l_btn f_btn">
+                                                                <a href="#">Join Session</a>
+                                                            </div>                                               
+                                                        </div>
+                                                    </div>
+                                                    <div class="booking-status">
+                                                        <span class="cancle">Cancelled</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="coach-book-wrap">
+                                                    <div class="coach-book-img">
+                                                        <img src="../images/coach-profile.jpg" alt="Profile">
+                                                    </div>
+                                                    <div class="coach-book-text">
+                                                        <h3>Nimesh Sharma</h3>
+                                                        <hr>
+                                                        <div class="booking-history-studant">
+                                                            <p>Date & Session Time</p>
+                                                            <p>18 May 2023, 6:45 AM - 7:30 AM</p>
+                                                            <p>Slot Duration- 45 min</p>
+                                                        </div>
+                                                        <div class="coach-book-footer">
+                                                            <div class="c_btn l_btn f_btn">
+                                                                <a href="../pages/student-Profile.html">View Profile</a>
+                                                            </div>
+                                                            <div class="c_btn b_btn">
+                                                                <a href="#" data-bs-toggle="modal" data-bs-target="#bookNow">   
+                                                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M4.16272 9.07935H9.5815V8.7068C9.5815 8.21008 9.33314 7.80932 8.83642 7.50451C8.3397 7.19971 7.68493 7.0473 6.87211 7.0473C6.05929 7.0473 5.40452 7.19971 4.9078 7.50451C4.41108 7.80932 4.16272 8.21008 4.16272 8.7068V9.07935ZM6.87211 6.36995C7.24465 6.36995 7.56357 6.23731 7.82886 5.97201C8.09416 5.70672 8.22681 5.3878 8.22681 5.01526C8.22681 4.64272 8.09416 4.3238 7.82886 4.0585C7.56357 3.79321 7.24465 3.66056 6.87211 3.66056C6.49957 3.66056 6.18065 3.79321 5.91536 4.0585C5.65006 4.3238 5.51742 4.64272 5.51742 5.01526C5.51742 5.3878 5.65006 5.70672 5.91536 5.97201C6.18065 6.23731 6.49957 6.36995 6.87211 6.36995ZM0.0986328 14.4981V2.30587C0.0986328 1.93333 0.23128 1.61441 0.496575 1.34911C0.761869 1.08382 1.08079 0.951172 1.45333 0.951172H12.2909C12.6634 0.951172 12.9824 1.08382 13.2476 1.34911C13.5129 1.61441 13.6456 1.93333 13.6456 2.30587V10.434C13.6456 10.8066 13.5129 11.1255 13.2476 11.3908C12.9824 11.6561 12.6634 11.7887 12.2909 11.7887H2.80802L0.0986328 14.4981ZM2.23228 10.434H12.2909V2.30587H1.45333V11.1961L2.23228 10.434Z" fill="white"></path>
+                                                                </svg>
+                                                                    Chat
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="coach-book-footer">
+                                                            <div class="c_btn l_btn f_btn">
+                                                                <a href="#">Join Session</a>
+                                                            </div>                                               
+                                                        </div>
+                                                    </div>
+                                                    <div class="booking-status">
+                                                        <span class="cancle">Cancelled</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="coach-book-wrap">
+                                                    <div class="coach-book-img">
+                                                        <img src="../images/coach-profile.jpg" alt="Profile">
+                                                    </div>
+                                                    <div class="coach-book-text">
+                                                        <h3>Nimesh Sharma</h3>
+                                                        <hr>
+                                                        <div class="booking-history-studant">
+                                                            <p>Date & Session Time</p>
+                                                            <p>18 May 2023, 6:45 AM - 7:30 AM</p>
+                                                            <p>Slot Duration- 45 min</p>
+                                                        </div>
+                                                        <div class="coach-book-footer">
+                                                            <div class="c_btn l_btn f_btn">
+                                                                <a href="../pages/student-Profile.html">View Profile</a>
+                                                            </div>
+                                                            <div class="c_btn b_btn">
+                                                                <a href="#" data-bs-toggle="modal" data-bs-target="#bookNow">   
+                                                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M4.16272 9.07935H9.5815V8.7068C9.5815 8.21008 9.33314 7.80932 8.83642 7.50451C8.3397 7.19971 7.68493 7.0473 6.87211 7.0473C6.05929 7.0473 5.40452 7.19971 4.9078 7.50451C4.41108 7.80932 4.16272 8.21008 4.16272 8.7068V9.07935ZM6.87211 6.36995C7.24465 6.36995 7.56357 6.23731 7.82886 5.97201C8.09416 5.70672 8.22681 5.3878 8.22681 5.01526C8.22681 4.64272 8.09416 4.3238 7.82886 4.0585C7.56357 3.79321 7.24465 3.66056 6.87211 3.66056C6.49957 3.66056 6.18065 3.79321 5.91536 4.0585C5.65006 4.3238 5.51742 4.64272 5.51742 5.01526C5.51742 5.3878 5.65006 5.70672 5.91536 5.97201C6.18065 6.23731 6.49957 6.36995 6.87211 6.36995ZM0.0986328 14.4981V2.30587C0.0986328 1.93333 0.23128 1.61441 0.496575 1.34911C0.761869 1.08382 1.08079 0.951172 1.45333 0.951172H12.2909C12.6634 0.951172 12.9824 1.08382 13.2476 1.34911C13.5129 1.61441 13.6456 1.93333 13.6456 2.30587V10.434C13.6456 10.8066 13.5129 11.1255 13.2476 11.3908C12.9824 11.6561 12.6634 11.7887 12.2909 11.7887H2.80802L0.0986328 14.4981ZM2.23228 10.434H12.2909V2.30587H1.45333V11.1961L2.23228 10.434Z" fill="white"></path>
+                                                                </svg>
+                                                                    Chat
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="coach-book-footer">
+                                                            <div class="c_btn l_btn f_btn">
+                                                                <a href="#">Join Session</a>
+                                                            </div>                                               
+                                                        </div>
+                                                    </div>
+                                                    <div class="booking-status">
+                                                        <span class="cancle">Cancelled</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="coach-book-wrap">
+                                                    <div class="coach-book-img">
+                                                        <img src="../images/coach-profile.jpg" alt="Profile">
+                                                    </div>
+                                                    <div class="coach-book-text">
+                                                        <h3>Nimesh Sharma</h3>
+                                                        <hr>
+                                                        <div class="booking-history-studant">
+                                                            <p>Date & Session Time</p>
+                                                            <p>18 May 2023, 6:45 AM - 7:30 AM</p>
+                                                            <p>Slot Duration- 45 min</p>
+                                                        </div>
+                                                        <div class="coach-book-footer">
+                                                            <div class="c_btn l_btn f_btn">
+                                                                <a href="../pages/student-Profile.html">View Profile</a>
+                                                            </div>
+                                                            <div class="c_btn b_btn">
+                                                                <a href="#" data-bs-toggle="modal" data-bs-target="#bookNow">   
+                                                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M4.16272 9.07935H9.5815V8.7068C9.5815 8.21008 9.33314 7.80932 8.83642 7.50451C8.3397 7.19971 7.68493 7.0473 6.87211 7.0473C6.05929 7.0473 5.40452 7.19971 4.9078 7.50451C4.41108 7.80932 4.16272 8.21008 4.16272 8.7068V9.07935ZM6.87211 6.36995C7.24465 6.36995 7.56357 6.23731 7.82886 5.97201C8.09416 5.70672 8.22681 5.3878 8.22681 5.01526C8.22681 4.64272 8.09416 4.3238 7.82886 4.0585C7.56357 3.79321 7.24465 3.66056 6.87211 3.66056C6.49957 3.66056 6.18065 3.79321 5.91536 4.0585C5.65006 4.3238 5.51742 4.64272 5.51742 5.01526C5.51742 5.3878 5.65006 5.70672 5.91536 5.97201C6.18065 6.23731 6.49957 6.36995 6.87211 6.36995ZM0.0986328 14.4981V2.30587C0.0986328 1.93333 0.23128 1.61441 0.496575 1.34911C0.761869 1.08382 1.08079 0.951172 1.45333 0.951172H12.2909C12.6634 0.951172 12.9824 1.08382 13.2476 1.34911C13.5129 1.61441 13.6456 1.93333 13.6456 2.30587V10.434C13.6456 10.8066 13.5129 11.1255 13.2476 11.3908C12.9824 11.6561 12.6634 11.7887 12.2909 11.7887H2.80802L0.0986328 14.4981ZM2.23228 10.434H12.2909V2.30587H1.45333V11.1961L2.23228 10.434Z" fill="white"></path>
+                                                                </svg>
+                                                                    Chat
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="coach-book-footer">
+                                                            <div class="c_btn l_btn f_btn">
+                                                                <a href="#">Join Session</a>
+                                                            </div>                                               
+                                                        </div>
+                                                    </div>
+                                                    <div class="booking-status">
+                                                        <span class="cancle">Cancelled</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="menu1" role="tabpanel">
+                            <p class="dashboard-heading">Join Session</p>
+                            <div class="session-wrap">
+                                <div class="row">
+                                    <div class="col-xl-6 col-md-6">
+                                        <div class="session-card">
+                                            <div class="session-card-header">
+                                                <p>Bowling Practice</p>
+                                            </div>
+                                            <div class="session-card-body">
+                                                <div class="session-date-time">
+                                                    <div class="session-date">
+                                                        <p class="icon-heading"><img src="../images/calendar.svg" alt="date-icon"> <span>Date</span></p>
+                                                        <p class="date">Wed, 15 Feb 2023</p>
+                                                    </div>
+                                                    <div class="session-time">
+                                                        <p class="icon-heading"><img src="../images/time.svg" alt="time-icon"> <span>Time</span></p>
+                                                        <p class="time">11:37 AM</p>
+                                                    </div>
+                                                </div>
+                                                <div class="session-duration">
+                                                    <p>Schedule Duration</p>
+                                                    <h6>1 Hour 30 Minute</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-md-6">
+                                        <div class="session-card">
+                                            <div class="session-card-header">
+                                                <p>Wicket Keeping</p>
+                                            </div>
+                                            <div class="session-card-body">
+                                                <div class="session-date-time">
+                                                    <div class="session-date">
+                                                        <p class="icon-heading"><img src="../images/calendar.svg" alt="date-icon"> <span>Date</span></p>
+                                                        <p class="date">Wed, 15 Feb 2023</p>
+                                                    </div>
+                                                    <div class="session-time">
+                                                        <p class="icon-heading"><img src="../images/time.svg" alt="time-icon"> <span>Time</span></p>
+                                                        <p class="time">11:37 AM</p>
+                                                    </div>
+                                                </div>
+                                                <div class="session-duration">
+                                                    <p>Schedule Duration</p>
+                                                    <h6>1 Hour</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="menu2" role="tabpanel">
+                            <p class="dashboard-heading">Upcoming Sessions</p>
+                            <div class="session-wrap">
+                                <div class="row">
+                                    <div class="col-xl-6 col-md-6">
+                                        <div class="session-card">
+                                            <div class="session-card-header">
+                                                <p>Bowling Practice</p>
+                                            </div>
+                                            <div class="session-card-body">
+                                                <div class="session-date-time">
+                                                    <div class="session-date">
+                                                        <p class="icon-heading"><img src="../images/calendar.svg" alt="date-icon"> <span>Date</span></p>
+                                                        <p class="date">Wed, 15 Feb 2023</p>
+                                                    </div>
+                                                    <div class="session-time">
+                                                        <p class="icon-heading"><img src="../images/time.svg" alt="time-icon"> <span>Time</span></p>
+                                                        <p class="time">11:37 AM</p>
+                                                    </div>
+                                                </div>
+                                                <div class="session-duration">
+                                                    <p>Schedule Duration</p>
+                                                    <h6>1 Hour 30 Minute</h6>
+                                                    <div class="c_btn l_btn f_btn mt-2">
+                                                        <a href="#">Join Session</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="menu3" role="tabpanel">
+                            <p class="dashboard-heading">Past Sessions</p>
+                            <div class="session-wrap">
+                                <div class="row">
+                                    <div class="col-xl-6 col-md-6">
+                                        <div class="session-card">
+                                            <div class="session-card-header">
+                                                <p>Bowling Practice</p>
+                                            </div>
+                                            <div class="session-card-body">
+                                                <div class="session-date-time">
+                                                    <div class="session-date">
+                                                        <p class="icon-heading"><img src="../images/calendar.svg" alt="date-icon"> <span>Date</span></p>
+                                                        <p class="date">Wed, 15 Feb 2023</p>
+                                                    </div>
+                                                    <div class="session-time">
+                                                        <p class="icon-heading"><img src="../images/time.svg" alt="time-icon"> <span>Time</span></p>
+                                                        <p class="time">11:37 AM</p>
+                                                    </div>
+                                                </div>
+                                                <div class="session-duration">
+                                                    <p>Schedule Duration</p>
+                                                    <h6>1 Hour 30 Minute</h6>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-md-6">
+                                        <div class="session-card">
+                                            <div class="session-card-header">
+                                                <p>Wicket Keeping</p>
+                                            </div>
+                                            <div class="session-card-body">
+                                                <div class="session-date-time">
+                                                    <div class="session-date">
+                                                        <p class="icon-heading"><img src="../images/calendar.svg" alt="date-icon"> <span>Date</span></p>
+                                                        <p class="date">Wed, 15 Feb 2023</p>
+                                                    </div>
+                                                    <div class="session-time">
+                                                        <p class="icon-heading"><img src="../images/time.svg" alt="time-icon"> <span>Time</span></p>
+                                                        <p class="time">11:37 AM</p>
+                                                    </div>
+                                                </div>
+                                                <div class="session-duration">
+                                                    <p>Schedule Duration</p>
+                                                    <h6>1 Hour</h6>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade " id="menu4" role="tabpanel">
+                            <p class="dashboard-heading">Update Academy Information</p>
+                            <div class="manage-academy">
+                                <form>
+                                    <div class="group-input mb-3">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Name of the academy (Title)" name="email">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Email ID" name="pswd">
+                                        </div>
+                                    </div>
+                                    <div class="group-input mb-3">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Location" name="email">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Academy Fees" name="pswd">
+                                        </div>
+                                    </div>
+                                    <div class="group-input mb-3">
+                                        <div class="form-group">
+                                            <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Detail (About the Academy)"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="group-input mb-3">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Achievment" name="email">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Contact Person Name" name="pswd">
+                                        </div>
+                                    </div>
+                                    <div class="group-input mb-3">
+                                        <div class="form-group mobile-cusotme">
+                                            <select class="form-select">
+                                                <option selected="">(IN) +91</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <input type="text" class="form-control" placeholder="Contact Person Phone No." name="email">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Language for Training" name="pswd">
+                                        </div>
+                                    </div>
+                                   <div class="check-box">
+                                    <label for="usr">Phone <span>*</span></label>
+                                       <div class="check-wrap">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Personal
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Group
+                                            </label>
+                                        </div>
+                                       </div>
+                                   </div>
+                                    <div class="group-input mb-3">
+                                        <div class="form-group">
+                                            <label for="usr">Choose Your Specialities <span>*</span></label>
+                                            <div class="update-coach-service">
+                                                <ul>
+                                                    <li>Batting</li>
+                                                    <li>Bowling</li>
+                                                    <li>Fielding</li>
+                                                    <li>Wicket keeping</li>
+                                                    <li>Mental</li>
+                                                    <li>Technical</li>
+                                                    <li>Physical</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="academy-timeslot mb-3">
+                                        <label for="usr"> Online Available Session Time <span>(In slots like 8:00-9:00, 9:00-10:00)</span></label>
+                                        <ul>
+                                            <li><a href="#">6:00 AM - 6:45 AM</a></li>
+                                            <li><a href="#">6:00 AM - 6:45 AM</a></li>
+                                            <li><a href="#">6:00 AM - 6:45 AM</a></li>
+                                            <li><a href="#">6:00 AM - 6:45 AM</a></li>
+                                            <li><a href="#">6:00 AM - 6:45 AM</a></li>
+                                            <li><a href="#">6:00 AM - 6:45 AM</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="social-links-wrap">
+                                        <label for="usr"> Social Media Profile</label>
+                                        <div class="group-input mb-3">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Facebook Profile" name="email">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Twitter Profile" name="pswd">
+                                            </div>
+                                        </div>
+                                        <div class="group-input mb-3">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Linked Profile" name="email">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Instagram Profile" name="pswd">
+                                            </div>
+                                        </div>
+                                        <div class="group-input mb-3">
+                                            <div class="form-group w-50">
+                                                <input type="text" class="form-control" placeholder="Youtube Profile" name="email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c_btn l_btn f_btn">
+                                        <a href="#">Submit</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade " id="menu5" role="tabpanel">
+                            <p class="dashboard-heading mb-3">Manage Attendance</p>
+                            <div class="header-coach">
+                                <p class="dashboard-heading">Today:-  <span>13 Feb 2023</span></p>
+                                <div class="c_btn l_btn f_btn">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#Attendance">+ Add Attendance</a>
+                                </div>
+                            </div>
+                            <div class="attendance">
+                                <table class="table  table-hover">
+                                    <thead>
+                                        <tr>
+                                            <td></td>
+                                            <td>Name</td>
+                                            <td>Mobile</td>
+                                            <td>Status</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="attendance-img">
+                                                    <img src="../images/post-by.png" alt="attendance">
+                                                </div>
+                                            </td>
+                                            <td>Philip Nicolas</td>
+                                            <td>9874563214</td>
+                                            <td>
+                                                <a href="#" class="present">Present</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="attendance-img">
+                                                    <img src="../images/post-by.png" alt="attendance">
+                                                </div>
+                                            </td>
+                                            <td>Philip Nicolas</td>
+                                            <td>9874563214</td>
+                                            <td>
+                                                <a href="#" class="present">Present</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="attendance-img">
+                                                    <img src="../images/post-by.png" alt="attendance">
+                                                </div>
+                                            </td>
+                                            <td>Philip Nicolas</td>
+                                            <td>9874563214</td>
+                                            <td>
+                                                <a href="#" class="absent">Present</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="attendance-img">
+                                                    <img src="../images/post-by.png" alt="attendance">
+                                                </div>
+                                            </td>
+                                            <td>Philip Nicolas</td>
+                                            <td>9874563214</td>
+                                            <td>
+                                                <a href="#" class="absent">Present</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="attendance-img">
+                                                    <img src="../images/post-by.png" alt="attendance">
+                                                </div>
+                                            </td>
+                                            <td>Philip Nicolas</td>
+                                            <td>9874563214</td>
+                                            <td>
+                                                <a href="#" class="present">Present</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="attendance-img">
+                                                    <img src="../images/post-by.png" alt="attendance">
+                                                </div>
+                                            </td>
+                                            <td>Philip Nicolas</td>
+                                            <td>9874563214</td>
+                                            <td>
+                                                <a href="#" class="absent">Present</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="menu6" role="tabpanel">
+                            <div class="manage-coach">
+                                <div class="header-coach">
+                                    <p class="dashboard-heading">Total Students :- <span>6</span></p>
+                                    <div class="c_btn l_btn f_btn">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#traingTips">+ Add Students</a>
+                                    </div>
+                                </div>
+                                <div class="coach-list-wrap mt-4">
+                                    <div class="coach-book-wrap">
+                                        <div class="coach-book-img">
+                                            <img src="../images/coach-profile.jpg" alt="Profile">
+                                        </div>
+                                        <div class="coach-book-text">
+                                            <h3>Sahil Sardar</h3>
+                                           
+                                            <div class="coach-book-service">
+                                                <p><span>Skills &amp; Speciality</span></p>
+                                                <ul>
+                                                    <li>Batting</li>
+                                                    <li>Bowling</li>
+                                                    <li>Fielding</li>
+                                                    <li>Wicket keeping</li>
+                                                </ul>
+                                            </div>
+                                            <hr>
+                                            <div class="coach-book-footer">
+                                                <div class="c_btn l_btn f_btn">
+                                                    <a href="../pages/my-profie .html">View Profile</a>
+                                                </div>                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="coach-book-wrap">
+                                        <div class="coach-book-img">
+                                            <img src="../images/coach-profile.jpg" alt="Profile">
+                                        </div>
+                                        <div class="coach-book-text">
+                                            <h3>Sahil Sardar</h3>
+                                           
+                                            <div class="coach-book-service">
+                                                <p><span>Skills &amp; Speciality</span></p>
+                                                <ul>
+                                                    <li>Batting</li>
+                                                    <li>Bowling</li>
+                                                    <li>Fielding</li>
+                                                    <li>Wicket keeping</li>
+                                                </ul>
+                                            </div>
+                                            <hr>
+                                            <div class="coach-book-footer">
+                                                <div class="c_btn l_btn f_btn">
+                                                    <a href="../pages/my-profie .html">View Profile</a>
+                                                </div>                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="coach-book-wrap">
+                                        <div class="coach-book-img">
+                                            <img src="../images/coach-profile.jpg" alt="Profile">
+                                        </div>
+                                        <div class="coach-book-text">
+                                            <h3>Sahil Sardar</h3>
+                                           
+                                            <div class="coach-book-service">
+                                                <p><span>Skills &amp; Speciality</span></p>
+                                                <ul>
+                                                    <li>Batting</li>
+                                                    <li>Bowling</li>
+                                                    <li>Fielding</li>
+                                                    <li>Wicket keeping</li>
+                                                </ul>
+                                            </div>
+                                            <hr>
+                                            <div class="coach-book-footer">
+                                                <div class="c_btn l_btn f_btn">
+                                                    <a href="../pages/my-profie .html">View Profile</a>
+                                                </div>                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="coach-book-wrap">
+                                        <div class="coach-book-img">
+                                            <img src="../images/coach-profile.jpg" alt="Profile">
+                                        </div>
+                                        <div class="coach-book-text">
+                                            <h3>Sahil Sardar</h3>
+                                           
+                                            <div class="coach-book-service">
+                                                <p><span>Skills &amp; Speciality</span></p>
+                                                <ul>
+                                                    <li>Batting</li>
+                                                    <li>Bowling</li>
+                                                    <li>Fielding</li>
+                                                    <li>Wicket keeping</li>
+                                                </ul>
+                                            </div>
+                                            <hr>
+                                            <div class="coach-book-footer">
+                                                <div class="c_btn l_btn f_btn">
+                                                    <a href="../pages/my-profie .html">View Profile</a>
+                                                </div>                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="coach-book-wrap">
+                                        <div class="coach-book-img">
+                                            <img src="../images/coach-profile.jpg" alt="Profile">
+                                        </div>
+                                        <div class="coach-book-text">
+                                            <h3>Sahil Sardar</h3>
+                                           
+                                            <div class="coach-book-service">
+                                                <p><span>Skills &amp; Speciality</span></p>
+                                                <ul>
+                                                    <li>Batting</li>
+                                                    <li>Bowling</li>
+                                                    <li>Fielding</li>
+                                                    <li>Wicket keeping</li>
+                                                </ul>
+                                            </div>
+                                            <hr>
+                                            <div class="coach-book-footer">
+                                                <div class="c_btn l_btn f_btn">
+                                                    <a href="../pages/my-profie .html">View Profile</a>
+                                                </div>                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="coach-book-wrap">
+                                        <div class="coach-book-img">
+                                            <img src="../images/coach-profile.jpg" alt="Profile">
+                                        </div>
+                                        <div class="coach-book-text">
+                                            <h3>Sahil Sardar</h3>
+                                           
+                                            <div class="coach-book-service">
+                                                <p><span>Skills &amp; Speciality</span></p>
+                                                <ul>
+                                                    <li>Batting</li>
+                                                    <li>Bowling</li>
+                                                    <li>Fielding</li>
+                                                    <li>Wicket keeping</li>
+                                                </ul>
+                                            </div>
+                                            <hr>
+                                            <div class="coach-book-footer">
+                                                <div class="c_btn l_btn f_btn">
+                                                    <a href="../pages/my-profie .html">View Profile</a>
+                                                </div>                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="menu7" role="tabpanel">
+                            <p class="dashboard-heading">Watch Nets</p>
+                            <div class="session-wrap">
+                                <div class="nets-wrap">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-md-4 p-0">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#WatchNet">
+                                                <div class="net position-relative">
+                                                    <div class="net-count">
+                                                        <span>Net 1</span>
+                                                    </div>
+                                                    <div class="net-img">
+                                                        <img src="../images/net1.png" alt="net-img">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-4 col-md-4 p-0">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#WatchNet">
+                                                <div class="net position-relative">
+                                                    <div class="net-count">
+                                                        <span>Net 2</span>
+                                                    </div>
+                                                    <div class="net-img">
+                                                        <img src="../images/net2.png" alt="net-img">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-4 col-md-4 p-0">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#WatchNet">
+                                                <div class="net position-relative">
+                                                    <div class="net-count">
+                                                        <span>Net 3</span>
+                                                    </div>
+                                                    <div class="net-img">
+                                                        <img src="../images/net3.png" alt="net-img">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-4 col-md-4 p-0">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#WatchNet">
+                                                <div class="net position-relative">
+                                                    <div class="net-count">
+                                                        <span>Net 4</span>
+                                                    </div>
+                                                    <div class="net-img">
+                                                        <img src="../images/net4.png" alt="net-img">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-4 col-md-4 p-0">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#WatchNet">
+                                                <div class="net position-relative">
+                                                    <div class="net-count">
+                                                        <span>Net 5</span>
+                                                    </div>
+                                                    <div class="net-img">
+                                                        <img src="../images/net1.png" alt="net-img">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-4 col-md-4 p-0">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#WatchNet">
+                                                <div class="net position-relative">
+                                                    <div class="net-count">
+                                                        <span>Net 6</span>
+                                                    </div>
+                                                    <div class="net-img">
+                                                        <img src="../images/net2.png" alt="net-img">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-4 col-md-4 p-0">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#WatchNet">
+                                                <div class="net position-relative">
+                                                    <div class="net-count">
+                                                        <span>Net 7</span>
+                                                    </div>
+                                                    <div class="net-img">
+                                                        <img src="../images/net3.png" alt="net-img">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-4 col-md-4 p-0">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#WatchNet">
+                                                <div class="net position-relative">
+                                                    <div class="net-count">
+                                                        <span>Net 8</span>
+                                                    </div>
+                                                    <div class="net-img">
+                                                        <img src="../images/net4.png" alt="net-img">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-4 col-md-4 p-0">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#WatchNet">
+                                                <div class="net position-relative">
+                                                    <div class="net-count">
+                                                        <span>Net 9</span>
+                                                    </div>
+                                                    <div class="net-img">
+                                                        <img src="../images/net1.png" alt="net-img">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-4 col-md-4 p-0">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#WatchNet">
+                                                <div class="net position-relative">
+                                                    <div class="net-count">
+                                                        <span>Net 10</span>
+                                                    </div>
+                                                    <div class="net-img">
+                                                        <img src="../images/net2.png" alt="net-img">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-4 col-md-4 p-0">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#WatchNet">
+                                                <div class="net position-relative">
+                                                    <div class="net-count">
+                                                        <span>Net 11</span>
+                                                    </div>
+                                                    <div class="net-img">
+                                                        <img src="../images/net3.png" alt="net-img">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-4 col-md-4 p-0">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#WatchNet">
+                                                <div class="net position-relative">
+                                                    <div class="net-count">
+                                                        <span>Net 12</span>
+                                                    </div>
+                                                    <div class="net-img">
+                                                        <img src="../images/net1.png" alt="net-img">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="menu8" role="tabpanel">
+                            <div class="manage-coach">
+                                <div class="header-coach">
+                                    <p class="dashboard-heading">Training Tips</p>
+                                </div>
+                                <div class="traning-tips-wrap">
+                                    <div class="traning-tip-head">
+                                        <div class="c_btn l_btn f_btn">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#AddStudents">+ Add Training Tip</a>
+                                        </div>
+                                    </div>
+                                    <div class="watch-learn mt-3">
+                                        <div class="header-tips mb-3">
+                                            <div class="tips-name">
+                                                <p>Watch &amp; Learn</p>
+                                            </div>
+                                            <div class="c_btn l_btn ms-2 f_btn">
+                                                <a href="#">     
+                                                    <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 2H20M5.21429 7H16.7857M9.07143 12H12.9286" stroke="white" stroke-width="2.14286" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    | Filters
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-6 col-md-6">
+                                                <div class="upcoming-card">
+                                                    <div class="upcoming-img">
+                                                        <img src="../images/match02.jpeg" alt="upcoming-match">
+                                                    </div>
+                                                    <div class="upcoming-content">
+                                                        <p>Batting</p>
+                                                    </div>
+                                                    <a data-bs-toggle="modal" data-bs-target="#TraningTips">  
+                                                        <svg width="129" height="129" viewBox="0 0 129 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M126.83 64.8177C126.83 30.0918 98.8732 1.91797 64.415 1.91797C29.9567 1.91797 2 30.0918 2 64.8177C2 99.5436 29.9567 127.717 64.415 127.717C98.8732 127.717 126.83 99.5436 126.83 64.8177Z" fill="#0E2245" stroke="#0E2245" stroke-width="2.4" stroke-miterlimit="10"></path>
+                                                            <path d="M51.5163 90.5156L88.7214 67.8651C89.24 67.5467 89.6687 67.0992 89.9661 66.5656C90.2635 66.0321 90.4197 65.4304 90.4197 64.8184C90.4197 64.2064 90.2635 63.6047 89.9661 63.0711C89.6687 62.5376 89.24 62.0901 88.7214 61.7717L51.5163 39.1212C50.983 38.7992 50.3743 38.626 49.7527 38.6193C49.131 38.6127 48.5188 38.7727 47.9788 39.0832C47.4389 39.3936 46.9905 39.8432 46.6799 40.3859C46.3692 40.9285 46.2074 41.5447 46.211 42.1712V87.4656C46.2074 88.0921 46.3692 88.7082 46.6799 89.2509C46.9905 89.7935 47.4389 90.2432 47.9788 90.5536C48.5188 90.864 49.131 91.0241 49.7527 91.0174C50.3743 91.0107 50.983 90.8375 51.5163 90.5156Z" fill="white"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 col-md-6">
+                                                <div class="upcoming-card">
+                                                    <div class="upcoming-img">
+                                                        <img src="../images/match02.jpeg" alt="upcoming-match">
+                                                    </div>
+                                                    <div class="upcoming-content">
+                                                        <p>Batting</p>
+                                                    </div>
+                                                    <a data-bs-toggle="modal" data-bs-target="#TraningTips">  
+                                                        <svg width="129" height="129" viewBox="0 0 129 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M126.83 64.8177C126.83 30.0918 98.8732 1.91797 64.415 1.91797C29.9567 1.91797 2 30.0918 2 64.8177C2 99.5436 29.9567 127.717 64.415 127.717C98.8732 127.717 126.83 99.5436 126.83 64.8177Z" fill="#0E2245" stroke="#0E2245" stroke-width="2.4" stroke-miterlimit="10"></path>
+                                                            <path d="M51.5163 90.5156L88.7214 67.8651C89.24 67.5467 89.6687 67.0992 89.9661 66.5656C90.2635 66.0321 90.4197 65.4304 90.4197 64.8184C90.4197 64.2064 90.2635 63.6047 89.9661 63.0711C89.6687 62.5376 89.24 62.0901 88.7214 61.7717L51.5163 39.1212C50.983 38.7992 50.3743 38.626 49.7527 38.6193C49.131 38.6127 48.5188 38.7727 47.9788 39.0832C47.4389 39.3936 46.9905 39.8432 46.6799 40.3859C46.3692 40.9285 46.2074 41.5447 46.211 42.1712V87.4656C46.2074 88.0921 46.3692 88.7082 46.6799 89.2509C46.9905 89.7935 47.4389 90.2432 47.9788 90.5536C48.5188 90.864 49.131 91.0241 49.7527 91.0174C50.3743 91.0107 50.983 90.8375 51.5163 90.5156Z" fill="white"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="watch-learn mt-3">
+                                        <div class="header-tips mb-3">
+                                            <div class="tips-name">
+                                                <p>Trending</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-6 col-md-6">
+                                                <div class="upcoming-card">
+                                                    <div class="upcoming-img">
+                                                        <img src="../images/match02.jpeg" alt="upcoming-match">
+                                                    </div>
+                                                    <div class="upcoming-content">
+                                                        <p>Batting</p>
+                                                    </div>
+                                                    <a data-bs-toggle="modal" data-bs-target="#TraningTips">  
+                                                        <svg width="129" height="129" viewBox="0 0 129 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M126.83 64.8177C126.83 30.0918 98.8732 1.91797 64.415 1.91797C29.9567 1.91797 2 30.0918 2 64.8177C2 99.5436 29.9567 127.717 64.415 127.717C98.8732 127.717 126.83 99.5436 126.83 64.8177Z" fill="#0E2245" stroke="#0E2245" stroke-width="2.4" stroke-miterlimit="10"></path>
+                                                            <path d="M51.5163 90.5156L88.7214 67.8651C89.24 67.5467 89.6687 67.0992 89.9661 66.5656C90.2635 66.0321 90.4197 65.4304 90.4197 64.8184C90.4197 64.2064 90.2635 63.6047 89.9661 63.0711C89.6687 62.5376 89.24 62.0901 88.7214 61.7717L51.5163 39.1212C50.983 38.7992 50.3743 38.626 49.7527 38.6193C49.131 38.6127 48.5188 38.7727 47.9788 39.0832C47.4389 39.3936 46.9905 39.8432 46.6799 40.3859C46.3692 40.9285 46.2074 41.5447 46.211 42.1712V87.4656C46.2074 88.0921 46.3692 88.7082 46.6799 89.2509C46.9905 89.7935 47.4389 90.2432 47.9788 90.5536C48.5188 90.864 49.131 91.0241 49.7527 91.0174C50.3743 91.0107 50.983 90.8375 51.5163 90.5156Z" fill="white"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 col-md-6">
+                                                <div class="upcoming-card">
+                                                    <div class="upcoming-img">
+                                                        <img src="../images/match02.jpeg" alt="upcoming-match">
+                                                    </div>
+                                                    <div class="upcoming-content">
+                                                        <p>Batting</p>
+                                                    </div>
+                                                    <a data-bs-toggle="modal" data-bs-target="#TraningTips">  
+                                                        <svg width="129" height="129" viewBox="0 0 129 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M126.83 64.8177C126.83 30.0918 98.8732 1.91797 64.415 1.91797C29.9567 1.91797 2 30.0918 2 64.8177C2 99.5436 29.9567 127.717 64.415 127.717C98.8732 127.717 126.83 99.5436 126.83 64.8177Z" fill="#0E2245" stroke="#0E2245" stroke-width="2.4" stroke-miterlimit="10"></path>
+                                                            <path d="M51.5163 90.5156L88.7214 67.8651C89.24 67.5467 89.6687 67.0992 89.9661 66.5656C90.2635 66.0321 90.4197 65.4304 90.4197 64.8184C90.4197 64.2064 90.2635 63.6047 89.9661 63.0711C89.6687 62.5376 89.24 62.0901 88.7214 61.7717L51.5163 39.1212C50.983 38.7992 50.3743 38.626 49.7527 38.6193C49.131 38.6127 48.5188 38.7727 47.9788 39.0832C47.4389 39.3936 46.9905 39.8432 46.6799 40.3859C46.3692 40.9285 46.2074 41.5447 46.211 42.1712V87.4656C46.2074 88.0921 46.3692 88.7082 46.6799 89.2509C46.9905 89.7935 47.4389 90.2432 47.9788 90.5536C48.5188 90.864 49.131 91.0241 49.7527 91.0174C50.3743 91.0107 50.983 90.8375 51.5163 90.5156Z" fill="white"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="watch-learn mt-3">
+                                        <div class="header-tips mb-3">
+                                            <div class="tips-name">
+                                                <p>Lorem Ipssum</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-6 col-md-6">
+                                                <div class="upcoming-card">
+                                                    <div class="upcoming-img">
+                                                        <img src="../images/match02.jpeg" alt="upcoming-match">
+                                                    </div>
+                                                    <div class="upcoming-content">
+                                                        <p>Batting</p>
+                                                    </div>
+                                                    <a data-bs-toggle="modal" data-bs-target="#TraningTips">  
+                                                        <svg width="129" height="129" viewBox="0 0 129 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M126.83 64.8177C126.83 30.0918 98.8732 1.91797 64.415 1.91797C29.9567 1.91797 2 30.0918 2 64.8177C2 99.5436 29.9567 127.717 64.415 127.717C98.8732 127.717 126.83 99.5436 126.83 64.8177Z" fill="#0E2245" stroke="#0E2245" stroke-width="2.4" stroke-miterlimit="10"></path>
+                                                            <path d="M51.5163 90.5156L88.7214 67.8651C89.24 67.5467 89.6687 67.0992 89.9661 66.5656C90.2635 66.0321 90.4197 65.4304 90.4197 64.8184C90.4197 64.2064 90.2635 63.6047 89.9661 63.0711C89.6687 62.5376 89.24 62.0901 88.7214 61.7717L51.5163 39.1212C50.983 38.7992 50.3743 38.626 49.7527 38.6193C49.131 38.6127 48.5188 38.7727 47.9788 39.0832C47.4389 39.3936 46.9905 39.8432 46.6799 40.3859C46.3692 40.9285 46.2074 41.5447 46.211 42.1712V87.4656C46.2074 88.0921 46.3692 88.7082 46.6799 89.2509C46.9905 89.7935 47.4389 90.2432 47.9788 90.5536C48.5188 90.864 49.131 91.0241 49.7527 91.0174C50.3743 91.0107 50.983 90.8375 51.5163 90.5156Z" fill="white"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 col-md-6">
+                                                <div class="upcoming-card">
+                                                    <div class="upcoming-img">
+                                                        <img src="../images/match02.jpeg" alt="upcoming-match">
+                                                    </div>
+                                                    <div class="upcoming-content">
+                                                        <p>Batting</p>
+                                                    </div>
+                                                    <a data-bs-toggle="modal" data-bs-target="#TraningTips">  
+                                                        <svg width="129" height="129" viewBox="0 0 129 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M126.83 64.8177C126.83 30.0918 98.8732 1.91797 64.415 1.91797C29.9567 1.91797 2 30.0918 2 64.8177C2 99.5436 29.9567 127.717 64.415 127.717C98.8732 127.717 126.83 99.5436 126.83 64.8177Z" fill="#0E2245" stroke="#0E2245" stroke-width="2.4" stroke-miterlimit="10"></path>
+                                                            <path d="M51.5163 90.5156L88.7214 67.8651C89.24 67.5467 89.6687 67.0992 89.9661 66.5656C90.2635 66.0321 90.4197 65.4304 90.4197 64.8184C90.4197 64.2064 90.2635 63.6047 89.9661 63.0711C89.6687 62.5376 89.24 62.0901 88.7214 61.7717L51.5163 39.1212C50.983 38.7992 50.3743 38.626 49.7527 38.6193C49.131 38.6127 48.5188 38.7727 47.9788 39.0832C47.4389 39.3936 46.9905 39.8432 46.6799 40.3859C46.3692 40.9285 46.2074 41.5447 46.211 42.1712V87.4656C46.2074 88.0921 46.3692 88.7082 46.6799 89.2509C46.9905 89.7935 47.4389 90.2432 47.9788 90.5536C48.5188 90.864 49.131 91.0241 49.7527 91.0174C50.3743 91.0107 50.983 90.8375 51.5163 90.5156Z" fill="white"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="menu9" role="tabpanel">
+                            <p class="dashboard-heading">Schedule Online Session</p>
+                            <div class="manage-academy">
+                                <form>   
+                                    <div class="group-input mb-3">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Enter Topic" name="email">
+                                        </div>                                        
+                                    </div>  
+                                    <div class="group-input mb-3">
+                                        <div class="form-group">
+                                            <input type="date" class="form-control" placeholder="Select Date" name="email">
+                                        </div> 
+                                        <div class="form-group">
+                                            <input type="time" class="form-control" placeholder="Select Time" name="email">
+                                        </div>                                        
+                                    </div>  
+                                    <p class="duration">Select Schedule Duration:</p>                            
+                                    <div class="group-input mb-3">
+                                        <div class="form-group">
+                                            <select class="form-select select-service">
+                                                <option selected="">Select Hour</option>
+                                                <option value="1">Male</option>
+                                                <option value="2">Female</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-select select-service">
+                                                <option selected="">Select Minute</option>
+                                                <option value="1">Male</option>
+                                                <option value="2">Female</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="group-input mb-3">
+                                        <div class="form-group">
+                                            <select class="form-select select-service">
+                                                <option selected="">Select Coach</option>
+                                                <option value="1">Male</option>
+                                                <option value="2">Female</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-select select-service">
+                                                <option selected="">Select Student</option>
+                                                <option value="1">Male</option>
+                                                <option value="2">Female</option>
+                                            </select>
+                                        </div>
+                                    </div>                                    
+                                    <div class="c_btn l_btn f_btn">
+                                        <a href="#">Submit</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+    <!-- EndDashboard  -->
+   <!-- add coach  -->
+   <div class="modal modal-xl fade ambassador-form" id="traingTips" data-bs-backdrop="static" data-bs-keyboard="false" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header icon-popup-header">
+            <svg width="34" height="35" data-bs-dismiss="modal" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.3382 18.0234L10.3371 18.0223C10.2669 17.9525 10.2096 17.8707 10.1679 17.7809C10.0978 17.6002 10.0978 17.3998 10.1679 17.2191C10.2096 17.1293 10.2669 17.0475 10.3371 16.9777L10.3382 16.9766L15.5437 11.7711C15.6817 11.6497 15.8604 11.5847 16.0444 11.5892C16.2319 11.5938 16.4105 11.6704 16.5431 11.803C16.6758 11.9357 16.7523 12.1142 16.7569 12.3018C16.7615 12.4857 16.6964 12.6645 16.5751 12.8024L13.4618 15.9157L12.6083 16.7692H13.8154H23.1538C23.3477 16.7692 23.5335 16.8462 23.6706 16.9833C23.8076 17.1203 23.8846 17.3062 23.8846 17.5C23.8846 17.6938 23.8076 17.8797 23.6706 18.0167C23.5335 18.1538 23.3477 18.2308 23.1538 18.2308H13.8154H12.6083L13.4618 19.0843L16.5845 22.207L10.3382 18.0234ZM10.3382 18.0234L15.5536 23.2388L15.5536 23.2387M10.3382 18.0234L15.5536 23.2387M15.5536 23.2387L15.5585 23.2437M15.5536 23.2387L15.5585 23.2437M15.5585 23.2437C15.6224 23.3095 15.6991 23.3614 15.784 23.3962C15.8688 23.431 15.9599 23.4481 16.0516 23.4462L16.0619 23.446M15.5585 23.2437L16.0619 23.446M16.0619 23.446L16.0723 23.4463M16.0619 23.446L16.0723 23.4463M16.0723 23.4463C16.1671 23.4483 16.2613 23.4311 16.3492 23.3956C16.4372 23.3601 16.517 23.3071 16.5838 23.2399L16.5845 23.2392M16.0723 23.4463L16.5845 23.2392M16.5845 23.2392C16.7211 23.1022 16.7979 22.9166 16.7979 22.7231M16.5845 23.2392L16.7979 22.7231M16.7979 22.7231C16.7979 22.5298 16.7213 22.3444 16.5849 22.2074L16.7979 22.7231ZM16.999 1H17C20.2634 1 23.4535 1.96771 26.1669 3.78075C28.8803 5.59379 30.9952 8.17074 32.244 11.1857C33.4929 14.2007 33.8196 17.5183 33.1829 20.719C32.5463 23.9197 30.9748 26.8597 28.6673 29.1673C26.3597 31.4748 23.4197 33.0463 20.219 33.6829C17.0183 34.3196 13.7007 33.9929 10.6857 32.744C7.67074 31.4952 5.09379 29.3803 3.28075 26.6669C1.46771 23.9535 0.5 20.7634 0.5 17.5V17.499C0.508385 13.1258 2.24937 8.93407 5.34172 5.84172C8.43407 2.74937 12.6258 1.00839 16.999 1Z" stroke="#800000"></path>
+            </svg>
+            <h6>Add Training Tips</h6>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body scoreboard-count traingTips">
+            <form>                                  
+                <div class="group-input mb-3">
+                    <div class="form-group">
+                        <select class="form-select select-service">
+                            <option selected="">Select Tips Category</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter Tips Title" name="email">
+                    </div>
+                </div>
+                <div class="group-input mb-3">
+                    <div class="form-group">
+                        <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Enter Message for your Tips"></textarea>
+                    </div>
+                </div>
+                <div class="group-input mb-3">
+                    <div class="form-group">
+                        <select class="form-select select-tips">
+                            <option selected="">Select Privacy for Tips</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group uplode-video">
+                        <div class="uplode-btn" for="file-upload">
+
+                            <label>
+                            <img src="../images/cloud-upload.svg" alt="icon" class="me-2">
+                            Upload Video for Tips
+                                <input type="file" size="60">
+                            </label> 
+                        </div>
+                        
+                    </div>
+                </div>
+               
+                <div class="c_btn l_btn f_btn">
+                    <a href="#">Submit</a>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+   </div>
+   <!-- end add coach popup  -->
+     <!-- add Add Students  -->
+    <div class="modal modal-xl fade ambassador-form" id="AddStudents" data-bs-backdrop="static" data-bs-keyboard="false" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header icon-popup-header">
+                <svg width="34" height="35" data-bs-dismiss="modal" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.3382 18.0234L10.3371 18.0223C10.2669 17.9525 10.2096 17.8707 10.1679 17.7809C10.0978 17.6002 10.0978 17.3998 10.1679 17.2191C10.2096 17.1293 10.2669 17.0475 10.3371 16.9777L10.3382 16.9766L15.5437 11.7711C15.6817 11.6497 15.8604 11.5847 16.0444 11.5892C16.2319 11.5938 16.4105 11.6704 16.5431 11.803C16.6758 11.9357 16.7523 12.1142 16.7569 12.3018C16.7615 12.4857 16.6964 12.6645 16.5751 12.8024L13.4618 15.9157L12.6083 16.7692H13.8154H23.1538C23.3477 16.7692 23.5335 16.8462 23.6706 16.9833C23.8076 17.1203 23.8846 17.3062 23.8846 17.5C23.8846 17.6938 23.8076 17.8797 23.6706 18.0167C23.5335 18.1538 23.3477 18.2308 23.1538 18.2308H13.8154H12.6083L13.4618 19.0843L16.5845 22.207L10.3382 18.0234ZM10.3382 18.0234L15.5536 23.2388L15.5536 23.2387M10.3382 18.0234L15.5536 23.2387M15.5536 23.2387L15.5585 23.2437M15.5536 23.2387L15.5585 23.2437M15.5585 23.2437C15.6224 23.3095 15.6991 23.3614 15.784 23.3962C15.8688 23.431 15.9599 23.4481 16.0516 23.4462L16.0619 23.446M15.5585 23.2437L16.0619 23.446M16.0619 23.446L16.0723 23.4463M16.0619 23.446L16.0723 23.4463M16.0723 23.4463C16.1671 23.4483 16.2613 23.4311 16.3492 23.3956C16.4372 23.3601 16.517 23.3071 16.5838 23.2399L16.5845 23.2392M16.0723 23.4463L16.5845 23.2392M16.5845 23.2392C16.7211 23.1022 16.7979 22.9166 16.7979 22.7231M16.5845 23.2392L16.7979 22.7231M16.7979 22.7231C16.7979 22.5298 16.7213 22.3444 16.5849 22.2074L16.7979 22.7231ZM16.999 1H17C20.2634 1 23.4535 1.96771 26.1669 3.78075C28.8803 5.59379 30.9952 8.17074 32.244 11.1857C33.4929 14.2007 33.8196 17.5183 33.1829 20.719C32.5463 23.9197 30.9748 26.8597 28.6673 29.1673C26.3597 31.4748 23.4197 33.0463 20.219 33.6829C17.0183 34.3196 13.7007 33.9929 10.6857 32.744C7.67074 31.4952 5.09379 29.3803 3.28075 26.6669C1.46771 23.9535 0.5 20.7634 0.5 17.5V17.499C0.508385 13.1258 2.24937 8.93407 5.34172 5.84172C8.43407 2.74937 12.6258 1.00839 16.999 1Z" stroke="#800000"></path>
+                </svg>
+                <h6>Add New Student</h6>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body scoreboard-count">
+                <form>
+                    <div class="from-group">
+                        <div class="from-group-lable">
+                            <label for="usr">Full Name <span>*</span></label>
+                        </div>
+                        <div class="from-group-input">
+                            <input type="text" class="form-control" placeholder="Full Name" name="email">
+                        </div>                        
+                    </div>
+                    <div class="live-strem-group">
+                        <div class="live-strem-lable">
+                            <label for="usr">Age Group*</label>
+                        </div>
+                        <div class="live-strem-input">
+                            <select class="form-select select-service">
+                                <option selected="">Age Group*</option>
+                                <option value="1">16 A</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="live-strem-group">
+                        <div class="live-strem-lable">
+                            <label for="usr">Gender*</label>
+                        </div>
+                        <div class="live-strem-input">
+                            <select class="form-select select-service">
+                                <option selected="">Gender*</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="from-group">
+                        <div class="from-group-lable">
+                            <label for="usr">Username <span>*</span></label>
+                        </div>
+                        <div class="from-group-input">
+                            <input type="text" class="form-control" placeholder="Username*" name="email">
+                        </div>
+                    </div>
+                    <div class="from-group">
+                        <div class="from-group-lable">
+                            <label for="usr">Email <span>*</span></label>
+                        </div>
+                        <div class="from-group-input">
+                            <input type="number" class="form-control" placeholder="Email*" name="email">
+                        </div>
+                    </div>
+                    <div class="from-group">
+                        <div class="from-group-lable">
+                            <label for="usr">Primary Phone Number <span>*</span></label>
+                        </div>
+                        <div class="from-group-input">
+                            <input type="number" class="form-control" placeholder="Primary Phone Number*" name="email">
+                        </div>
+                    </div>
+                    <div class="from-group">
+                        <div class="from-group-lable">
+                            <label for="usr">Secondary Phone Number</label>
+                        </div>
+                        <div class="from-group-input">
+                            <input type="number" class="form-control" placeholder="Secondary Phone Number" name="email">
+                        </div>
+                    </div>
+                    <div class="from-group">
+                        <div class="from-group-lable">
+                            <label for="usr">Enter Student Login Password <span>*</span></label>
+                        </div>
+                        <div class="from-group-input">
+                            <input type="text" class="form-control" placeholder="Enter Student Login Password*" name="email">
+                        </div>
+                    </div>
+                    <div class="from-group">
+                        <div class="from-group-lable">
+                            <label for="usr">Enter Scoring Profile Link</label>
+                        </div>
+                        <div class="from-group-input">
+                            <input type="number" class="form-control" placeholder="Enter Scoring Profile Link" name="email">
+                        </div>
+                    </div>
+                    <div class="live-strem-group">
+                        <div class="live-strem-lable">
+                            <label for="usr">Select Player Type</label>
+                        </div>
+                        <div class="live-strem-input">
+                            <select class="form-select select-service">
+                                <option selected="">Select Player Type</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="live-strem-group">
+                        <div class="live-strem-lable">
+                            <label for="usr">Select Batting Hand</label>
+                        </div>
+                        <div class="live-strem-input">
+                            <select class="form-select select-service">
+                                <option selected="">Select Batting Hand</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="live-strem-group">
+                        <div class="live-strem-lable">
+                            <label for="usr">Select Bowling Arm</label>
+                        </div>
+                        <div class="live-strem-input">
+                            <select class="form-select select-service">
+                                <option selected="">Select Bowling Arm</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="live-strem-group">
+                        <div class="live-strem-lable">
+                            <label for="usr">Select Ball Type</label>
+                        </div>
+                        <div class="live-strem-input">
+                            <select class="form-select select-service">
+                                <option selected="">Select Ball Type</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-footer d-flex">
+                        <div class="c_btn l_btn ms-auto f_btn">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#AmbassadorForm">
+                                Submit
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>
+    </div>
+       <!-- end add student popup  -->
+    <!-- attendance  -->
+    <div class="modal modal-md fade scoreboard" id="Attendance" data-bs-backdrop="static" data-bs-keyboard="false" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header icon-popup-header">
+                <svg width="34" height="35" data-bs-dismiss="modal" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.3382 18.0234L10.3371 18.0223C10.2669 17.9525 10.2096 17.8707 10.1679 17.7809C10.0978 17.6002 10.0978 17.3998 10.1679 17.2191C10.2096 17.1293 10.2669 17.0475 10.3371 16.9777L10.3382 16.9766L15.5437 11.7711C15.6817 11.6497 15.8604 11.5847 16.0444 11.5892C16.2319 11.5938 16.4105 11.6704 16.5431 11.803C16.6758 11.9357 16.7523 12.1142 16.7569 12.3018C16.7615 12.4857 16.6964 12.6645 16.5751 12.8024L13.4618 15.9157L12.6083 16.7692H13.8154H23.1538C23.3477 16.7692 23.5335 16.8462 23.6706 16.9833C23.8076 17.1203 23.8846 17.3062 23.8846 17.5C23.8846 17.6938 23.8076 17.8797 23.6706 18.0167C23.5335 18.1538 23.3477 18.2308 23.1538 18.2308H13.8154H12.6083L13.4618 19.0843L16.5845 22.207L10.3382 18.0234ZM10.3382 18.0234L15.5536 23.2388L15.5536 23.2387M10.3382 18.0234L15.5536 23.2387M15.5536 23.2387L15.5585 23.2437M15.5536 23.2387L15.5585 23.2437M15.5585 23.2437C15.6224 23.3095 15.6991 23.3614 15.784 23.3962C15.8688 23.431 15.9599 23.4481 16.0516 23.4462L16.0619 23.446M15.5585 23.2437L16.0619 23.446M16.0619 23.446L16.0723 23.4463M16.0619 23.446L16.0723 23.4463M16.0723 23.4463C16.1671 23.4483 16.2613 23.4311 16.3492 23.3956C16.4372 23.3601 16.517 23.3071 16.5838 23.2399L16.5845 23.2392M16.0723 23.4463L16.5845 23.2392M16.5845 23.2392C16.7211 23.1022 16.7979 22.9166 16.7979 22.7231M16.5845 23.2392L16.7979 22.7231M16.7979 22.7231C16.7979 22.5298 16.7213 22.3444 16.5849 22.2074L16.7979 22.7231ZM16.999 1H17C20.2634 1 23.4535 1.96771 26.1669 3.78075C28.8803 5.59379 30.9952 8.17074 32.244 11.1857C33.4929 14.2007 33.8196 17.5183 33.1829 20.719C32.5463 23.9197 30.9748 26.8597 28.6673 29.1673C26.3597 31.4748 23.4197 33.0463 20.219 33.6829C17.0183 34.3196 13.7007 33.9929 10.6857 32.744C7.67074 31.4952 5.09379 29.3803 3.28075 26.6669C1.46771 23.9535 0.5 20.7634 0.5 17.5V17.499C0.508385 13.1258 2.24937 8.93407 5.34172 5.84172C8.43407 2.74937 12.6258 1.00839 16.999 1Z" stroke="#800000"></path>
+                </svg>
+                <h6>Attendance</h6>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body scoreboard-count">
+                <div class="add-attendance text-center">
+                    <div class="select-date text-center mb-2">
+                        <input type="date" id="myId" placeholder="theDate">
+                    </div>
+                    <div class="attendance-fill">
+                        <div class="manage-attendance-select">
+                            <div class="attendance-left">
+                                <p>Neil Seth</p>
+                            </div>
+                            <div class="attendance-right">
+                                <select class="form-select attendance-select">
+                                    <option selected="">Present</option>
+                                    <option value="1">Absent</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="manage-attendance-select">
+                            <div class="attendance-left">
+                                <p>Akshay Mittal</p>
+                            </div>
+                            <div class="attendance-right">
+                                <select class="form-select attendance-select">
+                                    <option selected="">Present</option>
+                                    <option value="1">Absent</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="manage-attendance-select">
+                            <div class="attendance-left">
+                                <p>Kumar</p>
+                            </div>
+                            <div class="attendance-right">
+                                <select class="form-select attendance-select">
+                                    <option selected="">Present</option>
+                                    <option value="1">Absent</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="manage-attendance-select">
+                            <div class="attendance-left">
+                                <p>Manik Singh</p>
+                            </div>
+                            <div class="attendance-right">
+                                <select class="form-select attendance-select">
+                                    <option selected="">Present</option>
+                                    <option value="1">Absent</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="manage-attendance-select">
+                            <div class="attendance-left">
+                                <p>Bedi Nayak</p>
+                            </div>
+                            <div class="attendance-right">
+                                <select class="form-select attendance-select">
+                                    <option selected="">Present</option>
+                                    <option value="1">Absent</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="manage-attendance-select">
+                            <div class="attendance-left">
+                                <p>Sumit Singh</p>
+                            </div>
+                            <div class="attendance-right">
+                                <select class="form-select attendance-select">
+                                    <option selected="">Present</option>
+                                    <option value="1">Absent</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c_btn l_btn f_btn mt-3">
+                        <a href="#">Submit</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- TraningTips -->
+    <div class="modal modal-xl fade ambassador-form" id="TraningTips" data-bs-backdrop="static" data-bs-keyboard="false" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header icon-popup-header">
+                <svg width="34" height="35" data-bs-dismiss="modal" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.3382 18.0234L10.3371 18.0223C10.2669 17.9525 10.2096 17.8707 10.1679 17.7809C10.0978 17.6002 10.0978 17.3998 10.1679 17.2191C10.2096 17.1293 10.2669 17.0475 10.3371 16.9777L10.3382 16.9766L15.5437 11.7711C15.6817 11.6497 15.8604 11.5847 16.0444 11.5892C16.2319 11.5938 16.4105 11.6704 16.5431 11.803C16.6758 11.9357 16.7523 12.1142 16.7569 12.3018C16.7615 12.4857 16.6964 12.6645 16.5751 12.8024L13.4618 15.9157L12.6083 16.7692H13.8154H23.1538C23.3477 16.7692 23.5335 16.8462 23.6706 16.9833C23.8076 17.1203 23.8846 17.3062 23.8846 17.5C23.8846 17.6938 23.8076 17.8797 23.6706 18.0167C23.5335 18.1538 23.3477 18.2308 23.1538 18.2308H13.8154H12.6083L13.4618 19.0843L16.5845 22.207L10.3382 18.0234ZM10.3382 18.0234L15.5536 23.2388L15.5536 23.2387M10.3382 18.0234L15.5536 23.2387M15.5536 23.2387L15.5585 23.2437M15.5536 23.2387L15.5585 23.2437M15.5585 23.2437C15.6224 23.3095 15.6991 23.3614 15.784 23.3962C15.8688 23.431 15.9599 23.4481 16.0516 23.4462L16.0619 23.446M15.5585 23.2437L16.0619 23.446M16.0619 23.446L16.0723 23.4463M16.0619 23.446L16.0723 23.4463M16.0723 23.4463C16.1671 23.4483 16.2613 23.4311 16.3492 23.3956C16.4372 23.3601 16.517 23.3071 16.5838 23.2399L16.5845 23.2392M16.0723 23.4463L16.5845 23.2392M16.5845 23.2392C16.7211 23.1022 16.7979 22.9166 16.7979 22.7231M16.5845 23.2392L16.7979 22.7231M16.7979 22.7231C16.7979 22.5298 16.7213 22.3444 16.5849 22.2074L16.7979 22.7231ZM16.999 1H17C20.2634 1 23.4535 1.96771 26.1669 3.78075C28.8803 5.59379 30.9952 8.17074 32.244 11.1857C33.4929 14.2007 33.8196 17.5183 33.1829 20.719C32.5463 23.9197 30.9748 26.8597 28.6673 29.1673C26.3597 31.4748 23.4197 33.0463 20.219 33.6829C17.0183 34.3196 13.7007 33.9929 10.6857 32.744C7.67074 31.4952 5.09379 29.3803 3.28075 26.6669C1.46771 23.9535 0.5 20.7634 0.5 17.5V17.499C0.508385 13.1258 2.24937 8.93407 5.34172 5.84172C8.43407 2.74937 12.6258 1.00839 16.999 1Z" stroke="#800000"></path>
+                </svg> 
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body scoreboard-count">
+                <div class="video-detials">
+                    <iframe width="100%" height="450" src="https://www.youtube.com/embed/c29lO_6dins?si=o6eJUDefhtoz9htZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                </div>
+                <div class="subject">
+                    <ul>
+                        <li>Batting</li>
+                        <li>Tactical</li>
+                    </ul>
+                </div>
+                <div class="like-watch">
+                    <ul>
+                        <li>
+                            <div class="like">
+                                <img src="../images/like.svg" alt="icon">222
+                            </div>
+                        </li>
+                        <li>
+                            <div class="unlike">
+                                <img src="../images/unlike.svg" alt="icon">222
+                            </div>
+                        </li>
+                        <li>
+                            <div class="views">
+                                <img src="../images/eye.svg" alt="icon">222
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="traning-description">
+                    <h5>Description</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum vitae eros id egestas. Mauris nec purus magna. Nulla eros ipsum, vestibulum at ligula et, faucibus varius nulla. Maecenas in tincidunt felis. Vestibulum suscipit, nisi id ornare congue, dui metus vestibulum diam, in imperdiet odio lacus a ipsum. </p>
+                    <h5>Privacy Tips</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum vitae eros id egestas. Mauris nec purus magna. Nulla eros ipsum, vestibulum at ligula et, faucibus varius nulla. Maecenas in tincidunt felis. Vestibulum suscipit, nisi id ornare congue, dui metus vestibulum diam, in imperdiet odio lacus a ipsum. </p>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- watch net  -->
+    <div class="modal modal-xl fade ambassador-form" id="WatchNet" data-bs-backdrop="static" data-bs-keyboard="false" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header icon-popup-header">
+                <svg width="34" height="35" data-bs-dismiss="modal" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.3382 18.0234L10.3371 18.0223C10.2669 17.9525 10.2096 17.8707 10.1679 17.7809C10.0978 17.6002 10.0978 17.3998 10.1679 17.2191C10.2096 17.1293 10.2669 17.0475 10.3371 16.9777L10.3382 16.9766L15.5437 11.7711C15.6817 11.6497 15.8604 11.5847 16.0444 11.5892C16.2319 11.5938 16.4105 11.6704 16.5431 11.803C16.6758 11.9357 16.7523 12.1142 16.7569 12.3018C16.7615 12.4857 16.6964 12.6645 16.5751 12.8024L13.4618 15.9157L12.6083 16.7692H13.8154H23.1538C23.3477 16.7692 23.5335 16.8462 23.6706 16.9833C23.8076 17.1203 23.8846 17.3062 23.8846 17.5C23.8846 17.6938 23.8076 17.8797 23.6706 18.0167C23.5335 18.1538 23.3477 18.2308 23.1538 18.2308H13.8154H12.6083L13.4618 19.0843L16.5845 22.207L10.3382 18.0234ZM10.3382 18.0234L15.5536 23.2388L15.5536 23.2387M10.3382 18.0234L15.5536 23.2387M15.5536 23.2387L15.5585 23.2437M15.5536 23.2387L15.5585 23.2437M15.5585 23.2437C15.6224 23.3095 15.6991 23.3614 15.784 23.3962C15.8688 23.431 15.9599 23.4481 16.0516 23.4462L16.0619 23.446M15.5585 23.2437L16.0619 23.446M16.0619 23.446L16.0723 23.4463M16.0619 23.446L16.0723 23.4463M16.0723 23.4463C16.1671 23.4483 16.2613 23.4311 16.3492 23.3956C16.4372 23.3601 16.517 23.3071 16.5838 23.2399L16.5845 23.2392M16.0723 23.4463L16.5845 23.2392M16.5845 23.2392C16.7211 23.1022 16.7979 22.9166 16.7979 22.7231M16.5845 23.2392L16.7979 22.7231M16.7979 22.7231C16.7979 22.5298 16.7213 22.3444 16.5849 22.2074L16.7979 22.7231ZM16.999 1H17C20.2634 1 23.4535 1.96771 26.1669 3.78075C28.8803 5.59379 30.9952 8.17074 32.244 11.1857C33.4929 14.2007 33.8196 17.5183 33.1829 20.719C32.5463 23.9197 30.9748 26.8597 28.6673 29.1673C26.3597 31.4748 23.4197 33.0463 20.219 33.6829C17.0183 34.3196 13.7007 33.9929 10.6857 32.744C7.67074 31.4952 5.09379 29.3803 3.28075 26.6669C1.46771 23.9535 0.5 20.7634 0.5 17.5V17.499C0.508385 13.1258 2.24937 8.93407 5.34172 5.84172C8.43407 2.74937 12.6258 1.00839 16.999 1Z" stroke="#800000"></path>
+                </svg> 
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body scoreboard-count">
+                <div class="video-detials">
+                    <iframe width="100%" height="450" src="https://www.youtube.com/embed/c29lO_6dins?si=o6eJUDefhtoz9htZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+<!-- footer   -->
+<footer>
+    <div class="footer_top_wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-md-4">
+                    <div class="footer_collum_wrap">
+                        <h4 class="footer_heading">Contact Us</h4>
+                        <div class="footer_contact mb-20">
+                            <ul>
+                                <li class="mb-20"><a href="#"><img src="../images/whatsapp.svg" alt="whatsapp"> Whatsapp +918002632986</a></li>
+                                <li><a href="#"><img src="../images/mail.svg" alt="mail">Email: info@criconet.com</a></li>
+                            </ul>
+                        </div>
+                        <h4 class="footer_heading">Support</h4>
+                        <div class="footer_btn">
+                            <a href="#">Download App <img src="../images/google-play.png" alt="Play store"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-2">
+                    <h4 class="footer_heading">Our Services</h4>
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="#">e-Pavilion</a></li>
+                            <li><a href="e-coaching-page-coach.html">e-Coaching</a></li>
+                            <li><a href="Book-Live-streaming-Pitch.html">e-Streaming</a></li>
+                            <li><a href="academylisting.html">e-Academy</a></li>
+                            <li><a href="Partners-Page.html">Partner With Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-2">
+                    <h4 class="footer_heading">Quick Links</h4>
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="Blog.html">Blog</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Media Releases</a></li>
+                            <li><a href="career.html">Career</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <h4 class="footer_heading">Subscribe to our Newsletter</h4>
+                    <form action="">
+                            <div class="search_wrap footer mb-20">
+                                <div class="search_shadow"></div>
+                                <input type="text" placeholder="Email..." name="search">
+                                <div class="button_shadow">
+                                    <button type="submit">
+                                        Subscribe
+                                    </button>
+                                </div>                            
+                            </div>
+                     </form>
+                     <h4 class="footer_heading mt-20">Follow Us</h4>  
+                     <div class="social_icon">
+                        <ul>
+                            <li><a href="#"><img src="../images/Facebook.svg" alt="facebook"></a></li>
+                            <li><a href="#"><img src="../images/Insta.svg" alt="insta"></a></li>
+                            <li><a href="#"><img src="../images/youtube.svg" alt="youtube"></a></li>
+                            <li><a href="#"><img src="../images/Linkedin.svg" alt="Linkedin"></a></li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+   
+    <div class="footer_bottam_wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-6">
+                    <p>Copyright © 2022 Criconet. All rights reserved. </p>
+                </div>
+                <div class="col-xl-6 col-md-6">
+                    <div class="bttom_menu">
+                        <ul>
+                            <li><a href="User-Agreement.html">User Agreement</a></li>
+                            <li><a href="terms.html">Terms of Use</a></li>
+                            <li><a href="Privacy-Page.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer  -->
+<!-- boostrap  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+<!-- jquery  -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- main js  -->
+<script src="../js/main.js"></script>
+</body>

@@ -3521,3 +3521,10 @@ section.previous-session {
 .net{
   border: 2px solid #fff;
 }
+.live-strem-input.date-of-birth {
+  display: flex;
+  gap: 10px;
+}
+.live-strem-input.date-of-birth select.form-select.select-service {
+  background-position-x: 145px;
+}
