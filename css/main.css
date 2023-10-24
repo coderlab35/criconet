@@ -1885,11 +1885,11 @@ section.booking-live-sec{
   justify-content: space-evenly;
   margin: 12px 0;
 }
-.coach-book-footer .c_btn a {
+/* .coach-book-footer .c_btn a {
   padding: 0 26px;
   height: 37px;
   line-height: 37px;
-}
+} */
 .coach-right-wrap{
   width: 20%;
 }
@@ -3528,4 +3528,40 @@ section.previous-session {
 }
 .live-strem-input.date-of-birth select.form-select.select-service {
   background-position-x: 145px;
+}
+
+/* otp  */
+.otp{
+  justify-content: center;
+  display: flex;
+  gap: 14px;
+}
+.otp-verify .title{
+  font-weight:600;
+  margin-top:20px;
+  font-size:24px
+}
+
+.otp-verify .customBtn{
+  border-radius:0px;
+  padding:10px;
+}
+
+.otp-verify form input{
+  display:inline-block;
+  width:50px;
+  height:50px;
+  text-align:center;
+}
+
+.two_main_bg.home-about img {
+  width: 460px;
+  margin-top: 4px;
+}
+.blog_slide a {
+  color: inherit;
+}
+section.home_blog .heading h5 {
+  color: #fff;
+  font-weight: 600;
 }
