@@ -404,3 +404,11 @@ $(document).ready(function(){
   })
   
   });
+
+  $(window).scroll(function(){
+    var sticky = $('.epavilian-sidebar'),
+        scroll = $(window).scrollTop();
+  
+    if (scroll >= 100) sticky.addClass('siderbar-fix');
+    else sticky.removeClass('siderbar-fix');
+  });
