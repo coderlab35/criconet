@@ -915,7 +915,7 @@ section.mee_team_sec {
   background: #ECEDF1;
   top: -3px;
   left: auto;
-  right: 180px;
+  right: 350px;
   z-index: 10;
 }
 .f_btn a:hover{
@@ -1774,8 +1774,7 @@ section.notice-board-sec::before{
 section.navigation.log-in-page {
   background: #0E2245;
 }
-.update-coach,
-section.booking-live-sec{
+.update-coach{
   margin-top: 120px;
 }
 .live-strem-wrap {
@@ -1825,6 +1824,18 @@ section.booking-live-sec{
   border-radius: 15px;
   margin-bottom: 10px;
   box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+.coach-book-wrap.disable::before {
+  content: "";
+  background: hsl(0deg 100% 25% / 40%);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  position: absolute;
+  border-radius: 15px;
 }
 .coach-book-img {
   background: #0E2245;
@@ -1917,6 +1928,7 @@ section.booking-live-sec{
 .coach-book-text p.price {
   color: #800000;
   font-weight: 500;
+  text-decoration: none !important;
 }
 .recent-coach-img img {
   height: 80px;
@@ -3955,11 +3967,10 @@ body.video-single section.navigation {
   margin: 0 !important;
 }
 .side-menu-right {
-    background: #fff;
-    height: 100%;
-    padding: 20px 0;
-    /* position: fixed;
-    width: 23%; */
+  background: #fff;
+  height: 100vh;
+  padding: 20px 0;
+  overflow-y: auto;
 }
 .epavilian-sidebar.siderbar-fix {
   position: -webkit-sticky;
@@ -3997,4 +4008,33 @@ body.video-single section.navigation {
 .modal-body.feedback-form input[type="radio"]:checked + label {
   background: #800000;
     color: #fff;
+}
+.container.camera-bitton ul li a {
+  display: inline-block;
+  background: #800000;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 35px;
+  border-radius: 60px;
+  font-weight: 600;
+}
+.container.camera-bitton ul li a.nav-link.active {
+  background: #0E2245;
+  color: #fff;
+}
+.container.camera-bitton ul li {
+  margin: 0 10px;
+}
+.container.camera-bitton ul.nav.nav-tabs {
+  justify-content: center;
+  border: 0;
+  margin-bottom: 20px;
+}
+.coach-book-text p.price span {
+  display: block;
+}
+.coach-book-text .price .discount {
+  color: #800000;
+    font-weight: 500;
+  text-decoration: line-through;
 }
