@@ -86,6 +86,7 @@ textarea.form-control {
   box-shadow: 0 3px 3px 0 rgb(0 0 0);
   border: 1px solid #800000;
   cursor: pointer;
+  text-align: center;
 }
 .l_btn a:hover{
   background: transparent;
